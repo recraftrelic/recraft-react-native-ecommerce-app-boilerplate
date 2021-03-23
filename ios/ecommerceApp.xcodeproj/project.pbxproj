@@ -20,6 +20,16 @@
 		B0CD7BD2A0EA7CCA0589D607 /* libPods-ecommerceApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 466B8D40AEF27A6E7E6B080D /* libPods-ecommerceApp.a */; };
 		D9159D019D42EF5567FE08E5 /* libPods-ecommerceApp-ecommerceAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4261EBA6089FDAD321484794 /* libPods-ecommerceApp-ecommerceAppTests.a */; };
 		DF52B5884E952ECF59430296 /* libPods-ecommerceApp-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD5FA9B1A8245AF2A2F08C3 /* libPods-ecommerceApp-tvOSTests.a */; };
+		F683F13F1976462381887D2D /* ZillaSlab-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDC46EF0D53F4BDD90848A86 /* ZillaSlab-Bold.ttf */; };
+		BF5A1B5559E64E7D8C06F4C9 /* ZillaSlab-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D3D1DDA019A44A1AAC66B8F /* ZillaSlab-BoldItalic.ttf */; };
+		771FCA2C9FD14B078FA16F9D /* ZillaSlab-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75BABF73F04C4865A480DD50 /* ZillaSlab-Italic.ttf */; };
+		71718B49CC534C189D03BA53 /* ZillaSlab-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6BD8BCFBBDD4180BFC5BC94 /* ZillaSlab-Light.ttf */; };
+		F7034F3B2772401EB66091E8 /* ZillaSlab-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 90CBB8D1D77D4FE69C395989 /* ZillaSlab-LightItalic.ttf */; };
+		3B25A0D60F0E499D8DB530DB /* ZillaSlab-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 85AC2A66CBD247A2A5118714 /* ZillaSlab-Medium.ttf */; };
+		83A17FB7AA264B3CA7A14085 /* ZillaSlab-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA2A4BA75FFD48B3885D65E0 /* ZillaSlab-MediumItalic.ttf */; };
+		1E09E8FAC57B4EE0802AF779 /* ZillaSlab-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1F5CFDBD688E46CCBF79F543 /* ZillaSlab-Regular.ttf */; };
+		68F4A85371F74C00A6F286AD /* ZillaSlab-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39C30B229B80482BB6B114C9 /* ZillaSlab-SemiBold.ttf */; };
+		A2EB23A699854BF399F7B54D /* ZillaSlab-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C953381D482046EF82A2C584 /* ZillaSlab-SemiBoldItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +77,16 @@
 		E51302DC0CFF25AA61A7CD83 /* Pods-ecommerceApp-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecommerceApp-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-ecommerceApp-tvOSTests/Pods-ecommerceApp-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		DDC46EF0D53F4BDD90848A86 /* ZillaSlab-Bold.ttf */ = {isa = PBXFileReference; name = "ZillaSlab-Bold.ttf"; path = "../assets/fonts/ZillaSlab-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8D3D1DDA019A44A1AAC66B8F /* ZillaSlab-BoldItalic.ttf */ = {isa = PBXFileReference; name = "ZillaSlab-BoldItalic.ttf"; path = "../assets/fonts/ZillaSlab-BoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		75BABF73F04C4865A480DD50 /* ZillaSlab-Italic.ttf */ = {isa = PBXFileReference; name = "ZillaSlab-Italic.ttf"; path = "../assets/fonts/ZillaSlab-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A6BD8BCFBBDD4180BFC5BC94 /* ZillaSlab-Light.ttf */ = {isa = PBXFileReference; name = "ZillaSlab-Light.ttf"; path = "../assets/fonts/ZillaSlab-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		90CBB8D1D77D4FE69C395989 /* ZillaSlab-LightItalic.ttf */ = {isa = PBXFileReference; name = "ZillaSlab-LightItalic.ttf"; path = "../assets/fonts/ZillaSlab-LightItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		85AC2A66CBD247A2A5118714 /* ZillaSlab-Medium.ttf */ = {isa = PBXFileReference; name = "ZillaSlab-Medium.ttf"; path = "../assets/fonts/ZillaSlab-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		AA2A4BA75FFD48B3885D65E0 /* ZillaSlab-MediumItalic.ttf */ = {isa = PBXFileReference; name = "ZillaSlab-MediumItalic.ttf"; path = "../assets/fonts/ZillaSlab-MediumItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1F5CFDBD688E46CCBF79F543 /* ZillaSlab-Regular.ttf */ = {isa = PBXFileReference; name = "ZillaSlab-Regular.ttf"; path = "../assets/fonts/ZillaSlab-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		39C30B229B80482BB6B114C9 /* ZillaSlab-SemiBold.ttf */ = {isa = PBXFileReference; name = "ZillaSlab-SemiBold.ttf"; path = "../assets/fonts/ZillaSlab-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C953381D482046EF82A2C584 /* ZillaSlab-SemiBoldItalic.ttf */ = {isa = PBXFileReference; name = "ZillaSlab-SemiBoldItalic.ttf"; path = "../assets/fonts/ZillaSlab-SemiBoldItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +185,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				A47341FB1FD555D566E6601A /* Pods */,
+				3BBAF003ED674822B3D320CF /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -197,6 +218,24 @@
 			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		3BBAF003ED674822B3D320CF /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				DDC46EF0D53F4BDD90848A86 /* ZillaSlab-Bold.ttf */,
+				8D3D1DDA019A44A1AAC66B8F /* ZillaSlab-BoldItalic.ttf */,
+				75BABF73F04C4865A480DD50 /* ZillaSlab-Italic.ttf */,
+				A6BD8BCFBBDD4180BFC5BC94 /* ZillaSlab-Light.ttf */,
+				90CBB8D1D77D4FE69C395989 /* ZillaSlab-LightItalic.ttf */,
+				85AC2A66CBD247A2A5118714 /* ZillaSlab-Medium.ttf */,
+				AA2A4BA75FFD48B3885D65E0 /* ZillaSlab-MediumItalic.ttf */,
+				1F5CFDBD688E46CCBF79F543 /* ZillaSlab-Regular.ttf */,
+				39C30B229B80482BB6B114C9 /* ZillaSlab-SemiBold.ttf */,
+				C953381D482046EF82A2C584 /* ZillaSlab-SemiBoldItalic.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -342,6 +381,16 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				F683F13F1976462381887D2D /* ZillaSlab-Bold.ttf in Resources */,
+				BF5A1B5559E64E7D8C06F4C9 /* ZillaSlab-BoldItalic.ttf in Resources */,
+				771FCA2C9FD14B078FA16F9D /* ZillaSlab-Italic.ttf in Resources */,
+				71718B49CC534C189D03BA53 /* ZillaSlab-Light.ttf in Resources */,
+				F7034F3B2772401EB66091E8 /* ZillaSlab-LightItalic.ttf in Resources */,
+				3B25A0D60F0E499D8DB530DB /* ZillaSlab-Medium.ttf in Resources */,
+				83A17FB7AA264B3CA7A14085 /* ZillaSlab-MediumItalic.ttf in Resources */,
+				1E09E8FAC57B4EE0802AF779 /* ZillaSlab-Regular.ttf in Resources */,
+				68F4A85371F74C00A6F286AD /* ZillaSlab-SemiBold.ttf in Resources */,
+				A2EB23A699854BF399F7B54D /* ZillaSlab-SemiBoldItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
