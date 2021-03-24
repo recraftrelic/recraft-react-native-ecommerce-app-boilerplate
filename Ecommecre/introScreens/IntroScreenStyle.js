@@ -14,7 +14,7 @@ export const styles = StyleSheet.create({
         padding: 90,
         flex: 1,
     },
-    Shopping: {
+    Heading: {
         top: ('13%'),
         fontSize: 18,
         fontFamily: fonts.Italic,
@@ -23,5 +23,10 @@ export const styles = StyleSheet.create({
         top: ('20%'),
         textAlign: 'center',
         fontSize: 15,
+    },
+    image1: {
+        height: 100,
+        width: 100,
+        backgroundColor:'red'
     },
 })

@@ -1,15 +1,16 @@
 {
  "IntroScreens": [
      {
-         "Shopping": "SHOPPING FROM HOME",
-         "Content1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer maximus accumsan erat id facilisis."
+         "Heading": "SHOPPING FROM HOME",
+         "Content1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer maximus accumsan erat id facilisis.",
+         "Image":"data:image/png;base64,../utils/Images/Image1.png"
      },
      {
-        "Original": "PRODUK ORIGINAL",
+        "Heading": "PRODUK ORIGINAL",
         "Content1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer maximus accumsan erat id facilisis."
     },
     {
-        "Express": "EXPRESS DELIVERY",
+        "Heading": "EXPRESS DELIVERY",
         "Content1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer maximus accumsan erat id facilisis."
     }
  ]
