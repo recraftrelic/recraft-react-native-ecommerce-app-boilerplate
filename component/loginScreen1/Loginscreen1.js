@@ -11,7 +11,7 @@ import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view
 
 import { styles } from './loginStyles';
 import login from './login.json';
-import { images } from './utilities/images'
+import { images } from '../utilities/images'
 
 const Loginscreen1 = () => {
     const [email, setEmail] = useState('');

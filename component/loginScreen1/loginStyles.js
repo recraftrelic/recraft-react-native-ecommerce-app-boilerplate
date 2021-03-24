@@ -3,7 +3,7 @@ import {
     Dimensions,
     Platform
 } from "react-native";
-// import { fonts } from "./utilities/images";
+import { fonts } from '../utilities/images';
 import { RFValue } from 'react-native-responsive-fontsize';
 
 import {
@@ -49,11 +49,11 @@ export const styles = StyleSheet.create({
     signInText: {
         color: 'white',
         fontSize: moderateScale(16),
-        // fontFamily: fonts.regular
+        fontFamily: fonts.zilaMedium
     },
     container: {
         marginTop: Platform.OS == "ios" ? 50 : 0,
-        flex: 0.4,
+        flex: 0.3,
         backgroundColor: '#7BCFE9',
         borderBottomLeftRadius: 40,
         borderBottomRightRadius: 40,
@@ -90,8 +90,8 @@ export const styles = StyleSheet.create({
     facebookText: {
         color: 'white',
         marginLeft: moderateScale(10),
-        bottom: moderateScale(12)
-        // fontFamily: fonts.regular
+        bottom: moderateScale(12),
+        fontFamily: fonts.quickBold,
     },
     googleImg: {
         flexDirection: 'row',
@@ -207,7 +207,7 @@ export const styles = StyleSheet.create({
     },
     headName: {
         fontSize: RFValue(14),
-        marginTop: moderateScale(-2),
+        marginTop: moderateScale(-20),
         left: moderateScale(120),
         color: '#FFFFFF',
         // fontFamily: fonts.bold
@@ -215,45 +215,34 @@ export const styles = StyleSheet.create({
     headLogo: {
         position: 'absolute',
         top: moderateScale(240),
-        left: moderateScale(90),
+        left: moderateScale(110),
     },
     bottomText: {
         color: '#7A8D9C',
-
-    },
-    logoView: {
-        flex: 1,
-        // backgroundColor: '#7BCFE9'
-
-        // backgroundColor: 'black'
 
     },
     googleTxt: {
         color: '#57636F',
         marginLeft: moderateScale(10),
         bottom: moderateScale(12),
-
-        // fontFamily: fonts.regular
+        fontFamily: fonts.quickBold,
     },
     headerStyle: {
-        // marginTop: moderateScale(80),
-        top: moderateScale(80),
+        top: moderateScale(70),
         right: moderateScale(120),
         color: '#FFFFFF',
         fontSize: RFValue(20),
-        // fontFamily: fonts.regular
+        fontFamily: fonts.zilaMedium
     },
     subHeaderStyle: {
-        top: moderateScale(90),
-        left: moderateScale(1),
-        // width: moderateScale(290),
+        top: moderateScale(78),
+        right: moderateScale(13),
         color: '#FFFFFF',
         fontSize: RFValue(12),
     },
     subHeaderStyle1: {
-        top: moderateScale(90),
-        right: moderateScale(24),
-        // width: moderateScale(290),
+        top: moderateScale(80),
+        right: moderateScale(38),
         color: '#FFFFFF',
         fontSize: RFValue(12),
     }
