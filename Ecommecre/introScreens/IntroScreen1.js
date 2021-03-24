@@ -10,7 +10,7 @@ console.log(screen1.IntroScreens[0].Image, "hdgsdjgv")
         <>
         <SafeAreaView style={styles.main}>
             <View style={styles.container}>
-                <Image style={styles.image1} source={{uri:screen1.IntroScreens[0].Image}}/>
+                <Image style={styles.image1} source={screen1.IntroScreens[0].Image}/>
                 <Text style={styles.Heading}>{screen1.IntroScreens[0].Heading}</Text>
                 <Text style={styles.Content1}>{screen1.IntroScreens[0].Content1}</Text>
             </View>

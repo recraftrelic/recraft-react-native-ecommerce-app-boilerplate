@@ -3,7 +3,7 @@
      {
          "Heading": "SHOPPING FROM HOME",
          "Content1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer maximus accumsan erat id facilisis.",
-         "Image":"data:image/png;base64,../utils/Images/Image1.png"
+         "Image":"require(../utils/Images/Image1.png)"
      },
      {
         "Heading": "PRODUK ORIGINAL",

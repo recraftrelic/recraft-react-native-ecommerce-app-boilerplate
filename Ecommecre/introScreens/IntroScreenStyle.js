@@ -17,7 +17,7 @@ export const styles = StyleSheet.create({
     Heading: {
         top: ('13%'),
         fontSize: 18,
-        fontFamily: fonts.Italic,
+        fontFamily: fonts.Bold,
     },
     Content1: {
         top: ('20%'),
