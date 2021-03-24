@@ -26,6 +26,13 @@ const fonts = Platform.select({
         extraBold: 'WorkSans-ExtraBold',
         VariableFont:'AbrilFatface-Regular',
         Rubik: 'Rubik-VariableFont',
+        zilaMedium: 'ZillaSlab-Medium',
+        zilaBold: 'ZillaSlab-Bold',
+        zilaSemiBold: 'ZillaSlab-SemiBold',
+        quickRegular: 'Quicksand-Regular',
+        quickBold: 'Quicksand-Bold',
+        quickMedium: 'Quicksand-Medium',
+        quickSemiBold: 'Quicksand-SemiBold',
     },
     android: {
         regular: 'WorkSans-Regular',
