@@ -1,9 +1,9 @@
 import { Platform } from "react-native";
-import media from "../../images/icons/media.png";
-import Facebook from "../../images/icons/Facebook.png";
-import google from "../../images/icons/google.png";
-import eye from "../../images/icons/eye.png";
-import ic_ad_view from "../../images/icons/ic_ad_view.png";
+import media from '../../assets/images/signin/media.png';
+import Facebook from '../../assets/images/signin/Facebook.png';
+import google from '../../assets/images/signin/google.png';
+import eye from '../../assets/images/signin/eye.png';
+import ic_ad_view from '../../assets/images/signin/ic_ad_view.png';
 
 const images = {
     media,
