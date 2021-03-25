@@ -15,12 +15,6 @@ const App = () => {
         component={IntroScreenOne}
         options={{headerShown: false}}
         />
-
-        {/* <Stack.Screen
-        name="intro2"
-        component={IntroScreen2}
-        options={{headerShown: false}}
-        /> */}
       </Stack.Navigator>
     </NavigationContainer>
   )
