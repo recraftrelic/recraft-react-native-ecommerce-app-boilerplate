@@ -2,7 +2,7 @@ import React from 'react';
 import {createStackNavigator} from '@react-navigation/stack';
 import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
-import IntroScreen1 from './Ecommecre/introScreens/IntroScreen1';
+import IntroScreenOne from './pages/introscreens/IntroScreenOne';
 
 const Stack = createStackNavigator();
 const App = () => {
@@ -12,9 +12,15 @@ const App = () => {
       <Stack.Navigator>
         <Stack.Screen
         name="intro1"
-        component={IntroScreen1}
+        component={IntroScreenOne}
         options={{headerShown: false}}
         />
+
+        {/* <Stack.Screen
+        name="intro2"
+        component={IntroScreen2}
+        options={{headerShown: false}}
+        /> */}
       </Stack.Navigator>
     </NavigationContainer>
   )
