@@ -5,10 +5,6 @@ import google from "../../images/icons/google.png";
 import eye from "../../images/icons/eye.png";
 import ic_ad_view from "../../images/icons/ic_ad_view.png";
 
-
-
-
-
 const images = {
     media,
     Facebook,
@@ -26,6 +22,13 @@ const fonts = Platform.select({
         extraBold: 'WorkSans-ExtraBold',
         VariableFont:'AbrilFatface-Regular',
         Rubik: 'Rubik-VariableFont',
+        zilaMedium: 'ZillaSlab-Medium',
+        zilaBold: 'ZillaSlab-Bold',
+        zilaSemiBold: 'ZillaSlab-SemiBold',
+        quickRegular: 'Quicksand-Regular',
+        quickBold: 'Quicksand-Bold',
+        quickMedium: 'Quicksand-Medium',
+        quickSemiBold: 'Quicksand-SemiBold',
     },
     android: {
         regular: 'WorkSans-Regular',

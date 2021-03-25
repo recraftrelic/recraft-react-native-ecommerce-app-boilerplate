@@ -8,18 +8,53 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* ecommerceAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ecommerceAppTests.m */; };
+		0377E3CD71F046CFBA2FC097 /* WorkSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A629ED564FB4023A82061E5 /* WorkSans-Light.ttf */; };
+		0B854CBA9DE5441AB1AA8E19 /* WorkSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C3BDF59CD5EC4710953B72F2 /* WorkSans-Bold.ttf */; };
+		0CBB72721474492CA00967C7 /* WorkSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E975EEFA8DB54786A62FE7BD /* WorkSans-Italic.ttf */; };
+		0CC2242EA2A64DE398BA5F1B /* WorkSans-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B4A527AB2D5943CF899B51FC /* WorkSans-ExtraLight.ttf */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		1C8FBF6A9E5E4132AD24203D /* Quicksand-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2617BC66C77F4921B7E23DD0 /* Quicksand-SemiBold.ttf */; };
+		1E09E8FAC57B4EE0802AF779 /* ZillaSlab-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1F5CFDBD688E46CCBF79F543 /* ZillaSlab-Regular.ttf */; };
+		273C6D7D819A40218AC91DC1 /* WorkSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91062C1ACF4C4F8CB3822B68 /* WorkSans-SemiBoldItalic.ttf */; };
+		2B22F2EC6A0744AD94986EEC /* WorkSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A69ECF04270A4C43B8EB852A /* WorkSans-SemiBold.ttf */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* ecommerceAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ecommerceAppTests.m */; };
+		3B25A0D60F0E499D8DB530DB /* ZillaSlab-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 85AC2A66CBD247A2A5118714 /* ZillaSlab-Medium.ttf */; };
 		4DE0211D9863CFE091BEDBE4 /* libPods-ecommerceApp-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0A2BA8BF19B6E81A1164F3B /* libPods-ecommerceApp-tvOS.a */; };
+		51C62D6CD08C4E53A0DE0312 /* WorkSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2908716CE28746F586ADCBF9 /* WorkSans-BoldItalic.ttf */; };
+		52A325855BDD485BA371164A /* WorkSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0CC95FA9043249A387D38CAB /* WorkSans-Medium.ttf */; };
+		5948FFC22976467E86BA30CA /* WorkSans-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B3846CAEC2B4489B8381796B /* WorkSans-ThinItalic.ttf */; };
+		5EEF160E70DA4ED093B0A48D /* WorkSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3FAEFAEA89E24F699A207616 /* WorkSans-LightItalic.ttf */; };
+		616F0F5A5F4849949CEFC31E /* WorkSans-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B2D90559BF6140C5AF568A80 /* WorkSans-Black.ttf */; };
+		68F4A85371F74C00A6F286AD /* ZillaSlab-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39C30B229B80482BB6B114C9 /* ZillaSlab-SemiBold.ttf */; };
+		71718B49CC534C189D03BA53 /* ZillaSlab-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A6BD8BCFBBDD4180BFC5BC94 /* ZillaSlab-Light.ttf */; };
+		771FCA2C9FD14B078FA16F9D /* ZillaSlab-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 75BABF73F04C4865A480DD50 /* ZillaSlab-Italic.ttf */; };
+		80BBDBB5D2D24BEAAC8F9508 /* WorkSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 383317AB079A4EA886659A36 /* WorkSans-Regular.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		83A17FB7AA264B3CA7A14085 /* ZillaSlab-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AA2A4BA75FFD48B3885D65E0 /* ZillaSlab-MediumItalic.ttf */; };
+		95F3F1F96F5F4F1187E0F8C4 /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5B56E0A923C243E3A5A20E77 /* Quicksand-Light.ttf */; };
+		96315C11AB0241E0A7D363AB /* WorkSans-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A12C41B9DFC644B8B0B742A2 /* WorkSans-BlackItalic.ttf */; };
+		A2EB23A699854BF399F7B54D /* ZillaSlab-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C953381D482046EF82A2C584 /* ZillaSlab-SemiBoldItalic.ttf */; };
+		AD33B0CE0E0C4866ABC03C23 /* WorkSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 55BBDCCA685949D69482CBAB /* WorkSans-MediumItalic.ttf */; };
 		B0CD7BD2A0EA7CCA0589D607 /* libPods-ecommerceApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 466B8D40AEF27A6E7E6B080D /* libPods-ecommerceApp.a */; };
+		B117832B467F418ABFC486AA /* WorkSans-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E04F22DDB83842B5A6136302 /* WorkSans-VariableFont_wght.ttf */; };
+		B5AB5BAFBA0D4214949AA630 /* WorkSans-Italic-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27AAC3097BFE47BEA30EB8B7 /* WorkSans-Italic-VariableFont_wght.ttf */; };
+		BEFED4FDAA2949C9A0670A9F /* WorkSans-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C533675EC3EE4646B6775E16 /* WorkSans-ExtraLightItalic.ttf */; };
+		BF5A1B5559E64E7D8C06F4C9 /* ZillaSlab-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D3D1DDA019A44A1AAC66B8F /* ZillaSlab-BoldItalic.ttf */; };
+		D547C6D37AD142BFB4E816E3 /* WorkSans-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B42EAD4A7E6348339B7A792A /* WorkSans-Thin.ttf */; };
 		D9159D019D42EF5567FE08E5 /* libPods-ecommerceApp-ecommerceAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4261EBA6089FDAD321484794 /* libPods-ecommerceApp-ecommerceAppTests.a */; };
+		DF48CFC7EBA04B78BD638960 /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5E2622E8C2D94518B6896741 /* Quicksand-Regular.ttf */; };
 		DF52B5884E952ECF59430296 /* libPods-ecommerceApp-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD5FA9B1A8245AF2A2F08C3 /* libPods-ecommerceApp-tvOSTests.a */; };
+		E3CBD88D12854C899608589D /* Quicksand-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AE6AE61CCBE54292AE1301B2 /* Quicksand-Medium.ttf */; };
+		E4EEC07B4FDA4E469B889FA9 /* WorkSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C0D7A147137A4A92823E8D8F /* WorkSans-ExtraBold.ttf */; };
+		F651F274B47C47BC85A50AB6 /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 09144FA5BF2C47059D23031E /* Quicksand-Bold.ttf */; };
+		F683F13F1976462381887D2D /* ZillaSlab-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDC46EF0D53F4BDD90848A86 /* ZillaSlab-Bold.ttf */; };
+		F7034F3B2772401EB66091E8 /* ZillaSlab-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 90CBB8D1D77D4FE69C395989 /* ZillaSlab-LightItalic.ttf */; };
+		FC8B9A1470FA48AC9D4F012B /* WorkSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4DAB81AD79854C26A9E27CCC /* WorkSans-ExtraBoldItalic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,26 +80,61 @@
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* ecommerceAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ecommerceAppTests.m; sourceTree = "<group>"; };
 		01A0F4DFC3657D52D5078BC3 /* Pods-ecommerceApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecommerceApp.release.xcconfig"; path = "Target Support Files/Pods-ecommerceApp/Pods-ecommerceApp.release.xcconfig"; sourceTree = "<group>"; };
+		09144FA5BF2C47059D23031E /* Quicksand-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Quicksand-Bold.ttf"; path = "../assets/fonts/Quicksand-Bold.ttf"; sourceTree = "<group>"; };
+		0CC95FA9043249A387D38CAB /* WorkSans-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "WorkSans-Medium.ttf"; path = "../assets/fonts/static/WorkSans-Medium.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* ecommerceApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ecommerceApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ecommerceApp/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ecommerceApp/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ecommerceApp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ecommerceApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ecommerceApp/main.m; sourceTree = "<group>"; };
+		1F5CFDBD688E46CCBF79F543 /* ZillaSlab-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "ZillaSlab-Regular.ttf"; path = "../assets/fonts/ZillaSlab-Regular.ttf"; sourceTree = "<group>"; };
+		2617BC66C77F4921B7E23DD0 /* Quicksand-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Quicksand-SemiBold.ttf"; path = "../assets/fonts/Quicksand-SemiBold.ttf"; sourceTree = "<group>"; };
+		27AAC3097BFE47BEA30EB8B7 /* WorkSans-Italic-VariableFont_wght.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "WorkSans-Italic-VariableFont_wght.ttf"; path = "../assets/fonts/WorkSans-Italic-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		2908716CE28746F586ADCBF9 /* WorkSans-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "WorkSans-BoldItalic.ttf"; path = "../assets/fonts/static/WorkSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* ecommerceApp-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ecommerceApp-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* ecommerceApp-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ecommerceApp-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3581C7209EDE07153F7AA5A6 /* Pods-ecommerceApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecommerceApp.debug.xcconfig"; path = "Target Support Files/Pods-ecommerceApp/Pods-ecommerceApp.debug.xcconfig"; sourceTree = "<group>"; };
+		383317AB079A4EA886659A36 /* WorkSans-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "WorkSans-Regular.ttf"; path = "../assets/fonts/static/WorkSans-Regular.ttf"; sourceTree = "<group>"; };
+		39C30B229B80482BB6B114C9 /* ZillaSlab-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "ZillaSlab-SemiBold.ttf"; path = "../assets/fonts/ZillaSlab-SemiBold.ttf"; sourceTree = "<group>"; };
+		3FAEFAEA89E24F699A207616 /* WorkSans-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "WorkSans-LightItalic.ttf"; path = "../assets/fonts/static/WorkSans-LightItalic.ttf"; sourceTree = "<group>"; };
 		4261EBA6089FDAD321484794 /* libPods-ecommerceApp-ecommerceAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ecommerceApp-ecommerceAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		466B8D40AEF27A6E7E6B080D /* libPods-ecommerceApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ecommerceApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DAB81AD79854C26A9E27CCC /* WorkSans-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "WorkSans-ExtraBoldItalic.ttf"; path = "../assets/fonts/static/WorkSans-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
 		55043885574936A7D9E2C8F3 /* Pods-ecommerceApp-ecommerceAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecommerceApp-ecommerceAppTests.release.xcconfig"; path = "Target Support Files/Pods-ecommerceApp-ecommerceAppTests/Pods-ecommerceApp-ecommerceAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		55BBDCCA685949D69482CBAB /* WorkSans-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "WorkSans-MediumItalic.ttf"; path = "../assets/fonts/static/WorkSans-MediumItalic.ttf"; sourceTree = "<group>"; };
+		5B56E0A923C243E3A5A20E77 /* Quicksand-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Quicksand-Light.ttf"; path = "../assets/fonts/Quicksand-Light.ttf"; sourceTree = "<group>"; };
+		5E2622E8C2D94518B6896741 /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Quicksand-Regular.ttf"; path = "../assets/fonts/Quicksand-Regular.ttf"; sourceTree = "<group>"; };
+		6A629ED564FB4023A82061E5 /* WorkSans-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "WorkSans-Light.ttf"; path = "../assets/fonts/static/WorkSans-Light.ttf"; sourceTree = "<group>"; };
 		6F579870174151EC0DF90C57 /* Pods-ecommerceApp-ecommerceAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecommerceApp-ecommerceAppTests.debug.xcconfig"; path = "Target Support Files/Pods-ecommerceApp-ecommerceAppTests/Pods-ecommerceApp-ecommerceAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		737813EAAAA69E7B98349E7E /* Pods-ecommerceApp-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecommerceApp-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-ecommerceApp-tvOS/Pods-ecommerceApp-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		75BABF73F04C4865A480DD50 /* ZillaSlab-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "ZillaSlab-Italic.ttf"; path = "../assets/fonts/ZillaSlab-Italic.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ecommerceApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		85AC2A66CBD247A2A5118714 /* ZillaSlab-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "ZillaSlab-Medium.ttf"; path = "../assets/fonts/ZillaSlab-Medium.ttf"; sourceTree = "<group>"; };
 		873A4F2FB3502A1360F8CF43 /* Pods-ecommerceApp-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecommerceApp-tvOS.release.xcconfig"; path = "Target Support Files/Pods-ecommerceApp-tvOS/Pods-ecommerceApp-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		8D3D1DDA019A44A1AAC66B8F /* ZillaSlab-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "ZillaSlab-BoldItalic.ttf"; path = "../assets/fonts/ZillaSlab-BoldItalic.ttf"; sourceTree = "<group>"; };
+		90CBB8D1D77D4FE69C395989 /* ZillaSlab-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "ZillaSlab-LightItalic.ttf"; path = "../assets/fonts/ZillaSlab-LightItalic.ttf"; sourceTree = "<group>"; };
+		91062C1ACF4C4F8CB3822B68 /* WorkSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "WorkSans-SemiBoldItalic.ttf"; path = "../assets/fonts/static/WorkSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		A12C41B9DFC644B8B0B742A2 /* WorkSans-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "WorkSans-BlackItalic.ttf"; path = "../assets/fonts/static/WorkSans-BlackItalic.ttf"; sourceTree = "<group>"; };
+		A69ECF04270A4C43B8EB852A /* WorkSans-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "WorkSans-SemiBold.ttf"; path = "../assets/fonts/static/WorkSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		A6BD8BCFBBDD4180BFC5BC94 /* ZillaSlab-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "ZillaSlab-Light.ttf"; path = "../assets/fonts/ZillaSlab-Light.ttf"; sourceTree = "<group>"; };
+		AA2A4BA75FFD48B3885D65E0 /* ZillaSlab-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "ZillaSlab-MediumItalic.ttf"; path = "../assets/fonts/ZillaSlab-MediumItalic.ttf"; sourceTree = "<group>"; };
+		AE6AE61CCBE54292AE1301B2 /* Quicksand-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Quicksand-Medium.ttf"; path = "../assets/fonts/Quicksand-Medium.ttf"; sourceTree = "<group>"; };
 		B0A2BA8BF19B6E81A1164F3B /* libPods-ecommerceApp-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ecommerceApp-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B2D90559BF6140C5AF568A80 /* WorkSans-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "WorkSans-Black.ttf"; path = "../assets/fonts/static/WorkSans-Black.ttf"; sourceTree = "<group>"; };
+		B3846CAEC2B4489B8381796B /* WorkSans-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "WorkSans-ThinItalic.ttf"; path = "../assets/fonts/static/WorkSans-ThinItalic.ttf"; sourceTree = "<group>"; };
+		B42EAD4A7E6348339B7A792A /* WorkSans-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "WorkSans-Thin.ttf"; path = "../assets/fonts/static/WorkSans-Thin.ttf"; sourceTree = "<group>"; };
+		B4A527AB2D5943CF899B51FC /* WorkSans-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "WorkSans-ExtraLight.ttf"; path = "../assets/fonts/static/WorkSans-ExtraLight.ttf"; sourceTree = "<group>"; };
 		BDD5FA9B1A8245AF2A2F08C3 /* libPods-ecommerceApp-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ecommerceApp-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0D7A147137A4A92823E8D8F /* WorkSans-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "WorkSans-ExtraBold.ttf"; path = "../assets/fonts/static/WorkSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		C3BDF59CD5EC4710953B72F2 /* WorkSans-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "WorkSans-Bold.ttf"; path = "../assets/fonts/static/WorkSans-Bold.ttf"; sourceTree = "<group>"; };
+		C533675EC3EE4646B6775E16 /* WorkSans-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "WorkSans-ExtraLightItalic.ttf"; path = "../assets/fonts/static/WorkSans-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		C953381D482046EF82A2C584 /* ZillaSlab-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "ZillaSlab-SemiBoldItalic.ttf"; path = "../assets/fonts/ZillaSlab-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		DDC46EF0D53F4BDD90848A86 /* ZillaSlab-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "ZillaSlab-Bold.ttf"; path = "../assets/fonts/ZillaSlab-Bold.ttf"; sourceTree = "<group>"; };
 		DF18FD72622E378A74101B1F /* Pods-ecommerceApp-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecommerceApp-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-ecommerceApp-tvOSTests/Pods-ecommerceApp-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E04F22DDB83842B5A6136302 /* WorkSans-VariableFont_wght.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "WorkSans-VariableFont_wght.ttf"; path = "../assets/fonts/WorkSans-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		E51302DC0CFF25AA61A7CD83 /* Pods-ecommerceApp-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ecommerceApp-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-ecommerceApp-tvOSTests/Pods-ecommerceApp-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		E975EEFA8DB54786A62FE7BD /* WorkSans-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "WorkSans-Italic.ttf"; path = "../assets/fonts/static/WorkSans-Italic.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -149,6 +219,48 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3BBAF003ED674822B3D320CF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DDC46EF0D53F4BDD90848A86 /* ZillaSlab-Bold.ttf */,
+				8D3D1DDA019A44A1AAC66B8F /* ZillaSlab-BoldItalic.ttf */,
+				75BABF73F04C4865A480DD50 /* ZillaSlab-Italic.ttf */,
+				A6BD8BCFBBDD4180BFC5BC94 /* ZillaSlab-Light.ttf */,
+				90CBB8D1D77D4FE69C395989 /* ZillaSlab-LightItalic.ttf */,
+				85AC2A66CBD247A2A5118714 /* ZillaSlab-Medium.ttf */,
+				AA2A4BA75FFD48B3885D65E0 /* ZillaSlab-MediumItalic.ttf */,
+				1F5CFDBD688E46CCBF79F543 /* ZillaSlab-Regular.ttf */,
+				39C30B229B80482BB6B114C9 /* ZillaSlab-SemiBold.ttf */,
+				C953381D482046EF82A2C584 /* ZillaSlab-SemiBoldItalic.ttf */,
+				09144FA5BF2C47059D23031E /* Quicksand-Bold.ttf */,
+				5B56E0A923C243E3A5A20E77 /* Quicksand-Light.ttf */,
+				AE6AE61CCBE54292AE1301B2 /* Quicksand-Medium.ttf */,
+				5E2622E8C2D94518B6896741 /* Quicksand-Regular.ttf */,
+				2617BC66C77F4921B7E23DD0 /* Quicksand-SemiBold.ttf */,
+				B2D90559BF6140C5AF568A80 /* WorkSans-Black.ttf */,
+				A12C41B9DFC644B8B0B742A2 /* WorkSans-BlackItalic.ttf */,
+				C3BDF59CD5EC4710953B72F2 /* WorkSans-Bold.ttf */,
+				2908716CE28746F586ADCBF9 /* WorkSans-BoldItalic.ttf */,
+				C0D7A147137A4A92823E8D8F /* WorkSans-ExtraBold.ttf */,
+				4DAB81AD79854C26A9E27CCC /* WorkSans-ExtraBoldItalic.ttf */,
+				B4A527AB2D5943CF899B51FC /* WorkSans-ExtraLight.ttf */,
+				C533675EC3EE4646B6775E16 /* WorkSans-ExtraLightItalic.ttf */,
+				E975EEFA8DB54786A62FE7BD /* WorkSans-Italic.ttf */,
+				6A629ED564FB4023A82061E5 /* WorkSans-Light.ttf */,
+				3FAEFAEA89E24F699A207616 /* WorkSans-LightItalic.ttf */,
+				0CC95FA9043249A387D38CAB /* WorkSans-Medium.ttf */,
+				55BBDCCA685949D69482CBAB /* WorkSans-MediumItalic.ttf */,
+				383317AB079A4EA886659A36 /* WorkSans-Regular.ttf */,
+				A69ECF04270A4C43B8EB852A /* WorkSans-SemiBold.ttf */,
+				91062C1ACF4C4F8CB3822B68 /* WorkSans-SemiBoldItalic.ttf */,
+				B42EAD4A7E6348339B7A792A /* WorkSans-Thin.ttf */,
+				B3846CAEC2B4489B8381796B /* WorkSans-ThinItalic.ttf */,
+				27AAC3097BFE47BEA30EB8B7 /* WorkSans-Italic-VariableFont_wght.ttf */,
+				E04F22DDB83842B5A6136302 /* WorkSans-VariableFont_wght.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,6 +277,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				A47341FB1FD555D566E6601A /* Pods */,
+				3BBAF003ED674822B3D320CF /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -194,7 +307,6 @@
 				DF18FD72622E378A74101B1F /* Pods-ecommerceApp-tvOSTests.debug.xcconfig */,
 				E51302DC0CFF25AA61A7CD83 /* Pods-ecommerceApp-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -342,6 +454,41 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				F683F13F1976462381887D2D /* ZillaSlab-Bold.ttf in Resources */,
+				BF5A1B5559E64E7D8C06F4C9 /* ZillaSlab-BoldItalic.ttf in Resources */,
+				771FCA2C9FD14B078FA16F9D /* ZillaSlab-Italic.ttf in Resources */,
+				71718B49CC534C189D03BA53 /* ZillaSlab-Light.ttf in Resources */,
+				F7034F3B2772401EB66091E8 /* ZillaSlab-LightItalic.ttf in Resources */,
+				3B25A0D60F0E499D8DB530DB /* ZillaSlab-Medium.ttf in Resources */,
+				83A17FB7AA264B3CA7A14085 /* ZillaSlab-MediumItalic.ttf in Resources */,
+				1E09E8FAC57B4EE0802AF779 /* ZillaSlab-Regular.ttf in Resources */,
+				68F4A85371F74C00A6F286AD /* ZillaSlab-SemiBold.ttf in Resources */,
+				A2EB23A699854BF399F7B54D /* ZillaSlab-SemiBoldItalic.ttf in Resources */,
+				F651F274B47C47BC85A50AB6 /* Quicksand-Bold.ttf in Resources */,
+				95F3F1F96F5F4F1187E0F8C4 /* Quicksand-Light.ttf in Resources */,
+				E3CBD88D12854C899608589D /* Quicksand-Medium.ttf in Resources */,
+				DF48CFC7EBA04B78BD638960 /* Quicksand-Regular.ttf in Resources */,
+				1C8FBF6A9E5E4132AD24203D /* Quicksand-SemiBold.ttf in Resources */,
+				616F0F5A5F4849949CEFC31E /* WorkSans-Black.ttf in Resources */,
+				96315C11AB0241E0A7D363AB /* WorkSans-BlackItalic.ttf in Resources */,
+				0B854CBA9DE5441AB1AA8E19 /* WorkSans-Bold.ttf in Resources */,
+				51C62D6CD08C4E53A0DE0312 /* WorkSans-BoldItalic.ttf in Resources */,
+				E4EEC07B4FDA4E469B889FA9 /* WorkSans-ExtraBold.ttf in Resources */,
+				FC8B9A1470FA48AC9D4F012B /* WorkSans-ExtraBoldItalic.ttf in Resources */,
+				0CC2242EA2A64DE398BA5F1B /* WorkSans-ExtraLight.ttf in Resources */,
+				BEFED4FDAA2949C9A0670A9F /* WorkSans-ExtraLightItalic.ttf in Resources */,
+				0CBB72721474492CA00967C7 /* WorkSans-Italic.ttf in Resources */,
+				0377E3CD71F046CFBA2FC097 /* WorkSans-Light.ttf in Resources */,
+				5EEF160E70DA4ED093B0A48D /* WorkSans-LightItalic.ttf in Resources */,
+				52A325855BDD485BA371164A /* WorkSans-Medium.ttf in Resources */,
+				AD33B0CE0E0C4866ABC03C23 /* WorkSans-MediumItalic.ttf in Resources */,
+				80BBDBB5D2D24BEAAC8F9508 /* WorkSans-Regular.ttf in Resources */,
+				2B22F2EC6A0744AD94986EEC /* WorkSans-SemiBold.ttf in Resources */,
+				273C6D7D819A40218AC91DC1 /* WorkSans-SemiBoldItalic.ttf in Resources */,
+				D547C6D37AD142BFB4E816E3 /* WorkSans-Thin.ttf in Resources */,
+				5948FFC22976467E86BA30CA /* WorkSans-ThinItalic.ttf in Resources */,
+				B5AB5BAFBA0D4214949AA630 /* WorkSans-Italic-VariableFont_wght.ttf in Resources */,
+				B117832B467F418ABFC486AA /* WorkSans-VariableFont_wght.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +522,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
 		1279CF08B05C968C8AC6DFFF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
