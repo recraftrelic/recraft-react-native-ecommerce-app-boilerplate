@@ -12,28 +12,40 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         padding: 90,
         flex: 1,
+        
     },
     heading: {
-        top: ('13%'),
+        top: ('30%'),
         fontSize: 18,
         fontFamily: fonts.Bold,
+        color:'#808080'
     },
     content: {
-        top: ('20%'),
+        top: ('50%'),
         textAlign: 'center',
         fontSize: 15,
+        fontFamily: fonts.nunito,
+    },
+    slide: {
+        top: heightToDp('15%')
     },
     button: {
-        flexDirection:'row',
-        justifyContent: 'space-between',
-        marginBottom: heightToDp(5),
-        // padding: widthToDp(10), 
-        left: widthToDp(60)    
+          backgroundColor: '#126881',
+          borderRadius: 50,
+          width: widthToDp(25),
+          height: heightToDp(8),
+          left: widthToDp('65%'),
+          bottom: heightToDp('8%'),
     },
-    button1: {
-        // flexDirection:'row',
-        justifyContent: 'space-between',
-        marginBottom: heightToDp(5),
-        // padding: widthToDp(10),    
+    text: {
+        color: 'white',
+        fontSize: 14,
+        left: 30,
+        top: heightToDp(3)
+    },
+    skip: {
+        color: '#ACBAC3',
+        bottom: heightToDp('12%'),
+        left: widthToDp('15%'),
     }
 })

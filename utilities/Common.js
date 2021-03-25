@@ -40,7 +40,9 @@ const fonts = Platform.select({
         VariableFont:'AbrilFatface-Regular',
         Rubik: 'Rubik-VariableFont',
         Bold: 'ZillaSlab-Bold',
-      Italic: 'ZillaSlab-BoldItalic'
+      Italic: 'ZillaSlab-BoldItalic',
+      light: 'ZillaSlab-Light',
+      nunito:'nunito.regular',
     },
     android: {
         regular: 'WorkSans-Regular',
@@ -48,7 +50,8 @@ const fonts = Platform.select({
         bold: 'WorkSans-Bold',
         extraBold: 'WorkSans-ExtraBold',
         Bold: 'ZillaSlab-Bold',
-      Italic: 'ZillaSlab-BoldItalic'
+      Italic: 'ZillaSlab-BoldItalic',
+      nunito:'nunito.regular',
     }
 });
 
