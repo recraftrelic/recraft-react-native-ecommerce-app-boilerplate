@@ -228,7 +228,7 @@ const Loginscreen3 = () => {
           <View>
             <TouchableOpacity style={styles.facebokBtn}
               onPress={onLogin}>
-              <Image source={images.Facebook} style={styles.facebookImg} />
+              <Image source={images.facebook} style={styles.facebookImg} />
               <Text style={styles.facebookText}>
                 {login.Facebook}
               </Text>

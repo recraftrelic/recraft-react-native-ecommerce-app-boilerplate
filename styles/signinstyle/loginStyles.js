@@ -194,7 +194,7 @@ export const styles = StyleSheet.create({
     },
     inputView: {
         flex: 0.2,
-        marginTop: moderateScale(10)
+        marginTop: moderateScale(10),
     },
     headText: {
         marginTop: moderateScale(40),

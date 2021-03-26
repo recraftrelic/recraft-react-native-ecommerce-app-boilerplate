@@ -69,6 +69,7 @@ const Loginscreen2 = () => {
     return (
         <>
         <View style={styles.container}>
+       
         <View style={styles.headText}>
         <Text style={styles.headName}>
             {login.headername}

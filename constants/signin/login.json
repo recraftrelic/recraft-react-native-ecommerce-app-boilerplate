@@ -6,13 +6,14 @@
     "forgote": "Forgot Password?",
     "account": "Don’t Have an Account?",
     "Facebook": "CONTINUE WITH FACEBOOK",
-    "signIn": "SIGN IN",
+    "signIn": "Sign in",
     "google": "CONTINUE WITH GOOGLE",
     "welcome": "Welcome Back !",
     "subHead": "Sign in to your continue",
     "subHead2": "account",
     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing.",
-    "text1": "Integer maximus accumsan erat id facilisis."
+    "text1": "Integer maximus accumsan erat id facilisis.",
+    "media": "Or Sign in with social media"
 
 
 }
