@@ -48,8 +48,8 @@
 29-->/Users/recraft-5/work/recraft-react-native-ecommerce-app-boilerplate/android/app/src/main/AndroidManifest.xml:15:9-41
 30            android:launchMode="singleTask"
 30-->/Users/recraft-5/work/recraft-react-native-ecommerce-app-boilerplate/android/app/src/main/AndroidManifest.xml:17:9-40
-31            android:windowSoftInputMode="adjustResize" >
-31-->/Users/recraft-5/work/recraft-react-native-ecommerce-app-boilerplate/android/app/src/main/AndroidManifest.xml:18:9-51
+31            android:windowSoftInputMode="adjustPan" >
+31-->/Users/recraft-5/work/recraft-react-native-ecommerce-app-boilerplate/android/app/src/main/AndroidManifest.xml:18:8-47
 32            <intent-filter>
 32-->/Users/recraft-5/work/recraft-react-native-ecommerce-app-boilerplate/android/app/src/main/AndroidManifest.xml:19:9-22:25
 33                <action android:name="android.intent.action.MAIN" />

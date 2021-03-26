@@ -1,9 +1,11 @@
 import { Platform } from "react-native";
-import Facebook from '../assets/images/signin/google.png';
+import facebook from '../assets/images/signin/Facebook.png';
 import google from '../assets/images/signin/google.png';
 import eye from '../assets/images/signin/eye.png';
 import ic_ad_view from '../assets/images/signin/ic_ad_view.png';
-import image1 from '../assets/images/introscreens/Image1.png'
+import image1 from '../assets/images/introscreens/Image1.png';
+import media from '../assets/images/signin/media.png';
+
 
 import {Dimensions,PixelRatio} from 'react-native'
 
@@ -23,11 +25,12 @@ const numberToDp = number =>{
     return PixelRatio.roundToNearestPixel(givenNumber);
 }
 const images = {
-    Facebook,
+    facebook,
     google,
     eye,
     ic_ad_view,
     image1,
+    media,
 
 }
 
@@ -39,16 +42,19 @@ const fonts = Platform.select({
         extraBold: 'WorkSans-ExtraBold',
         VariableFont:'AbrilFatface-Regular',
         Rubik: 'Rubik-VariableFont',
-        Bold: 'ZillaSlab-Bold',
-      Italic: 'ZillaSlab-BoldItalic'
+        zilaBold: 'ZillaSlab-Bold',
+        zilaItalic: 'ZillaSlab-BoldItalic',
+        zilaMedium: 'ZillaSlab-Medium'
     },
     android: {
         regular: 'WorkSans-Regular',
         semiBold: 'WorkSans-SemiBold',
         bold: 'WorkSans-Bold',
         extraBold: 'WorkSans-ExtraBold',
-        Bold: 'ZillaSlab-Bold',
-      Italic: 'ZillaSlab-BoldItalic'
+        zilaBold: 'ZillaSlab-Bold',
+        zilaItalic: 'ZillaSlab-BoldItalic',
+        zilaMedium: 'ZillaSlab-Medium'
+
     }
 });
 
