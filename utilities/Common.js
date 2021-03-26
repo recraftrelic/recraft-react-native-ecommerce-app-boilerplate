@@ -42,19 +42,19 @@ const fonts = Platform.select({
         extraBold: 'WorkSans-ExtraBold',
         VariableFont:'AbrilFatface-Regular',
         Rubik: 'Rubik-VariableFont',
-        zilaBold: 'ZillaSlab-Bold',
-        zilaItalic: 'ZillaSlab-BoldItalic',
-        zilaMedium: 'ZillaSlab-Medium'
+        Bold: 'ZillaSlab-Bold',
+      Italic: 'ZillaSlab-BoldItalic',
+      light: 'ZillaSlab-Light',
+      nunito:'nunito.regular',
     },
     android: {
         regular: 'WorkSans-Regular',
         semiBold: 'WorkSans-SemiBold',
         bold: 'WorkSans-Bold',
         extraBold: 'WorkSans-ExtraBold',
-        zilaBold: 'ZillaSlab-Bold',
-        zilaItalic: 'ZillaSlab-BoldItalic',
-        zilaMedium: 'ZillaSlab-Medium'
-
+        Bold: 'ZillaSlab-Bold',
+      Italic: 'ZillaSlab-BoldItalic',
+      nunito:'nunito.regular',
     }
 });
 
