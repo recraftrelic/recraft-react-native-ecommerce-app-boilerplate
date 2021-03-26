@@ -4,7 +4,13 @@ import google from '../assets/images/signin/google.png';
 import eye from '../assets/images/signin/eye.png';
 import ic_ad_view from '../assets/images/signin/ic_ad_view.png';
 import image1 from '../assets/images/introscreens/Image1.png';
-import media from '../assets/images/signin/media.png';
+import Searchbar from '../assets/images/mainpage/Searchicon.png';
+import cart from '../assets/images/mainpage/Carticon.png';
+import purse from '../assets/images/mainpage/Purse.png';
+import slide from '../assets/images/mainpage/slide.png';
+import Top from '../assets/images/mainpage/Top.png';
+import Pay from '../assets/images/mainpage/Pay.png';
+import more from '../assets/images/mainpage/more.png'
 
 
 import {Dimensions,PixelRatio} from 'react-native'
@@ -30,8 +36,13 @@ const images = {
     eye,
     ic_ad_view,
     image1,
-    media,
-
+    Searchbar,
+    cart,
+    slide,
+    purse,
+    Pay,
+    Top,
+    more,
 }
 
 const fonts = Platform.select({
@@ -45,6 +56,7 @@ const fonts = Platform.select({
         Bold: 'ZillaSlab-Bold',
       Italic: 'ZillaSlab-BoldItalic',
       light: 'ZillaSlab-Light',
+      medium: 'ZillaSlab-Medium',
       nunito:'nunito.regular',
     },
     android: {
@@ -55,6 +67,7 @@ const fonts = Platform.select({
         Bold: 'ZillaSlab-Bold',
       Italic: 'ZillaSlab-BoldItalic',
       nunito:'nunito.regular',
+      medium: 'ZillaSlab-Medium',
     }
 });
 
