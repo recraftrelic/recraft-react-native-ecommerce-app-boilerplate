@@ -54,7 +54,11 @@
     <remote-repository>
       <option name="id" value="maven4" />
       <option name="name" value="maven4" />
+<<<<<<< HEAD
+      <option name="url" value="file:/$PROJECT_DIR$/../node_modules/react-native-screens/node_modules/react-native/android" />
+=======
       <option name="url" value="file:$PROJECT_DIR$/../node_modules/react-native-screens/node_modules/react-native/android" />
+>>>>>>> e523b1b0bd9062029796af26ed9d430b434ae549
     </remote-repository>
   </component>
 </project>
