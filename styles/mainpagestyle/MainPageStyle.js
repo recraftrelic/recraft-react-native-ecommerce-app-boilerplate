@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
   },
   container: {
     padding: 29,
-    height: heightToDp(20),
+    height:1500
   },
   Searchbar: {
     backgroundColor: "white",
@@ -36,17 +36,21 @@ export const styles = StyleSheet.create({
   },
   src: {
         width: widthToDp(100),
-      height: heightToDp(60),
+      height: heightToDp(20),
   },
+  src1: {
+    width: widthToDp(100),
+  height: 1000,
+  marginBottom:10
+},
   slide: {
-    bottom: heightToDp(43),
+    bottom: heightToDp(3),
     left: widthToDp(35)
   },
   box: {
       backgroundColor: '#FFA771',
       flexDirection: 'row',
       height: heightToDp(10),
-      bottom: heightToDp(40),
       borderRadius: 10
   },
   purse: {
@@ -68,7 +72,6 @@ export const styles = StyleSheet.create({
   },
   content: {
       color: 'white',
-      textAlign: 'center',
       top: heightToDp(1),
       fontSize: 15
   },
@@ -76,7 +79,46 @@ export const styles = StyleSheet.create({
     fontFamily: fonts.medium,
     fontSize: 20,
     color: "#7A8D9C",
-    bottom: heightToDp(36)
+    top: heightToDp(5),
   },
+  discount: {
+    backgroundColor: '#F6F6F7',
+    marginRight:10,
+    width: widthToDp(40),
+    borderRadius: 15,
+  },
+  bg: {
+    height: heightToDp("30%"),
+    width:"100%" ,
+    top: heightToDp(8)
+  },
+  price: {
+    flexDirection: 'row-reverse',
+    top: heightToDp("23.5%"),
+    left: widthToDp("4%")
+  },
+  price1: {
+    top: heightToDp("21%"),
+    left: widthToDp(13),
+    textDecorationLine: 'line-through'
+  },
+  content1: {
+    top: heightToDp("23%"),
+    left: widthToDp(4)
+  },
+  popular: {
+  top: 80,
+  fontFamily: fonts.medium,
+  fontSize: 20,
+  color: "#7A8D9C",
+  },
+  popularList: {
+    top: 180,
+    fontFamily: fonts.medium,
+    fontSize: 20,
+    color: "#7A8D9C",
+    },
+    popularList: {
 
+    },
 });

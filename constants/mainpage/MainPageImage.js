@@ -6,6 +6,7 @@ import Kitchentools from '../../assets/images/mainpage/Kitchentools.png';
 import Furniture from '../../assets/images/mainpage/Furniture.png';
 import Hobby from '../../assets/images/mainpage/Hobby.png';
 import Electronic from '../../assets/images/mainpage/Electronic.png';
+import LoveIcon from '../../assets/images/mainpage/LoveIcon.png'
 
 const main ={
     data: [
@@ -36,8 +37,44 @@ const main ={
     ],
     dataSale: [
         {
-            
-        }
+          name: "Camelia Heels",
+          discount: "$64",
+          actual: "$125"  
+        },
+        {
+            name: "Converse Shoes",
+            discount: "$89",
+            actual: "$135"  
+        },
+        {
+            name: "Levi's Jacket",
+            discount: "$94",
+            actual: "$135"  
+        },
+        {
+            name: "Aphira Chair",
+            discount: "$147",
+            actual: "$185"  
+        },
+        {
+            name: "Pan",
+            discount: "$65",
+            actual: "$5"  
+        },
+    ],
+    dataPopular: [
+        {
+            name: "Vinta BackPack",
+            src: LoveIcon,
+            amount: "$78",
+            rating: 5
+        },
+        {
+            name: "Kimono Clogs",
+            src: LoveIcon,
+            amount: "$65",
+            rating: 2
+        },
     ]
 }
 
