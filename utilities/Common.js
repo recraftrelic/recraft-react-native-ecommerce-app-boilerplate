@@ -1,5 +1,5 @@
 import { Platform } from "react-native";
-import Facebook from '../assets/images/signin/google.png';
+import facebook from '../assets/images/signin/Facebook.png';
 import google from '../assets/images/signin/google.png';
 import eye from '../assets/images/signin/eye.png';
 import ic_ad_view from '../assets/images/signin/ic_ad_view.png';
@@ -31,7 +31,7 @@ const numberToDp = number =>{
     return PixelRatio.roundToNearestPixel(givenNumber);
 }
 const images = {
-    Facebook,
+    facebook,
     google,
     eye,
     ic_ad_view,

@@ -6,6 +6,7 @@ import {
     TextInput,
     Image,
     TouchableOpacity,
+    ScrollView
 } from 'react-native';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
 
@@ -13,7 +14,7 @@ import { styles } from '../../styles/signinstyle/loginStyles';
 import login from '../../constants/signin/login.json';
 import { images } from '../../utilities/Common'
 
-const Loginscreen1 = () => {
+const LoginScreen1 = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [check, setCheckStatus] = useState(false);
@@ -61,7 +62,8 @@ const Loginscreen1 = () => {
     };
 
     return (
-        <>
+        <View style={{flex:1}}>
+        
         <View style={styles.container}>
         <View style={styles.headText}>
         <Text style={styles.headName}>
@@ -87,9 +89,9 @@ const Loginscreen1 = () => {
             <KeyboardAwareScrollView enableOnAndroid={true}
             keyboardShouldPersistTaps='handled'
             showsVerticalScrollIndicator={false}
-        >
+            >
                
-
+                
             <View style={styles.inputView}>
 
                 <View>
@@ -104,8 +106,6 @@ const Loginscreen1 = () => {
                             * Please include an '@' in the email address.
                         </Text>
                     ) : null}
-
-
                     
                 </View>
 
@@ -204,13 +204,12 @@ const Loginscreen1 = () => {
             
             </View>
 
-
-        
         </KeyboardAwareScrollView>
             
             </View>
-            </>
+            </View>
+
     );
 };
 
-export default Loginscreen1;
+export default LoginScreen1;
