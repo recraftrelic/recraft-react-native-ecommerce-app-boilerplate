@@ -3,9 +3,10 @@ import {SafeAreaView} from 'react-native';
 import {createStackNavigator} from '@react-navigation/stack';
 import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
+import MainScreen from './component/common/MainScreen'
 // import IntroScreenOne from './pages/introscreens/IntroScreenOne';
 import MainPage from './pages/introscreens/MainPage';
-
+import IntroScreenOne from './pages/introscreens/IntroScreenOne';
 import SigningScreen from './pages/signin/SigningScreen';
 import SignupScreen from './pages/signin/SignupScreen';
 import ForgoteComponent from './pages/signin/ForgoteComponent';
@@ -33,11 +34,22 @@ const App = () => {
 
         options={{headerShown: false}}
         /> */}
-        <Stack.Screen
+         {/* <Stack.Screen
+        name="intro1"
+        component={IntroScreenOne}
+        options={{headerShown: false}}
+        /> */}
+         <Stack.Screen
         name="mainPage"
-        component={PasswordScreen}
+        component={MainPage}
         options={{headerShown: false}}
         />
+        {/* <Stack.Screen
+        name="signin"
+        component={SigningScreen}
+        options={{headerShown: false}}
+        /> */}
+       
       </Stack.Navigator>
     </NavigationContainer>
   )

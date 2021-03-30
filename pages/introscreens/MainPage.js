@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   FlatList,
   Image,
@@ -13,8 +13,15 @@ import mainPage from "../../constants/mainpage/mainpage.json";
 import SearchBar from "../../component/common/SearchBar";
 import main from "../../constants/mainpage/MainPageImage";
 import { Rating } from "react-native-elements";
+import { TouchableOpacity } from "react-native";
 
 const MainPage = () => {
+  const [moreSettings, setMoreSettings] = useState(false);
+
+  const moreButton = () => {
+    setMoreSettings(!moreSettings);
+  };
+
   return (
     <SafeAreaView style={styles.main}>
       <ScrollView
@@ -22,14 +29,17 @@ const MainPage = () => {
         contentInsetAdjustmentBehavior="automatic"
       >
         <View style={styles.container}>
-          <SearchBar
-            style={styles.Searchbar}
-            placeholder={mainPage.search}
-            imageSource={images.Searchbar}
-            imageStyle={styles.searchIcon}
-            cartStyle={styles.cart}
-            cartSource={images.cart}
-          />
+          <View style={styles.color}>
+          <View>
+            <SearchBar
+              style={styles.Searchbar}
+              placeholder={mainPage.search}
+              imageSource={images.Searchbar}
+              imageStyle={styles.searchIcon}
+              cartStyle={styles.cart}
+              cartSource={images.cart}
+            />
+          </View>
           <View>
             <Text style={styles.category}>{mainPage.category}</Text>
           </View>
@@ -38,9 +48,9 @@ const MainPage = () => {
               horizontal={true}
               data={main.data}
               renderItem={({ item, index }) => (
-                <View>
+                <View style={styles.itemCategory}>
                   <Image source={item.src}></Image>
-                  <Text>{item.key}</Text>
+                  {/* <Text>{item.key}</Text> */}
                 </View>
               )}
               showsHorizontalScrollIndicator={false}
@@ -59,11 +69,38 @@ const MainPage = () => {
                 <Image source={images.Top}></Image>
                 <Text style={styles.content}>{mainPage.Top}</Text>
               </View>
-              <View style={styles.rightStyle}>
-                <Image source={images.more}></Image>
-                <Text style={styles.content}>{mainPage.More}</Text>
-              </View>
+              <TouchableOpacity onPress={moreButton}>
+                <View style={styles.rightStyle}>
+                  <Image source={images.more}></Image>
+                  {moreSettings ? (
+                    <View style={styles.settings}>
+                      <Image
+                        style={styles.settings1}
+                        source={images.charge}
+                      ></Image>
+                      <Image
+                        style={styles.settings1}
+                        source={images.credit}
+                      ></Image>
+                      <Image
+                        style={styles.settings1}
+                        source={images.paylate}
+                      ></Image>
+                      <Image
+                        style={styles.settings1}
+                        source={images.transfer}
+                      ></Image>
+                      <Image
+                        style={styles.settings1}
+                        source={images.settings}
+                      ></Image>
+                    </View>
+                  ) : null}
+                  <Text style={styles.content}>{mainPage.More}</Text>
+                </View>
+              </TouchableOpacity>
             </View>
+          </View>
           </View>
           <View style={styles.backColor}>
             <Text style={styles.sale}>{mainPage.sale}</Text>
@@ -75,6 +112,9 @@ const MainPage = () => {
               data={main.dataSale}
               renderItem={({ item, index }) => (
                 <View style={styles.discount}>
+                  <View>
+                    <Text style={styles.discountBar}>{item.average}</Text>
+                  </View>
                   <Text style={styles.content1}>{item.name}</Text>
                   <View>
                     <Text style={styles.price}>{item.discount}</Text>
@@ -92,16 +132,28 @@ const MainPage = () => {
               vertical={true}
               data={main.dataPopular}
               renderItem={({ item, index }) => (
-                <View>
-                  <Text>{item.name}</Text>
-
-                  <Rating
-                    ratingCount={5}
-                    startingValue={item.rating}
-                    readonly={true}
-                    ratingColor="#3498db"
-                    imageSize={20}
-                  ></Rating>
+                <View style={styles.menu}>
+                  <View style={styles.box1}>
+                    <Image style={styles.img}></Image>
+                  </View>
+                  <View style={styles.box2}>
+                    <View style={styles.menu1}>
+                      <Text style={styles.name}>{item.name}</Text>
+                      <Image style={styles.icon} source={item.src}></Image>
+                    </View>
+                    <Text style={styles.amount1}>{item.amount}</Text>
+                    <View style={styles.menu2}>
+                      <Rating
+                        ratingCount={5}
+                        startingValue={item.rating}
+                        readonly={true}
+                        ratingColor="#3498db"
+                        imageSize={16}
+                      ></Rating>
+                      <Text style={styles.average}>{item.average}</Text>
+                      <Image style={styles.icon1} source={item.cart}></Image>
+                    </View>
+                  </View>
                 </View>
               )}
               showsVerticalScrollIndicator={false}
@@ -109,6 +161,11 @@ const MainPage = () => {
           </View>
         </View>
       </ScrollView>
+      <View style={styles.tabBoundary}>
+        <Image style={styles.icon2} source={images.home}></Image>
+        <Image style={styles.icon2} source={images.notification}></Image>
+        <Image style={styles.icon2} source={images.profile}></Image>
+      </View>
     </SafeAreaView>
   );
 };

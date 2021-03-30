@@ -10,8 +10,15 @@ import purse from '../assets/images/mainpage/Purse.png';
 import slide from '../assets/images/mainpage/slide.png';
 import Top from '../assets/images/mainpage/Top.png';
 import Pay from '../assets/images/mainpage/Pay.png';
-import more from '../assets/images/mainpage/more.png'
-
+import more from '../assets/images/mainpage/more.png';
+import home from '../assets/images/mainpage/HomeButton.png';
+import notification from '../assets/images/mainpage/NotificationButton.png';
+import profile from '../assets/images/mainpage/Profile.png';
+import charge from '../assets/images/mainpage/Chargebutton.png';
+import credit from '../assets/images/mainpage/Credit.png';
+import paylate from '../assets/images/mainpage/Paylater.png';
+import transfer from '../assets/images/mainpage/Transferbutton.png';
+import settings from '../assets/images/mainpage/Settings.png';
 
 import {Dimensions,PixelRatio} from 'react-native'
 
@@ -43,6 +50,14 @@ const images = {
     Pay,
     Top,
     more,
+    home,
+    notification,
+    profile,
+    charge,
+    credit,
+    paylate,
+    transfer,
+    settings,
 }
 
 const fonts = Platform.select({

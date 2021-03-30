@@ -25,6 +25,9 @@ const IntroScreenOne = () => {
     if (activeTab == "product") {
       updateActiveTab = "express";
     }
+    // if (activeTab == "express"){
+    //   navigation.navigate('signin')
+    // }
     setActiveTab(updateActiveTab);
   };
 
