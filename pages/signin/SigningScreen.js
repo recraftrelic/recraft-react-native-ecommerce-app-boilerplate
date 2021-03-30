@@ -23,6 +23,7 @@ const SigningScreen = (props) => {
     email,
     password
   });
+  const [showHidePassword, setShowHidePassword] = useState(true);
 
   const {
     email,
@@ -30,7 +31,6 @@ const SigningScreen = (props) => {
   } = state;
 
   const [check, setCheckStatus] = useState(false);
-  const [showHidePassword, setShowHidePassword] = useState(true);
   const [passwordErrorStatus, setPasswordErrorStatus] = useState(false);
   const [emailErrorStatus, setEmailErrorStatus] = useState(false);
 
@@ -77,7 +77,7 @@ const SigningScreen = (props) => {
             <TextInputContainer
               value={password}
               placeholder={"Enter password"}
-              secureTextEntry={showHidePassword}
+              secureTextEntry
               onChangeText={onChangeText('password')}
             />
 

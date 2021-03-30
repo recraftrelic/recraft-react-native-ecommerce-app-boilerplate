@@ -10,7 +10,8 @@ import purse from '../assets/images/mainpage/Purse.png';
 import slide from '../assets/images/mainpage/slide.png';
 import Top from '../assets/images/mainpage/Top.png';
 import Pay from '../assets/images/mainpage/Pay.png';
-import more from '../assets/images/mainpage/more.png'
+import more from '../assets/images/mainpage/more.png';
+import Filters from '../assets/images/products/Filters.png'
 
 
 import {Dimensions,PixelRatio} from 'react-native'
@@ -43,6 +44,7 @@ const images = {
     Pay,
     Top,
     more,
+    Filters
 }
 
 const fonts = Platform.select({
@@ -58,16 +60,22 @@ const fonts = Platform.select({
       light: 'ZillaSlab-Light',
       medium: 'ZillaSlab-Medium',
       nunito:'nunito.regular',
+      quickBold: 'Quicksand-Bold',
     },
     android: {
         regular: 'WorkSans-Regular',
         semiBold: 'WorkSans-SemiBold',
         bold: 'WorkSans-Bold',
         extraBold: 'WorkSans-ExtraBold',
+        VariableFont:'AbrilFatface-Regular',
+        Rubik: 'Rubik-VariableFont',
         Bold: 'ZillaSlab-Bold',
       Italic: 'ZillaSlab-BoldItalic',
-      nunito:'nunito.regular',
+      light: 'ZillaSlab-Light',
       medium: 'ZillaSlab-Medium',
+      nunito:'nunito.regular',
+      quickBold: 'Quicksand-Bold',
+
     }
 });
 

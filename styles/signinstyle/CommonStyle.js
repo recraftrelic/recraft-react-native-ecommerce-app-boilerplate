@@ -83,14 +83,8 @@ export const styles = StyleSheet.create({
 
     },
     passwordInput: {
-        height: heightToDp(8),
-        width: width - 50,
-        alignSelf: 'center',
-        borderRadius: moderateScale(30),
-        borderColor: 'lightgrey',
-        borderWidth: 0.5,
-        paddingHorizontal: moderateScale(38),
-        backgroundColor: '#F6F6F7',
+        height: 0,
+        width: 0,
 
     },
     forgote: {
@@ -107,8 +101,8 @@ export const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         borderRadius: 40,
-        marginTop: moderateScale(20)
-
+        marginTop: moderateScale(20),
+        fontFamily: fonts.quickBold,
 
     },
     btnView: {
@@ -122,7 +116,8 @@ export const styles = StyleSheet.create({
     },
     media: {
         color: '#7A8D9C',
-        alignSelf: 'center'
+        alignSelf: 'center',
+        top: moderateScale(12)
     },
     btnContainer: {
         flex: 0.4,
@@ -137,9 +132,52 @@ export const styles = StyleSheet.create({
         borderRadius: 40,
         top: heightToDp(4),
     },
-    images:{
-        // right: widthToDp(35),
-        // top: heightToDp(1.5),
-        // alignSelf: 'flex-start'
+    EmialText:{
+        color: '#ACBAC3'
+    },
+
+    count: {
+        flex: 0.1,
+        marginLeft: moderateScale(142),
+        flex: 0.2,
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        bottom: moderateScale(15)
+    },
+    forgoteView: {
+        flex: 0.4,
+        marginTop: moderateScale(10),
+        flexDirection: 'row',
+        justifyContent: 'space-around',
+        alignItems: 'flex-end',
+
+    },
+    containerInput: {
+        flexDirection: 'row',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    cellView: {
+        paddingVertical: 11,
+        width: 40,
+        margin: 5,
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderBottomWidth: 1.5,
+        height: moderateScale(60),
+        width: 70,
+        borderRadius: moderateScale(10),
+        right: moderateScale(18),
+        backgroundColor: '#F6F6F7',
+        // borderColor: 'lightgrey',
+        borderWidth: 0.5,
+        // paddingHorizontal: moderateScale(38),
+        // marginTop: moderateScale(20),
+        // // fontFamily: fonts.regular,
+        // top: moderateScale(12),
+    },
+    cellText: {
+        textAlign: 'center',
+        fontSize: 16,
     }
 })

@@ -16,7 +16,7 @@ import login from '../constants/signin/login.json';
 import { moderateScale } from 'react-native-size-matters';
 
 const TextInputContainer = (props) => {
-    const [showHidePassword, setShowHidePassword] = useState(true);
+    const [showHidePassword, setShowHidePassword] = useState(false);
 
     const {
         placeholder,
@@ -25,6 +25,17 @@ const TextInputContainer = (props) => {
         onChangeText,
     } = props;
 
+    // function toggel (value) {
+    //     if(value === false){
+    //         setInputType('text')
+    //     }else{
+    //         setInputType('password')
+    //     }
+    //     setShowHidePassword (value)
+        
+    // }
+
+    console.log(showHidePassword, 'secureTextEntry')
     return (
       
             <View style={[styles.emailInput,{marginTop:10}]}>
@@ -33,9 +44,9 @@ const TextInputContainer = (props) => {
                     value={value}
                     onChangeText={(value) => onChangeText(value)}
                     placeholder={placeholder}
-                    // style={styles.emailInput}
+                    secureTextEntry={secureTextEntry ? !showHidePassword: false}
                     style={{ height: moderateScale(50) }}
-                    secureTextEntry={showHidePassword}
+                    
                 />
 
                 {
@@ -48,11 +59,12 @@ const TextInputContainer = (props) => {
                             width: 30,
                             position: 'absolute',
                             right: 15,
-                            bottom: 20
+                            bottom: 15
                         }}
                     >
+                    
                         {
-                            showHidePassword ?
+                            !showHidePassword ?
                                 <Image
                                     source={images.eye}
                                 />

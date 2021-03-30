@@ -21,12 +21,14 @@ const SigningScreen = (props) => {
   const container = props.container
   const [state, setState] = useState({
     email,
-    password
+    password,
+    ConfirmPassword
   });
 
   const {
     email,
-    password
+    password,
+    ConfirmPassword
   } = state;
 
   const [check, setCheckStatus] = useState(false);
@@ -75,10 +77,10 @@ const SigningScreen = (props) => {
         />
 
             <TextInputContainer
-              value={password}
+              value={ConfirmPassword}
               placeholder={"Confirm new password"}
               secureTextEntry={showHidePassword}
-              onChangeText={onChangeText('password')}
+              onChangeText={onChangeText('confirmpassword')}
             />
 
           </View>
