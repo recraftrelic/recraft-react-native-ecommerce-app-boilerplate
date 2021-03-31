@@ -1,15 +1,4 @@
-<<<<<<< HEAD
-#Tue Mar 30 10:08:14 IST 2021
-=======
-<<<<<<< HEAD
-#Fri Mar 26 17:44:31 IST 2021
+#Wed Mar 31 13:17:14 IST 2021
 base.0=/Users/recraft-5/work/recraft-react-native-ecommerce-app-boilerplate/android/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
-=======
-#Thu Mar 25 16:46:05 IST 2021
->>>>>>> e523b1b0bd9062029796af26ed9d430b434ae549
-base.0=C\:\\Users\\justa\\OneDrive\\Documents\\project\\recraft-react-native-ecommerce-app-boilerplate\\android\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
-path.0=classes.dex
-renamed.0=classes.dex
->>>>>>> 629388a670a5b05385382d0c9af931c0b4430fc5
