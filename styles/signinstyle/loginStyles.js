@@ -105,26 +105,21 @@ export const styles = StyleSheet.create({
     },
     regularStyle: {
         color: '#092C4C',
-        // fontFamily: fonts.regular
     },
     signUpTxt: {
         color: 'blue',
         marginLeft: moderateScale(5),
-        // fontFamily: fonts.semiBold
     },
     forgote: {
         color: '#E41A4A',
-        // marginBottom: moderateScale(10),
         bottom: moderateScale(12),
         left: moderateScale(23),
         fontSize: 12,
-        // fontFamily: fonts.regular
     },
     remember: {
         marginLeft: moderateScale(10),
         marginTop: moderateScale(2),
         color: '#ABB3BB',
-        // fontFamily: fonts.regular
     },
     checkBox: {
         height: moderateScale(22),
@@ -159,7 +154,6 @@ export const styles = StyleSheet.create({
         borderWidth: 0.5,
         paddingHorizontal: moderateScale(38),
         marginTop: moderateScale(20),
-        // fontFamily: fonts.regular
 
     },
     emailIcon: {
@@ -171,7 +165,6 @@ export const styles = StyleSheet.create({
         fontSize: 12,
         color: "red",
         marginLeft: moderateScale(30),
-        // fontFamily: fonts.regular
 
     },
     tick: {
@@ -189,7 +182,6 @@ export const styles = StyleSheet.create({
         borderColor: 'lightgrey',
         borderWidth: 0.5,
         paddingHorizontal: moderateScale(38),
-        // fontFamily: fonts.regular
 
     },
     inputView: {
@@ -210,7 +202,6 @@ export const styles = StyleSheet.create({
         marginTop: moderateScale(-20),
         left: moderateScale(120),
         color: '#FFFFFF',
-        // fontFamily: fonts.bold
     },
     headLogo: {
         position: 'absolute',

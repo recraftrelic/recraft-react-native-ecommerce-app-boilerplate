@@ -1,22 +1,17 @@
 import React, { useState } from 'react';
 import {
-  Text,
   View,
   SafeAreaView,
-  Image,
-  TouchableOpacity,
-  Platform
 } from 'react-native';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
 
-import { styles } from '../../styles/signinstyle/CommonStyle';
 import login from '../../constants/signin/login.json';
-import { images } from '../../utilities/Common';
+import { colors } from '../../constants/colors/colors';
 import HeaderContainer from '../../utilities/HeaderContainer';
 import TextInputContainer from '../../utilities/TextInputContainer';
 import ButtonContainer from '../../utilities/ButtonContainer';
-import { moderateScale } from 'react-native-size-matters';
 import VerifyCount from '../../utilities/VerifyCount';
+import { styles } from '../../styles/signinstyle/CommonStyle';
 
 const EmailComponent = (props) => {
   const container = props.container
@@ -30,11 +25,6 @@ const EmailComponent = (props) => {
     password
   } = state;
 
-  const [check, setCheckStatus] = useState(false);
-  const [showHidePassword, setShowHidePassword] = useState(true);
-  const [passwordErrorStatus, setPasswordErrorStatus] = useState(false);
-  const [emailErrorStatus, setEmailErrorStatus] = useState(false);
-
   const onPressSignIn = () => {
     alert(email + password)
   }
@@ -42,18 +32,14 @@ const EmailComponent = (props) => {
   const onChangeText = (key) => (val) => {
     setState({ ...state, [key]: val });
     console.log(key, 'value')
-
   };
 
   return (
     <SafeAreaView style={styles.main}>
     <View style={styles.mainView}>
-
         <View style={styles.upperHeader}>
-
           <HeaderContainer
-            mainText={'SIGN UP'}
-            screenName={'Sign in'}
+            screenName={login.enteremail}
           />
         </View>
 
@@ -65,17 +51,15 @@ const EmailComponent = (props) => {
           contentContainerStyle={{
             flexGrow: 1
           }}
-
         >
           <View style={styles.inputView}>
-
             <TextInputContainer
               value={email}
-              placeholder={"Enter email"}
+              placeholder={login.emailaddress}
               onChangeText={onChangeText('email')}
             />
-
           </View>
+          
           <View
           style={{
             flex: 0.2,
@@ -85,26 +69,21 @@ const EmailComponent = (props) => {
           <VerifyCount/>
           
           </View>
-          
-          <View style={styles.btnView}>
-
-          </View>
 
           <View
             style={styles.btnContainer}
           >
-
           <ButtonContainer
-          text={'SAVE EMAIL ADDRESS'}
-          bgColor={'#126881'}
-          textColor={'#FFFFFF'}
+          text={login.saveaddress}
+          bgColor={colors.blue}
+          textColor={colors.white}
           image={""}
           onPressSignIn={onPressSignIn}
         />
         <ButtonContainer
-              text={'RESEND LINK'}
-              bgColor={'#ACBAC3'}
-              textColor={'#FFFFFF'}
+              text={login.resend}
+              bgColor={colors.darkGrey}
+              textColor={colors.white}
               image={""}
               onPressSignIn={onPressSignIn}
             />

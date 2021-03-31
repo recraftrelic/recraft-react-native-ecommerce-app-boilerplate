@@ -25,16 +25,6 @@ const TextInputContainer = (props) => {
         onChangeText,
     } = props;
 
-    // function toggel (value) {
-    //     if(value === false){
-    //         setInputType('text')
-    //     }else{
-    //         setInputType('password')
-    //     }
-    //     setShowHidePassword (value)
-        
-    // }
-
     console.log(showHidePassword, 'secureTextEntry')
     return (
       

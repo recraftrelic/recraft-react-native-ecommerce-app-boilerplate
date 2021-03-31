@@ -105,26 +105,21 @@ export const styles = StyleSheet.create({
     },
     regularStyle: {
         color: '#092C4C',
-        // fontFamily: fonts.regular
     },
     signUpTxt: {
         color: 'blue',
         marginLeft: moderateScale(5),
-        // fontFamily: fonts.semiBold
     },
     forgote: {
         color: '#E41A4A',
-        // marginBottom: moderateScale(10),
         bottom: moderateScale(12),
         left: moderateScale(23),
         fontSize: 12,
-        // fontFamily: fonts.regular
     },
     remember: {
         marginLeft: moderateScale(10),
         marginTop: moderateScale(2),
         color: '#ABB3BB',
-        // fontFamily: fonts.regular
     },
     checkBox: {
         height: moderateScale(22),
@@ -153,20 +148,6 @@ export const styles = StyleSheet.create({
     passwordInput: {
         height: 0,
         width: 0,
-        // flexDirection: 'row',
-        // height: moderateScale(50),
-        // width: 12,
-        // // width: width - 50,
-        // alignSelf: 'center',
-        // borderRadius: moderateScale(20),
-        // borderColor: 'lightgrey',
-        // borderWidth: 0.5,
-        // paddingHorizontal: moderateScale(38),
-        // marginTop: moderateScale(20),
-        // // fontFamily: fonts.regular,
-        // top: moderateScale(12),
-
-
     },
     eye: {
         top: moderateScale(15),
@@ -195,7 +176,6 @@ export const styles = StyleSheet.create({
     },
     emailInput: {
         height: moderateScale(50),
-        // width: width - 50,
         flexDirection: 'row',
         width: 12,
         alignSelf: 'center',
@@ -203,7 +183,6 @@ export const styles = StyleSheet.create({
         borderColor: 'lightgrey',
         borderWidth: 0.5,
         paddingHorizontal: moderateScale(38),
-        // fontFamily: fonts.regular,
         top: moderateScale(12),
 
     },
@@ -211,7 +190,6 @@ export const styles = StyleSheet.create({
         flexDirection: 'row',
         height: moderateScale(50),
         width: 12,
-        // width: width - 10,
         alignSelf: 'center',
         borderRadius: moderateScale(20),
         borderColor: 'lightgrey',
@@ -242,12 +220,7 @@ export const styles = StyleSheet.create({
         borderRadius: moderateScale(10),
         right: moderateScale(18),
         backgroundColor: '#F6F6F7',
-        // borderColor: 'lightgrey',
         borderWidth: 0.5,
-        // paddingHorizontal: moderateScale(38),
-        // marginTop: moderateScale(20),
-        // // fontFamily: fonts.regular,
-        // top: moderateScale(12),
 
     },
     cellText: {
@@ -269,7 +242,6 @@ export const styles = StyleSheet.create({
         marginTop: moderateScale(-10),
         left: moderateScale(120),
         color: '#FFFFFF',
-        // fontFamily: fonts.bold
     },
     headLogo: {
         position: 'absolute',
@@ -320,7 +292,6 @@ export const styles = StyleSheet.create({
 
     },
     btnChangeNumber: {
-        // width: 180,
         height: 50,
         borderRadius: 10,
         alignItems: 'flex-start',

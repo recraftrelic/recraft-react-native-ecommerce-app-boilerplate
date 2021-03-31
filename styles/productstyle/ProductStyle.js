@@ -1,7 +1,10 @@
 import React from "react";
 import { StyleSheet } from "react-native";
 import { moderateScale } from "react-native-size-matters";
+
+import { colors } from "../../constants/colors/colors";
 import { fonts, heightToDp, widthToDp } from "../../utilities/Common";
+
 
 export const styles = StyleSheet.create({
   main: {
@@ -11,8 +14,8 @@ export const styles = StyleSheet.create({
     padding: 29,
     height: heightToDp(20),
   },
-  Searchbar: {
-    backgroundColor: "white",
+  searchbar: {
+    backgroundColor: colors.white,
     borderRadius: 50,
     width: widthToDp(75),
     padding: 6.5,
@@ -43,15 +46,15 @@ export const styles = StyleSheet.create({
     bottom: 70,
     marginLeft: 35
   },
-  TextStyle: {
-    color: '#ACBAC3',
+  textStyle: {
+    color: colors.darkGrey,
 
   },
-  Filters: {
+  filters: {
     bottom: 85,
     marginLeft: moderateScale(290)
   },
-  FlatlistView: {
+  flatlistView: {
     marginBottom: 100,
     bottom: moderateScale(50),
   },
@@ -66,12 +69,12 @@ export const styles = StyleSheet.create({
   txt: {
     margin: 5,
     marginLeft: 40,
-    color: '#7A8D9C'
+    color: colors.grey
   },
   img: {
     margin: 8,
     marginLeft: 40,
-    color: '#7A8D9C',
+    color: colors.grey,
     marginBottom: 19
   },
   rate: {
@@ -79,7 +82,7 @@ export const styles = StyleSheet.create({
     marginLeft: 100,
     marginTop: -20,
     bottom: 12,
-    color: '#7A8D9C'
+    color: colors.grey
   },
   price: {
     margin: 12,
@@ -87,7 +90,7 @@ export const styles = StyleSheet.create({
     marginTop: -50,
     bottom: 12,
     fontSize: 20,
-    color: '#126881'
+    color: colors.blue
   }
   
 

@@ -8,14 +8,12 @@ import {
   ScrollView,
   TouchableOpacity
 } from "react-native";
-import { styles } from '../../styles/productstyle/ProductStyle';
-import { images } from '../../utilities/Common';
-import mainPage from '../../constants/mainpage/mainpage.json';
-import SearchBar from '../../component/common/SearchBar';
 import product from '../../constants/products/product.json';
-import { moderateScale } from "react-native-size-matters";
+import mainPage from '../../constants/mainpage/mainpage.json';
 import products from '../../constants/products/Products'
-
+import SearchBar from '../../component/common/SearchBar';
+import { images } from '../../utilities/Common';
+import { styles } from '../../styles/productstyle/ProductStyle';
 
 const MainPage = () => {
   return (
@@ -24,9 +22,9 @@ const MainPage = () => {
 
       <View style={styles.container}>
         <SearchBar
-          style={styles.Searchbar}
+          style={styles.searchbar}
           placeholder={mainPage.search}
-          imageSource={images.Searchbar}
+          imageSource={images.searchbar}
           imageStyle={styles.searchIcon}
           cartStyle={styles.cart}
           cartSource={images.cart}
@@ -37,7 +35,7 @@ const MainPage = () => {
         <View
         style={styles.search}>
         <Text
-        style={styles.TextStyle}>
+        style={styles.textStyle}>
         {product.items}
         </Text>
 
@@ -45,10 +43,10 @@ const MainPage = () => {
         <View>
         <Image
         source={images.Filters}
-        style={styles.Filters}/>
+        style={styles.filters}/>
         </View>
         <View
-        style={styles.FlatlistView}>
+        style={styles.flatlistView}>
         <FlatList
             data={products.data}
             renderItem={({ item, index }) => (

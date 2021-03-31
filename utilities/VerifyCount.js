@@ -2,34 +2,22 @@ import React, { useState, useEffect, useRef } from 'react';
 import {
     Text,
     View,
-    SafeAreaView,
-    TextInput,
-    Platform,
     TouchableOpacity,
-    Image,
 } from 'react-native';
-import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
 
 import { styles } from '../styles/signinstyle/CommonStyle';
 import login from '../constants/signin/login.json';
-import { images } from '../utilities/Common';
 import { moderateScale } from 'react-native-size-matters';
 
 
-const VerifyCount = ({
-    text,
-    bgColor,
-    textColor,
-    image,
-    onPressSignIn
-}) => {
+const VerifyCount = () => {
   const defaultCountdown = 30;
 
   const [countDown, setCountDown] = useState(defaultCountdown);
   const [enableResend, setEnableResend] = useState(false);
 
-  let clockCall = null
-  let textInput = useRef(null)
+  let clockCall = null;
+  let textInput = useRef(null);
   const lengthInput = 4;
 
   useEffect(() => {
@@ -70,7 +58,7 @@ const VerifyCount = ({
                     color: '#ACBAC3'
                 }}
             >
-                Code was send your email
+                {login.code}
       </Text>
             <Text
                 style={{
@@ -78,7 +66,7 @@ const VerifyCount = ({
                     marginLeft: moderateScale(18)
                 }}
             >
-                Kylie_04@gmail.com
+               {login.emailcode}
       </Text>
            
             <TouchableOpacity onPress={onResendOTP}>
@@ -90,7 +78,7 @@ const VerifyCount = ({
                     marginTop: moderateScale(90)
                 }}
             >
-                This code will expire on
+                {login.expire}
       </Text>
             </View>
                 <View style={styles.count}>
@@ -98,7 +86,7 @@ const VerifyCount = ({
                     {
                         color: enableResend ? '#126881' : '#234DB7'
                     }]}>
-                        {countDown} seconds
+                        {countDown} {login.seconds}
             </Text>
 
                 </View>

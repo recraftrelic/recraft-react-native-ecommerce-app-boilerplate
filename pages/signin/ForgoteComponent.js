@@ -3,23 +3,19 @@ import {
   Text,
   View,
   SafeAreaView,
-  Image,
-  TouchableOpacity,
-  Platform,
   TextInput
 } from 'react-native';
-import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
-
-import { styles } from '../../styles/signinstyle/CommonStyle';
-import login from '../../constants/signin/login.json';
-import { images } from '../../utilities/Common';
-import HeaderContainer from '../../utilities/HeaderContainer';
-import TextInputContainer from '../../utilities/TextInputContainer';
-import ButtonContainer from '../../utilities/ButtonContainer';
+import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import { moderateScale } from 'react-native-size-matters';
-import VerifyCount from '../../utilities/VerifyCount';
 
-const EmailComponent = (props) => {
+import login from '../../constants/signin/login.json';
+import { colors } from '../../constants/colors/colors';
+import HeaderContainer from '../../utilities/HeaderContainer';
+import ButtonContainer from '../../utilities/ButtonContainer';
+import VerifyCount from '../../utilities/VerifyCount';
+import { styles } from '../../styles/signinstyle/CommonStyle';
+
+const ForgoteComponent = (props) => {
   const container = props.container
   const [state, setState] = useState({
     email,
@@ -28,14 +24,12 @@ const EmailComponent = (props) => {
   const lengthInput = 4;
   let textInput = useRef(null)
 
-
   const [internalVal, setInternalVal] = useState('');
 
   const {
     email,
     password
   } = state;
-
 
   const onPressSignIn = () => {
     alert(email + password)
@@ -47,18 +41,13 @@ const EmailComponent = (props) => {
   useEffect(() => {
     textInput.focus()
   }, [])
-  const onChangeNumber = () => {
-    setInterval("")
-  }
 
   return (
     <SafeAreaView style={styles.main}>
     <View style={styles.mainView}>
-
         <View style={styles.upperHeader}>
-
           <HeaderContainer
-            screenName={'Forgot password'}
+            screenName={login.forgotepassword}
           />
         </View>
 
@@ -70,9 +59,7 @@ const EmailComponent = (props) => {
           contentContainerStyle={{
             flexGrow: 1
           }}
-
         >
-
           <View style={styles.forgoteView}>
           <View>
             <TextInput
@@ -94,20 +81,18 @@ const EmailComponent = (props) => {
                   key={index}
                   style={[styles.cellView,
                   {
-                    borderBottomColor: index === internalVal.length ? '#FB6C6A' : '#234DB7'
-                  }]}>
+                    borderBottomColor: index === internalVal.length ? colors.orange : colors.bluegreen
+                   }]}>
                   <Text style={styles.cellText}
                     onPress={() => textInput.focus()}
                   >
                     {internalVal[index]}
                   </Text>
-
                 </View>
               })
 
             }
           </View>
-
           </View>
           <View
           style={{
@@ -118,28 +103,22 @@ const EmailComponent = (props) => {
           }}
           >
           <VerifyCount/>
-          
-          </View>
-          
-          <View style={styles.btnView}>
-
           </View>
 
           <View
             style={styles.btnContainer}
           >
-
           <ButtonContainer
-          text={'SAVE EMAIL ADDRESS'}
-          bgColor={'#126881'}
-          textColor={'#FFFFFF'}
+          text={login.saveaddress}
+          bgColor={colors.blue}
+          textColor={colors.white}
           image={""}
           onPressSignIn={onPressSignIn}
         />
         <ButtonContainer
-              text={'RESEND LINK'}
-              bgColor={'#ACBAC3'}
-              textColor={'#FFFFFF'}
+              text={login.resend}
+              bgColor={colors.darkGrey}
+              textColor={colors.white}
               image={""}
               onPressSignIn={onPressSignIn}
             />
@@ -152,4 +131,4 @@ const EmailComponent = (props) => {
   );
 };
 
-export default EmailComponent;
+export default ForgoteComponent;
