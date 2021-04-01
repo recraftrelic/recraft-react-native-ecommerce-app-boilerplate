@@ -1,6 +1,5 @@
 import React from 'react';
 import { Platform, StyleSheet } from 'react-native';
-//import { heightToDp, widthToDp } from '../utils/Responsive';
 import IntroScreen1 from './IntroScreen1';
 import {fonts} from '../../Ecommecre/images';
 

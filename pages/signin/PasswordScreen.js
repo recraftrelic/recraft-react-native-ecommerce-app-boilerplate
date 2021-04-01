@@ -1,57 +1,48 @@
 import React, { useState } from 'react';
 import {
-  Text,
   View,
   SafeAreaView,
-  Image,
-  TouchableOpacity,
-  Platform
 } from 'react-native';
-import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
+import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
+import { moderateScale } from 'react-native-size-matters';
 
-import { styles } from '../../styles/signinstyle/CommonStyle';
 import login from '../../constants/signin/login.json';
-import { images } from '../../utilities/Common';
+import { colors } from '../../constants/colors/colors';
 import HeaderContainer from '../../utilities/HeaderContainer';
 import TextInputContainer from '../../utilities/TextInputContainer';
 import ButtonContainer from '../../utilities/ButtonContainer';
-import { moderateScale } from 'react-native-size-matters';
+import { styles } from '../../styles/signinstyle/CommonStyle';
 
-const SigningScreen = (props) => {
-  const container = props.container
+const PasswordScreen = ({navigation}) => {
+ 
   const [state, setState] = useState({
     email,
-    password
+    password,
+    confirmPassword
   });
 
   const {
     email,
-    password
+    password,
+    confirmPassword
   } = state;
-
-  const [check, setCheckStatus] = useState(false);
   const [showHidePassword, setShowHidePassword] = useState(true);
-  const [passwordErrorStatus, setPasswordErrorStatus] = useState(false);
-  const [emailErrorStatus, setEmailErrorStatus] = useState(false);
 
   const onPressSignIn = () => {
-    alert(email + password)
+    navigation.navigate('MainPage')
   }
 
   const onChangeText = (key) => (val) => {
     setState({ ...state, [key]: val });
     console.log(key, 'value')
-
   };
 
   return (
     <SafeAreaView style={styles.main}>
     <View style={styles.mainView}>
-
         <View style={styles.upperHeader}>
-
           <HeaderContainer
-            screenName={'Set a new password'}
+            screenName={login.setpassword}
           />
         </View>
 
@@ -63,24 +54,21 @@ const SigningScreen = (props) => {
           contentContainerStyle={{
             flexGrow: 1
           }}
-
         >
           <View style={styles.inputView}>
-
           <TextInputContainer
           value={password}
-          placeholder={"Enter new password"}
+          placeholder={login.newpassword}
           secureTextEntry={showHidePassword}
           onChangeText={onChangeText('password')}
         />
 
             <TextInputContainer
-              value={password}
-              placeholder={"Confirm new password"}
+              value={confirmPassword}
+              placeholder={login.confirmnewpass}
               secureTextEntry={showHidePassword}
-              onChangeText={onChangeText('password')}
+              onChangeText={onChangeText('confirmpassword')}
             />
-
           </View>
 
           <View style={[styles.btnView,
@@ -88,15 +76,13 @@ const SigningScreen = (props) => {
                 marginTop: moderateScale(200)
             }
             ]}>
-
             <ButtonContainer
-              text={'SAVE PASSWORD'}
-              bgColor={'#126881'}
-              textColor={'#FFFFFF'}
+              text={login.savepassword}
+              bgColor={colors.blue}
+              textColor={colors.white}
               image={""}
               onPressSignIn={onPressSignIn}
             />
-
           </View>
 
         </KeyboardAwareScrollView>
@@ -107,4 +93,4 @@ const SigningScreen = (props) => {
   );
 };
 
-export default SigningScreen;
+export default PasswordScreen;

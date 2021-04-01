@@ -1,11 +1,15 @@
 import React from "react";
-import { Text, View, FlatList, Image } from "react-native";
+import { Text, View, FlatList, Image, TouchableOpacity } from "react-native";
 import profile from "../../constants/profilepage/ProfilePageJs";
 import profilepage from "../../constants/profilepage/profilepage.json";
 import { images } from "../../utilities/Common";
 import { styles } from "../../styles/profilepage/ProfilePageStyle";
 
-const ProfilePage = () => {
+const ProfilePage = ({navigation}) => {
+
+  const homeButton = () => {
+    navigation.navigate('MainPage')
+  }
   return (
     <View style={styles.main}>
       <View style={styles.container}>
@@ -29,9 +33,11 @@ const ProfilePage = () => {
         </View>
       </View>
       <View style={styles.tabBoundary}>
-        <Image style={styles.icon2} source={images.home}></Image>
+        <TouchableOpacity onPress={homeButton}>
+        <Image  style={styles.icon2} source={images.home}></Image>
+        </TouchableOpacity>
         <Image style={styles.icon2} source={images.notification}></Image>
-        <Image style={styles.icon2} source={images.profile}></Image>
+        <Image style={styles.icon2} source={images.Circle}></Image>
       </View>
     </View>
   );

@@ -16,12 +16,20 @@ import SearchBar from "../../component/common/SearchBar";
 import { styles } from "../../styles/mainpagestyle/MainPageStyle";
 
 
-const MainPage = () => {
+const MainPage = ({navigation}) => {
   const [moreSettings, setMoreSettings] = useState(false);
+
+  const textChange = () => {
+    navigation.navigate('SearchPage')
+  };
 
   const moreButton = () => {
     setMoreSettings(!moreSettings);
   };
+
+  const imageButton = () => {
+    navigation.navigate('ProfilePage')
+  }
 
   return (
     <SafeAreaView style={styles.main}>
@@ -35,10 +43,11 @@ const MainPage = () => {
             <SearchBar
               style={styles.searchbar}
               placeholder={mainPage.search}
-              imageSource={images.Searchbar}
+              imageSource={images.searchbar}
               imageStyle={styles.searchIcon}
               cartStyle={styles.cart}
               cartSource={images.cart}
+              onChange={textChange}
             />
           </View>
           <View>
@@ -163,7 +172,9 @@ const MainPage = () => {
       <View style={styles.tabBoundary}>
         <Image style={styles.icon2} source={images.home}></Image>
         <Image style={styles.icon2} source={images.notification}></Image>
-        <Image style={styles.icon2} source={images.profile}></Image>
+        <TouchableOpacity onPress={imageButton}>
+        <Image  style={styles.icon2} source={images.Circle}></Image>
+        </TouchableOpacity>
       </View>
     </SafeAreaView>
   );

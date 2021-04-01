@@ -9,7 +9,8 @@ const SearchBar = ({
     imageStyle,
     imageSource,
     cartStyle,
-    cartSource
+    cartSource,
+    onChange
 }) => {
 
     return(
@@ -17,6 +18,7 @@ const SearchBar = ({
             <TextInput
             style={style}
             placeholder={placeholder}
+            onChange={onChange}
             />
             <Image style={imageStyle} source={imageSource} />
             <Image style={cartStyle} source={cartSource}></Image>
