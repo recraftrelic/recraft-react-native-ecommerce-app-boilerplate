@@ -19,6 +19,7 @@ import credit from '../assets/images/mainpage/Credit.png';
 import paylate from '../assets/images/mainpage/Paylater.png';
 import transfer from '../assets/images/mainpage/Transferbutton.png';
 import settings from '../assets/images/mainpage/Settings.png';
+import Profil from '../assets/images/profilepage/Profil.png'
 
 import {Dimensions,PixelRatio} from 'react-native'
 
@@ -58,6 +59,7 @@ const images = {
     paylate,
     transfer,
     settings,
+    Profil,
 }
 
 const fonts = Platform.select({
@@ -73,6 +75,8 @@ const fonts = Platform.select({
       light: 'ZillaSlab-Light',
       medium: 'ZillaSlab-Medium',
       nunito:'nunito.regular',
+      nBold: 'Nunito-Bold',
+      Quick: 'Quicksand-Bold',
     },
     android: {
         regular: 'WorkSans-Regular',
@@ -83,6 +87,8 @@ const fonts = Platform.select({
       Italic: 'ZillaSlab-BoldItalic',
       nunito:'nunito.regular',
       medium: 'ZillaSlab-Medium',
+      nBold: 'Nunito-Bold',
+      Quick: 'Quicksand-Bold',
     }
 });
 

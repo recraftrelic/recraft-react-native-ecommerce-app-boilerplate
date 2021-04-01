@@ -1,18 +1,16 @@
 import React, { useState } from "react";
 import {
-  Button,
   Image,
   SafeAreaView,
   Text,
   TouchableOpacity,
   View,
 } from "react-native";
-import { styles } from "../../styles/introstyle/IntroScreenStyle";
 import { introScreens, slideImage } from "../../constants/introscreens/screenOne";
+import { styles } from "../../styles/introstyle/IntroScreenStyle";
 
-const IntroScreenOne = () => {
+const IntroScreenOne = ({navigation}) => {
   const [activeTab, setActiveTab] = useState("shopping");
-
   const data = introScreens[activeTab];
 
   const activeSlideImage = slideImage[activeTab]
@@ -25,11 +23,13 @@ const IntroScreenOne = () => {
     if (activeTab == "product") {
       updateActiveTab = "express";
     }
-    // if (activeTab == "express"){
-    //   navigation.navigate('signin')
-    // }
+    if (activeTab == "express") {
+      navigation.navigate('signup')
+    }
     setActiveTab(updateActiveTab);
   };
+
+  
 
   return (
     <>

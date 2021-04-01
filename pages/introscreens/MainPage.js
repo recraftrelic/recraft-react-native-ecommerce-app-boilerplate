@@ -6,14 +6,15 @@ import {
   ScrollView,
   Text,
   View,
+  TouchableOpacity,
 } from "react-native";
-import { styles } from "../../styles/mainpagestyle/MainPageStyle";
-import { images } from "../../utilities/Common";
-import mainPage from "../../constants/mainpage/mainpage.json";
-import SearchBar from "../../component/common/SearchBar";
-import main from "../../constants/mainpage/MainPageImage";
 import { Rating } from "react-native-elements";
-import { TouchableOpacity } from "react-native";
+import main from "../../constants/mainpage/MainPageImage";
+import mainPage from "../../constants/mainpage/mainpage.json";
+import { images } from "../../utilities/Common";
+import SearchBar from "../../component/common/SearchBar";
+import { styles } from "../../styles/mainpagestyle/MainPageStyle";
+
 
 const MainPage = () => {
   const [moreSettings, setMoreSettings] = useState(false);
@@ -32,7 +33,7 @@ const MainPage = () => {
           <View style={styles.color}>
           <View>
             <SearchBar
-              style={styles.Searchbar}
+              style={styles.searchbar}
               placeholder={mainPage.search}
               imageSource={images.Searchbar}
               imageStyle={styles.searchIcon}
@@ -50,7 +51,6 @@ const MainPage = () => {
               renderItem={({ item, index }) => (
                 <View style={styles.itemCategory}>
                   <Image source={item.src}></Image>
-                  {/* <Text>{item.key}</Text> */}
                 </View>
               )}
               showsHorizontalScrollIndicator={false}
@@ -147,7 +147,6 @@ const MainPage = () => {
                         ratingCount={5}
                         startingValue={item.rating}
                         readonly={true}
-                        ratingColor="#3498db"
                         imageSize={16}
                       ></Rating>
                       <Text style={styles.average}>{item.average}</Text>

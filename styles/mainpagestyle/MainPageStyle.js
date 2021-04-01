@@ -15,7 +15,7 @@ export const styles = StyleSheet.create({
   search: {
     flexDirection: 'row',
   },
-  Searchbar: {
+  searchbar: {
     backgroundColor: "white",
     borderRadius: 50,
     width: widthToDp(75),
@@ -192,8 +192,6 @@ export const styles = StyleSheet.create({
    left: widthToDp('5%')
  },
  tabBoundary: {
-  //  borderWidth: 1,
-  //  borderColor: 'grey',
   backgroundColor: '#F6F6F7',
    bottom: heightToDp('1%'),
    height: heightToDp('7%'),
@@ -222,8 +220,6 @@ export const styles = StyleSheet.create({
    backgroundColor: '#ffff',
    right: widthToDp('54%'),
    top: heightToDp('5%'),
-  //  borderWidth: 1,
-  //  borderColor: 'grey',
   shadowColor: "grey",
     shadowOpacity: 0.1,
     shadowRadius: 2,

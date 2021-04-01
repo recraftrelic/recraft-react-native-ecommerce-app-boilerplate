@@ -3,9 +3,6 @@ import {SafeAreaView} from 'react-native';
 import {createStackNavigator} from '@react-navigation/stack';
 import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
-import MainScreen from './component/common/MainScreen'
-// import IntroScreenOne from './pages/introscreens/IntroScreenOne';
-import MainPage from './pages/introscreens/MainPage';
 import IntroScreenOne from './pages/introscreens/IntroScreenOne';
 import SigningScreen from './pages/signin/SigningScreen';
 import SignupScreen from './pages/signin/SignupScreen';
@@ -14,7 +11,8 @@ import EmailComponent from './pages/signin/EmailComponent';
 import PhoneScreen from './pages/signin/PhoneScreen';
 import PasswordScreen from './pages/signin/PasswordScreen';
 import Loginscreen3 from './pages/signin/Loginscreen3';
-
+import MainPage from './pages/introscreens/MainPage';
+import ProfilePage from './pages/profilePage/ProfilePage';
 
 const Stack = createStackNavigator();
 const App = () => {
@@ -34,22 +32,21 @@ const App = () => {
 
         options={{headerShown: false}}
         /> */}
-         {/* <Stack.Screen
-        name="intro1"
+        <Stack.Screen
+        name="mainPage"
         component={IntroScreenOne}
         options={{headerShown: false}}
-        /> */}
-         <Stack.Screen
-        name="mainPage"
-        component={MainPage}
+        />
+        <Stack.Screen
+        name="signup"
+        component={SignupScreen}
         options={{headerShown: false}}
         />
         {/* <Stack.Screen
-        name="signin"
-        component={SigningScreen}
+        name="profilePage"
+        component={ProfilePage}
         options={{headerShown: false}}
         /> */}
-       
       </Stack.Navigator>
     </NavigationContainer>
   )
