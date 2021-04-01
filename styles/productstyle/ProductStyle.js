@@ -5,7 +5,6 @@ import { moderateScale } from "react-native-size-matters";
 import { colors } from "../../constants/colors/colors";
 import { fonts, heightToDp, widthToDp } from "../../utilities/Common";
 
-
 export const styles = StyleSheet.create({
   main: {
     flex: 1,
@@ -19,14 +18,14 @@ export const styles = StyleSheet.create({
     borderRadius: 50,
     width: widthToDp(75),
     padding: 6.5,
-    height: moderateScale(40)
+    height: moderateScale(40),
   },
   searchIcon: {
-    position: 'absolute',
+    position: "absolute",
     flex: 0.1,
     marginLeft: moderateScale(245),
-    flexDirection: 'row',
-    justifyContent: 'space-around',
+    flexDirection: "row",
+    justifyContent: "space-around",
     marginTop: moderateScale(-2),
     height: moderateScale(45),
     width: moderateScale(45),
@@ -40,19 +39,17 @@ export const styles = StyleSheet.create({
     height: moderateScale(45),
     width: moderateScale(45),
     borderRadius: 30,
-
   },
   search: {
     bottom: 70,
-    marginLeft: 35
+    marginLeft: 35,
   },
   textStyle: {
     color: colors.darkGrey,
-
   },
   filters: {
     bottom: 85,
-    marginLeft: moderateScale(290)
+    marginLeft: moderateScale(290),
   },
   flatlistView: {
     marginBottom: 100,
@@ -64,25 +61,25 @@ export const styles = StyleSheet.create({
   },
   photo: {
     marginLeft: 150,
-    bottom: 30
+    bottom: 30,
   },
   txt: {
     margin: 5,
     marginLeft: 40,
-    color: colors.grey
+    color: colors.grey,
   },
   img: {
     margin: 8,
     marginLeft: 40,
     color: colors.grey,
-    marginBottom: 19
+    marginBottom: 19,
   },
   rate: {
     margin: 12,
     marginLeft: 100,
     marginTop: -20,
     bottom: 12,
-    color: colors.grey
+    color: colors.grey,
   },
   price: {
     margin: 12,
@@ -90,8 +87,6 @@ export const styles = StyleSheet.create({
     marginTop: -50,
     bottom: 12,
     fontSize: 20,
-    color: colors.blue
-  }
-  
-
+    color: colors.blue,
+  },
 });

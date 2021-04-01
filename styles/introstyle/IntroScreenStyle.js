@@ -1,7 +1,8 @@
 import React from 'react';
 import { Platform, StyleSheet } from 'react-native';
+import { colors } from '../../constants/colors/colors'
 import { heightToDp, widthToDp } from '../../utilities/Common';
-import {fonts} from '../../utilities/Common';
+import { fonts } from '../../utilities/Common';
 
 export const styles = StyleSheet.create({
     main: {
@@ -18,19 +19,18 @@ export const styles = StyleSheet.create({
         top: ('30%'),
         fontSize: 18,
         fontFamily: fonts.Bold,
-        color:'#808080'
+        color: colors.blackGrey,
     },
     content: {
         top: ('50%'),
         textAlign: 'center',
         fontSize: 15,
-        // fontFamily: fonts.nunito,
     },
     slide: {
         top: heightToDp('15%')
     },
     button: {
-          backgroundColor: '#126881',
+          backgroundColor: colors.blue,
           borderRadius: 50,
           width: widthToDp(25),
           height: heightToDp(8),
@@ -38,13 +38,13 @@ export const styles = StyleSheet.create({
           bottom: heightToDp('8%'),
     },
     text: {
-        color: 'white',
+        color: colors.white,
         fontSize: 14,
         left: 30,
         top: heightToDp(3)
     },
     skip: {
-        color: '#ACBAC3',
+        color: colors.darkGrey,
         bottom: heightToDp('12%'),
         left: widthToDp('15%'),
     }

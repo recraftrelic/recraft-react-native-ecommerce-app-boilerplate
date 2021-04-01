@@ -8,12 +8,13 @@ import { moderateScale } from 'react-native-size-matters'
 
 import login from '../../constants/signin/login.json';
 import { colors } from '../../constants/colors/colors';
+import Routes from '../../constants/routes/routes';
 import HeaderContainer from '../../utilities/HeaderContainer';
 import TextInputContainer from '../../utilities/TextInputContainer';
 import ButtonContainer from '../../utilities/ButtonContainer';
 import { styles } from '../../styles/signinstyle/CommonStyle';
 
-const PhoneScreen = ({navigation}) => {
+const PhoneScreen = ({ navigation }) => {
   
   const [state, setState] = useState({
     email,
@@ -26,13 +27,11 @@ const PhoneScreen = ({navigation}) => {
   } = state;
 
   const onPressSignIn = () => {
-    navigation.navigate('PasswordScreen')
+    navigation.navigate(Routes.PasswordScreen)
   }
 
   const onChangeText = (key) => (val) => {
     setState({ ...state, [key]: val });
-    console.log(key, 'value')
-
   };
 
   return (
@@ -48,7 +47,7 @@ const PhoneScreen = ({navigation}) => {
           keyboardShouldPersistTaps='handled'
           showsVerticalScrollIndicator={false}
           enableOnAndroid={true}
-          style={styles.centent}
+          style={styles.content}
           contentContainerStyle={{
             flexGrow: 1
           }}

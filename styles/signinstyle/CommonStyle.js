@@ -30,7 +30,7 @@ export const styles = StyleSheet.create({
         borderBottomLeftRadius: 40,
         borderBottomRightRadius: 40,
     },
-    centent: {
+    content: {
         flex:1
     },
     TextInputContainer: {

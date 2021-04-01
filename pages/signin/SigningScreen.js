@@ -8,15 +8,13 @@ import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view
 
 import login from '../../constants/signin/login.json';
 import { colors } from '../../constants/colors/colors';
+import Routes from '../../constants/routes/routes';
 import { images } from '../../utilities/Common';
 import HeaderContainer from '../../utilities/HeaderContainer';
 import TextInputContainer from '../../utilities/TextInputContainer';
 import ButtonContainer from '../../utilities/ButtonContainer';
 import { styles } from '../../styles/signinstyle/CommonStyle';
-import { NavigationContainer } from '@react-navigation/native';
-
-const SigningScreen = ({navigation}) => {
-  // const container = props.container
+const SigningScreen = ({ navigation }) => {
   const [state, setState] = useState({
     email,
     password
@@ -28,19 +26,16 @@ const SigningScreen = ({navigation}) => {
   } = state;
 
   const onPressSignIn = () => {
-    alert(email + password)
+    navigation.navigate(Routes.MainPage)
   }
 
   const onChangeText = (key) => (val) => {
     setState({ ...state, [key]: val });
-    console.log(key, 'value')
-
   };
 
   const forgotButton = () => {
-    navigation.navigate('ForgoteComponent')
+    navigation.navigate(Routes.ForgotComponent)
   }
-  console.log(colors, 'asdasd')
   return (
     <SafeAreaView style={styles.main}>
     <View style={styles.mainView}>
@@ -56,7 +51,7 @@ const SigningScreen = ({navigation}) => {
           keyboardShouldPersistTaps='handled'
           showsVerticalScrollIndicator={false}
           enableOnAndroid={true}
-          style={styles.centent}
+          style={styles.content}
           contentContainerStyle={{
             flexGrow: 1
           }}

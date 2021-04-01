@@ -1,12 +1,13 @@
 import React from "react";
 import { StyleSheet } from "react-native";
+import { colors } from '../../constants/colors/colors'
 import { fonts, heightToDp, widthToDp } from "../../utilities/Common";
 
 export const styles = StyleSheet.create({
   main: {
     marginTop: Platform.OS == "ios" ? 50 : 0,
     flex: 1,
-    backgroundColor: '#ffff'
+    backgroundColor: colors.white
   },
   container: {
     padding: 19,
@@ -16,7 +17,7 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
   },
   searchbar: {
-    backgroundColor: "white",
+    backgroundColor: colors.white,
     borderRadius: 50,
     width: widthToDp(75),
     padding: 6.5,
@@ -34,7 +35,7 @@ export const styles = StyleSheet.create({
     top: heightToDp('5%'),
     fontFamily: fonts.medium,
     fontSize: 20,
-    color: "#7A8D9C",
+    color: colors.grey,
   },
   src: {
     height: heightToDp('27%'),
@@ -53,7 +54,7 @@ export const styles = StyleSheet.create({
     left: widthToDp(35),
   },
   box: {
-    backgroundColor: "#FFA771",
+    backgroundColor: colors.orange,
     flexDirection: "row",
     height: heightToDp(10),
     borderRadius: 10,
@@ -63,7 +64,7 @@ export const styles = StyleSheet.create({
     left: widthToDp(5),
   },
   amount: {
-    color: "white",
+    color: colors.white,
     left: widthToDp(7),
     top: heightToDp(3.5),
   },
@@ -76,7 +77,7 @@ export const styles = StyleSheet.create({
     marginRight: 30,
   },
   content: {
-    color: "white",
+    color: colors.white,
     top: heightToDp(1),
     fontSize: 15,
   },
@@ -115,20 +116,20 @@ export const styles = StyleSheet.create({
   color: {
     backgroundColor: '#F6F6F7',
   },
-  price1: {
+  priceOne: {
     top: heightToDp("16%"),
     left: widthToDp(13),
     textDecorationLine: "line-through",
     color: '#000',
    fontSize: 10
   },
-  content1: {
+  contentOne: {
     top: heightToDp("18%"),
     left: widthToDp(4),
     fontFamily: fonts.medium,
     fontSize: 14
   },
-  box1: {
+  boxOne: {
     backgroundColor: "#F6F6F7",
     flex: 1,
     borderRadius: 10,
@@ -147,7 +148,7 @@ export const styles = StyleSheet.create({
     fontSize: 20,
     color: "#7A8D9C",
   },
-  box2: {
+  boxTwo: {
     borderColor: 'grey',
     borderWidth: 1,
     borderRadius: 10,
@@ -160,7 +161,7 @@ export const styles = StyleSheet.create({
    flex: 1,
    flexDirection: 'row'
  },
- menu1: {
+ menuOne: {
    flexDirection: 'row',
  },
  name: {
@@ -173,18 +174,18 @@ export const styles = StyleSheet.create({
    left: widthToDp('25%'),
    top: heightToDp('1%')
  },
- amount1: {
+ amountOne: {
    left: widthToDp('2%'),
    top: heightToDp('1%'),
   fontSize: 18,
   color: '#126881'
  },
- menu2: {
+ menuTwo: {
   flexDirection: 'row',
   top: heightToDp('2%'),
   left: widthToDp('2%'),
  },
- icon1: {
+ iconOne: {
   left: widthToDp('18%'),
   bottom: heightToDp('2%'),
  },
@@ -211,7 +212,7 @@ export const styles = StyleSheet.create({
       width: 1
     }
  },
- icon2: {
+ iconTwo: {
    marginRight: widthToDp('27%'),
  
  },
@@ -228,7 +229,7 @@ export const styles = StyleSheet.create({
       width: 1
     }
  },
- settings1: {
+ settingsOne: {
    marginRight: widthToDp('5%'),
    marginTop: heightToDp('0.5%')
  }

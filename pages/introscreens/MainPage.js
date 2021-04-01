@@ -11,16 +11,16 @@ import {
 import { Rating } from "react-native-elements";
 import main from "../../constants/mainpage/MainPageImage";
 import mainPage from "../../constants/mainpage/mainpage.json";
-import { images } from "../../utilities/Common";
+import Routes from '../../constants/routes/routes';
 import SearchBar from "../../component/common/SearchBar";
+import { images } from "../../utilities/Common";
 import { styles } from "../../styles/mainpagestyle/MainPageStyle";
 
-
-const MainPage = ({navigation}) => {
+const MainPage = ({ navigation }) => {
   const [moreSettings, setMoreSettings] = useState(false);
 
   const textChange = () => {
-    navigation.navigate('SearchPage')
+    navigation.navigate(Routes.SearchPage)
   };
 
   const moreButton = () => {
@@ -28,7 +28,7 @@ const MainPage = ({navigation}) => {
   };
 
   const imageButton = () => {
-    navigation.navigate('ProfilePage')
+    navigation.navigate(Routes.ProfilePage)
   }
 
   return (
@@ -84,23 +84,23 @@ const MainPage = ({navigation}) => {
                   {moreSettings ? (
                     <View style={styles.settings}>
                       <Image
-                        style={styles.settings1}
+                        style={styles.settingsOne}
                         source={images.charge}
                       ></Image>
                       <Image
-                        style={styles.settings1}
+                        style={styles.settingsOne}
                         source={images.credit}
                       ></Image>
                       <Image
-                        style={styles.settings1}
+                        style={styles.settingsOne}
                         source={images.paylate}
                       ></Image>
                       <Image
-                        style={styles.settings1}
+                        style={styles.settingsOne}
                         source={images.transfer}
                       ></Image>
                       <Image
-                        style={styles.settings1}
+                        style={styles.settingsOne}
                         source={images.settings}
                       ></Image>
                     </View>
@@ -124,10 +124,10 @@ const MainPage = ({navigation}) => {
                   <View>
                     <Text style={styles.discountBar}>{item.average}</Text>
                   </View>
-                  <Text style={styles.content1}>{item.name}</Text>
+                  <Text style={styles.contentOne}>{item.name}</Text>
                   <View>
                     <Text style={styles.price}>{item.discount}</Text>
-                    <Text style={styles.price1}>{item.actual}</Text>
+                    <Text style={styles.priceOne}>{item.actual}</Text>
                   </View>
                 </View>
               )}
@@ -142,16 +142,16 @@ const MainPage = ({navigation}) => {
               data={main.dataPopular}
               renderItem={({ item, index }) => (
                 <View style={styles.menu}>
-                  <View style={styles.box1}>
+                  <View style={styles.boxOne}>
                     <Image style={styles.img}></Image>
                   </View>
-                  <View style={styles.box2}>
-                    <View style={styles.menu1}>
+                  <View style={styles.boxTwo}>
+                    <View style={styles.menuOne}>
                       <Text style={styles.name}>{item.name}</Text>
                       <Image style={styles.icon} source={item.src}></Image>
                     </View>
-                    <Text style={styles.amount1}>{item.amount}</Text>
-                    <View style={styles.menu2}>
+                    <Text style={styles.amountOne}>{item.amount}</Text>
+                    <View style={styles.menuTwo}>
                       <Rating
                         ratingCount={5}
                         startingValue={item.rating}
@@ -159,7 +159,7 @@ const MainPage = ({navigation}) => {
                         imageSize={16}
                       ></Rating>
                       <Text style={styles.average}>{item.average}</Text>
-                      <Image style={styles.icon1} source={item.cart}></Image>
+                      <Image style={styles.iconOne} source={item.cart}></Image>
                     </View>
                   </View>
                 </View>
@@ -170,10 +170,10 @@ const MainPage = ({navigation}) => {
         </View>
       </ScrollView>
       <View style={styles.tabBoundary}>
-        <Image style={styles.icon2} source={images.home}></Image>
-        <Image style={styles.icon2} source={images.notification}></Image>
+        <Image style={styles.iconTwo} source={images.home}></Image>
+        <Image style={styles.iconTwo} source={images.notification}></Image>
         <TouchableOpacity onPress={imageButton}>
-        <Image  style={styles.icon2} source={images.Circle}></Image>
+        <Image  style={styles.iconTwo} source={images.Circle}></Image>
         </TouchableOpacity>
       </View>
     </SafeAreaView>

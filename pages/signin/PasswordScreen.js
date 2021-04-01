@@ -5,7 +5,7 @@ import {
 } from 'react-native';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import { moderateScale } from 'react-native-size-matters';
-
+import Routes from '../../constants/routes/routes';
 import login from '../../constants/signin/login.json';
 import { colors } from '../../constants/colors/colors';
 import HeaderContainer from '../../utilities/HeaderContainer';
@@ -13,7 +13,7 @@ import TextInputContainer from '../../utilities/TextInputContainer';
 import ButtonContainer from '../../utilities/ButtonContainer';
 import { styles } from '../../styles/signinstyle/CommonStyle';
 
-const PasswordScreen = ({navigation}) => {
+const PasswordScreen = ({ navigation }) => {
  
   const [state, setState] = useState({
     email,
@@ -29,12 +29,11 @@ const PasswordScreen = ({navigation}) => {
   const [showHidePassword, setShowHidePassword] = useState(true);
 
   const onPressSignIn = () => {
-    navigation.navigate('MainPage')
+    navigation.navigate(Routes.MainPage)
   }
 
   const onChangeText = (key) => (val) => {
     setState({ ...state, [key]: val });
-    console.log(key, 'value')
   };
 
   return (
@@ -50,7 +49,7 @@ const PasswordScreen = ({navigation}) => {
           keyboardShouldPersistTaps='handled'
           showsVerticalScrollIndicator={false}
           enableOnAndroid={true}
-          style={styles.centent}
+          style={styles.content}
           contentContainerStyle={{
             flexGrow: 1
           }}

@@ -7,7 +7,7 @@ import {
 } from 'react-native';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import { moderateScale } from 'react-native-size-matters';
-
+import Routes from '../../constants/routes/routes';
 import login from '../../constants/signin/login.json';
 import { colors } from '../../constants/colors/colors';
 import HeaderContainer from '../../utilities/HeaderContainer';
@@ -15,7 +15,7 @@ import ButtonContainer from '../../utilities/ButtonContainer';
 import VerifyCount from '../../utilities/VerifyCount';
 import { styles } from '../../styles/signinstyle/CommonStyle';
 
-const ForgoteComponent = ({navigation}) => {
+const ForgoteComponent = ({ navigation }) => {
   
   const [state, setState] = useState({
     email,
@@ -32,7 +32,7 @@ const ForgoteComponent = ({navigation}) => {
   } = state;
 
   const onPressSignIn = () => {
-    navigation.navigate('EmailComponent')
+    navigation.navigate(Routes.EmailComponent)
   }
   const onChangeText = (val) => {
     setInternalVal(val)
@@ -55,7 +55,7 @@ const ForgoteComponent = ({navigation}) => {
           keyboardShouldPersistTaps='handled'
           showsVerticalScrollIndicator={false}
           enableOnAndroid={true}
-          style={styles.centent}
+          style={styles.content}
           contentContainerStyle={{
             flexGrow: 1
           }}
