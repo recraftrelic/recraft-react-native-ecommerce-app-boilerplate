@@ -29,5 +29,7 @@ export const colors = {
     blackGrey: "#808080",
     orange: "#FFA771",
     lightPink: "#F6F6F7",
-    mustard: "#FBBA32"
+    mustard: "#FBBA32",
+    silverGrey : "#E4E4E4",
+    pink: "#E4126B"
 }
