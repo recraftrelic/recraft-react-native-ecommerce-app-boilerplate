@@ -28,4 +28,6 @@ export const colors = {
     red: "#E41A4A",
     blackGrey: "#808080",
     orange: "#FFA771",
+    lightPink: "#F6F6F7",
+    mustard: "#FBBA32"
 }

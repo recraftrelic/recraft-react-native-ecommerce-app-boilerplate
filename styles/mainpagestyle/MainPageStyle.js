@@ -84,19 +84,19 @@ export const styles = StyleSheet.create({
   sale: {
     fontFamily: fonts.medium,
     fontSize: 20,
-    color: "#7A8D9C",
+    color: colors.grey,
     top: heightToDp(5),
   },
   discountBar: {
-    backgroundColor: '#FBBA32',
+    backgroundColor: colors.mustard,
     height: heightToDp('6%'),
     width: widthToDp('9%'),
     left: widthToDp('25%'),
-    color: '#ffff',
+    color: colors.white,
     textAlign:'center',
   },
   discount: {
-    backgroundColor: "#F6F6F7",
+    backgroundColor: colors.lightPink,
     marginRight: 10,
     width: widthToDp(40),
     borderRadius: 15,
@@ -110,17 +110,17 @@ export const styles = StyleSheet.create({
     flexDirection: "row-reverse",
     top: heightToDp("18%"),
     left: widthToDp("4%"),
-    color: '#126881'
+    color: colors.blue
 
   },
   color: {
-    backgroundColor: '#F6F6F7',
+    backgroundColor: colors.lightPink,
   },
   priceOne: {
     top: heightToDp("16%"),
     left: widthToDp(13),
     textDecorationLine: "line-through",
-    color: '#000',
+    color: colors.black,
    fontSize: 10
   },
   contentOne: {
@@ -130,7 +130,7 @@ export const styles = StyleSheet.create({
     fontSize: 14
   },
   boxOne: {
-    backgroundColor: "#F6F6F7",
+    backgroundColor: colors.lightPink,
     flex: 1,
     borderRadius: 10,
     zIndex: 9999,
@@ -140,13 +140,13 @@ export const styles = StyleSheet.create({
     top: 80,
     fontFamily: fonts.medium,
     fontSize: 20,
-    color: "#7A8D9C",
+    color: colors.grey,
   },
   popularList: {
     top: heightToDp("15%"),
     fontFamily: fonts.medium,
     fontSize: 20,
-    color: "#7A8D9C",
+    color: colors.grey,
   },
   boxTwo: {
     borderColor: 'grey',
@@ -178,7 +178,7 @@ export const styles = StyleSheet.create({
    left: widthToDp('2%'),
    top: heightToDp('1%'),
   fontSize: 18,
-  color: '#126881'
+  color: colors.blue
  },
  menuTwo: {
   flexDirection: 'row',
@@ -193,7 +193,7 @@ export const styles = StyleSheet.create({
    left: widthToDp('5%')
  },
  tabBoundary: {
-  backgroundColor: '#F6F6F7',
+  backgroundColor: colors.lightPink,
    bottom: heightToDp('1%'),
    height: heightToDp('7%'),
    width: widthToDp('90%'),
@@ -202,7 +202,7 @@ export const styles = StyleSheet.create({
    alignItems: 'center',
    padding: widthToDp('5%'),
   position: 'absolute',
-  backgroundColor: '#fff',
+  backgroundColor: colors.white,
   left: widthToDp('4%'),
   shadowColor: "grey",
     shadowOpacity: 0.8,
@@ -218,7 +218,7 @@ export const styles = StyleSheet.create({
  },
  settings: {
    flexDirection: 'row',
-   backgroundColor: '#ffff',
+   backgroundColor: colors.white,
    right: widthToDp('54%'),
    top: heightToDp('5%'),
   shadowColor: "grey",

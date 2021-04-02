@@ -1,5 +1,6 @@
 import React from "react";
 import { StyleSheet } from "react-native";
+import { colors } from '../../constants/colors/colors'
 import { fonts, heightToDp, widthToDp } from "../../utilities/Common";
 
 export const styles = StyleSheet.create({
@@ -22,7 +23,7 @@ export const styles = StyleSheet.create({
     textAlign: "center",
     top: heightToDp("1%"),
     fontSize: 12,
-    color: "#57636F",
+    color: colors.darkBlue,
   },
   image: {
     left: widthToDp("32%"),
@@ -31,22 +32,22 @@ export const styles = StyleSheet.create({
     flexDirection: "row",
     borderWidth: 0.5,
     borderRadius: 10,
-    borderColor: "#ACBAC3",
+    borderColor: colors.darkGrey,
     height: heightToDp("8%"),
     marginTop: heightToDp("2%"),
-    backgroundColor: "#fff",
+    backgroundColor: colors.white,
   },
   imageOne: {
     top: heightToDp("3%"),
     marginRight: widthToDp("5%"),
     marginLeft: widthToDp("5%"),
-    color: "#126881",
+    color: colors.blue,
     fontFamily: fonts.Quick,
     fontSize: 14,
   },
   tabBoundary: {
-    backgroundColor: "#F6F6F7",
-    bottom: heightToDp("1%"),
+    backgroundColor: colors.lightPink,
+    bottom: heightToDp("0.5%"),
     height: heightToDp("7%"),
     width: widthToDp("90%"),
     borderRadius: 50,
@@ -54,7 +55,7 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     padding: widthToDp("5%"),
     position: "absolute",
-    backgroundColor: "#fff",
+    backgroundColor: colors.white,
     left: widthToDp("4%"),
     shadowColor: "grey",
     shadowOpacity: 0.8,

@@ -11,23 +11,23 @@ export const styles = StyleSheet.create({
     },
     container: {
         alignItems: 'center',
-        padding: 90,
+        padding: 30,
         flex: 1,
         
     },
     heading: {
-        top: ('30%'),
+        top: ('25%'),
         fontSize: 18,
         fontFamily: fonts.Bold,
         color: colors.blackGrey,
     },
     content: {
-        top: ('50%'),
+        top: ('40%'),
         textAlign: 'center',
         fontSize: 15,
     },
     slide: {
-        top: heightToDp('15%')
+        top: heightToDp('20%')
     },
     button: {
           backgroundColor: colors.blue,
