@@ -1,6 +1,6 @@
-import product from '../../assets/images/products/product.png'
+import product from '../../assets/images/products/Product.png'
 import rate from '../../assets/images/products/rate.png'
-import love from '../../assets/images/products/love.png'
+import love from '../../assets/images/products/Love.png'
 
 const products ={
     data: [

@@ -7,7 +7,7 @@ import {
 } from 'react-native';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import { moderateScale } from 'react-native-size-matters';
-
+import Routes from '../../constants/routes/routes';
 import login from '../../constants/signin/login.json';
 import { colors } from '../../constants/colors/colors';
 import HeaderContainer from '../../utilities/HeaderContainer';
@@ -15,8 +15,8 @@ import ButtonContainer from '../../utilities/ButtonContainer';
 import VerifyCount from '../../utilities/VerifyCount';
 import { styles } from '../../styles/signinstyle/CommonStyle';
 
-const ForgoteComponent = (props) => {
-  const container = props.container
+const ForgoteComponent = ({ navigation }) => {
+  
   const [state, setState] = useState({
     email,
     password
@@ -32,7 +32,7 @@ const ForgoteComponent = (props) => {
   } = state;
 
   const onPressSignIn = () => {
-    alert(email + password)
+    navigation.navigate(Routes.EmailComponent)
   }
   const onChangeText = (val) => {
     setInternalVal(val)
@@ -55,7 +55,7 @@ const ForgoteComponent = (props) => {
           keyboardShouldPersistTaps='handled'
           showsVerticalScrollIndicator={false}
           enableOnAndroid={true}
-          style={styles.centent}
+          style={styles.content}
           contentContainerStyle={{
             flexGrow: 1
           }}
@@ -109,14 +109,14 @@ const ForgoteComponent = (props) => {
             style={styles.btnContainer}
           >
           <ButtonContainer
-          text={login.saveaddress}
+          text={login.verify}
           bgColor={colors.blue}
           textColor={colors.white}
           image={""}
           onPressSignIn={onPressSignIn}
         />
         <ButtonContainer
-              text={login.resend}
+              text={login.resendOne}
               bgColor={colors.darkGrey}
               textColor={colors.white}
               image={""}

@@ -30,7 +30,7 @@ export const styles = StyleSheet.create({
         borderBottomLeftRadius: 40,
         borderBottomRightRadius: 40,
     },
-    centent: {
+    content: {
         flex:1
     },
     TextInputContainer: {
@@ -103,7 +103,6 @@ export const styles = StyleSheet.create({
         borderRadius: 40,
         marginTop: moderateScale(20),
         fontFamily: fonts.quickBold,
-
     },
     btnView: {
         flex: 0.2,

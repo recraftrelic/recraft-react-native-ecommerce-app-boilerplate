@@ -25,5 +25,9 @@ export const colors = {
     borderBlue:"#5E73FF",
     cream:"#F5F5F5",
     lightPurple:"#D6DBFD",
-    red: "#E41A4A"
+    red: "#E41A4A",
+    blackGrey: "#808080",
+    orange: "#FFA771",
+    lightPink: "#F6F6F7",
+    mustard: "#FBBA32"
 }

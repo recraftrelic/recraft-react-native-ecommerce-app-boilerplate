@@ -8,14 +8,15 @@ import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view
 
 import login from '../../constants/signin/login.json';
 import { colors } from '../../constants/colors/colors';
+import Routes from '../../constants/routes/routes';
 import { images } from '../../utilities/Common';
 import HeaderContainer from '../../utilities/HeaderContainer';
 import TextInputContainer from '../../utilities/TextInputContainer';
 import ButtonContainer from '../../utilities/ButtonContainer';
 import { styles } from '../../styles/signinstyle/CommonStyle';
 
-const SignupScreen = (props) => {
-  const container = props.container
+const SignupScreen = ({ navigation }) => {
+  
   const [state, setState] = useState({
     email,
     password,
@@ -33,19 +34,18 @@ const SignupScreen = (props) => {
 
   const [showHidePassword, setShowHidePassword] = useState(true);
   const onPressSignIn = () => {
-    alert(email + password)
+    navigation.navigate(Routes.SignIn)
   }
 
   const onChangeText = (key) => (val) => {
     setState({ ...state, [key]: val });
-    console.log(key, 'value')
-
   };
 
   return (
     <SafeAreaView style={styles.main}>
       <View style={styles.mainView}>
         <View style={styles.upperHeader}>
+
           <HeaderContainer
             mainText={login.button}
             screenName={login.signup}
@@ -55,7 +55,7 @@ const SignupScreen = (props) => {
           keyboardShouldPersistTaps='handled'
           showsVerticalScrollIndicator={false}
           enableOnAndroid={true}
-          style={styles.centent}
+          style={styles.content}
           contentContainerStyle={{
             flexGrow: 1
           }}

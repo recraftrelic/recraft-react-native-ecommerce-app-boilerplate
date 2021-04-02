@@ -8,14 +8,13 @@ import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view
 
 import login from '../../constants/signin/login.json';
 import { colors } from '../../constants/colors/colors';
+import Routes from '../../constants/routes/routes';
 import { images } from '../../utilities/Common';
 import HeaderContainer from '../../utilities/HeaderContainer';
 import TextInputContainer from '../../utilities/TextInputContainer';
 import ButtonContainer from '../../utilities/ButtonContainer';
 import { styles } from '../../styles/signinstyle/CommonStyle';
-
-const SigningScreen = (props) => {
-  const container = props.container
+const SigningScreen = ({ navigation }) => {
   const [state, setState] = useState({
     email,
     password
@@ -27,15 +26,16 @@ const SigningScreen = (props) => {
   } = state;
 
   const onPressSignIn = () => {
-    alert(email + password)
+    navigation.navigate(Routes.MainPage)
   }
 
   const onChangeText = (key) => (val) => {
     setState({ ...state, [key]: val });
-    console.log(key, 'value')
-
   };
-  console.log(colors, 'asdasd')
+
+  const forgotButton = () => {
+    navigation.navigate(Routes.ForgotComponent)
+  }
   return (
     <SafeAreaView style={styles.main}>
     <View style={styles.mainView}>
@@ -51,7 +51,7 @@ const SigningScreen = (props) => {
           keyboardShouldPersistTaps='handled'
           showsVerticalScrollIndicator={false}
           enableOnAndroid={true}
-          style={styles.centent}
+          style={styles.content}
           contentContainerStyle={{
             flexGrow: 1
           }}
@@ -71,13 +71,13 @@ const SigningScreen = (props) => {
             />
 
           </View>
-          <Text style={styles.forgote}>
-            {login.forgote}
+          <Text style={styles.forgote} onPress={forgotButton}>
+            {login.forgotepassword}
           </Text>
 
           <View style={styles.btnView}>
             <ButtonContainer
-              text={login.button}
+              text={login.button1}
               bgColor={colors.blue}
               textColor={colors.white}
               image={""}

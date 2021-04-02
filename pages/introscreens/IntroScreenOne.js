@@ -1,21 +1,23 @@
 import React, { useState } from "react";
 import {
-  Button,
   Image,
   SafeAreaView,
   Text,
   TouchableOpacity,
   View,
 } from "react-native";
+import {
+  introScreens,
+  slideImage,
+} from "../../constants/introscreens/screenOne";
+import Routes from '../../constants/routes/routes'
 import { styles } from "../../styles/introstyle/IntroScreenStyle";
-import { introScreens, slideImage } from "../../constants/introscreens/screenOne";
 
-const IntroScreenOne = () => {
+const IntroScreenOne = ({ navigation }) => {
   const [activeTab, setActiveTab] = useState("shopping");
-
   const data = introScreens[activeTab];
 
-  const activeSlideImage = slideImage[activeTab]
+  const activeSlideImage = slideImage[activeTab];
 
   const nextButton = () => {
     let updateActiveTab = activeTab;
@@ -24,6 +26,9 @@ const IntroScreenOne = () => {
     }
     if (activeTab == "product") {
       updateActiveTab = "express";
+    }
+    if (activeTab == "express") {
+      navigation.navigate(Routes.SignUp);
     }
     setActiveTab(updateActiveTab);
   };
@@ -37,13 +42,12 @@ const IntroScreenOne = () => {
               <Image source={item.src} />
               <Text style={styles.heading}>{item.heading}</Text>
               <Text style={styles.content}>{item.content}</Text>
-              
             </>
           ))}
         </View>
-            <View style={styles.container}>
-            <Image style={styles.slide}  source={activeSlideImage}/>
-            </View>
+        <View style={styles.container}>
+          <Image style={styles.slide} source={activeSlideImage} />
+        </View>
         <View>
           <TouchableOpacity style={styles.button} onPress={nextButton}>
             <Text style={styles.text}>{introScreens.btnTex}</Text>

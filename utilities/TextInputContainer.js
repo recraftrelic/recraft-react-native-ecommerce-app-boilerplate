@@ -24,8 +24,6 @@ const TextInputContainer = (props) => {
         value,
         onChangeText,
     } = props;
-
-    console.log(showHidePassword, 'secureTextEntry')
     return (
       
             <View style={[styles.emailInput,{marginTop:10}]}>
