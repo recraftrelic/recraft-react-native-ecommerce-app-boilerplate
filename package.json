@@ -20,16 +20,20 @@
     "react-native": "^0.63.4",
     "react-native-gesture-handler": "^1.10.3",
     "react-native-keyboard-aware-scroll-view": "^0.9.3",
+    "react-native-modal": "^11.7.0",
     "react-native-paper": "^4.7.2",
+    "react-native-parallax-header": "^1.1.4",
     "react-native-reanimated": "^2.0.0",
     "react-native-responsive-fontsize": "^0.5.0",
     "react-native-safe-area-context": "^3.2.0",
     "react-native-screens": "^2.18.1",
     "react-native-size-matters": "^0.4.0",
     "react-native-splash-screen": "^3.2.0",
+    "react-native-swiper": "^1.6.0",
     "react-navigation": "^4.4.4",
     "react-router-dom": "^5.2.0",
-    "react-router-native": "^5.2.0"
+    "react-router-native": "^5.2.0",
+    "rn-bottom-drawer": "^1.4.3"
   },
   "devDependencies": {
     "@babel/core": "^7.13.10",

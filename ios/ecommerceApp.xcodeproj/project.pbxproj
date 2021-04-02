@@ -55,6 +55,7 @@
 		F683F13F1976462381887D2D /* ZillaSlab-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDC46EF0D53F4BDD90848A86 /* ZillaSlab-Bold.ttf */; };
 		F7034F3B2772401EB66091E8 /* ZillaSlab-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 90CBB8D1D77D4FE69C395989 /* ZillaSlab-LightItalic.ttf */; };
 		FC8B9A1470FA48AC9D4F012B /* WorkSans-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4DAB81AD79854C26A9E27CCC /* WorkSans-ExtraBoldItalic.ttf */; };
+		F2424104224645318AC69432 /* nunito.regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 696B181E49F64CBA93606733 /* nunito.regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +138,7 @@
 		E975EEFA8DB54786A62FE7BD /* WorkSans-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "WorkSans-Italic.ttf"; path = "../assets/fonts/static/WorkSans-Italic.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
+		696B181E49F64CBA93606733 /* nunito.regular.ttf */ = {isa = PBXFileReference; name = "nunito.regular.ttf"; path = "../assets/fonts/nunito.regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,6 +259,7 @@
 				B3846CAEC2B4489B8381796B /* WorkSans-ThinItalic.ttf */,
 				27AAC3097BFE47BEA30EB8B7 /* WorkSans-Italic-VariableFont_wght.ttf */,
 				E04F22DDB83842B5A6136302 /* WorkSans-VariableFont_wght.ttf */,
+				696B181E49F64CBA93606733 /* nunito.regular.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -489,6 +492,7 @@
 				5948FFC22976467E86BA30CA /* WorkSans-ThinItalic.ttf in Resources */,
 				B5AB5BAFBA0D4214949AA630 /* WorkSans-Italic-VariableFont_wght.ttf in Resources */,
 				B117832B467F418ABFC486AA /* WorkSans-VariableFont_wght.ttf in Resources */,
+				F2424104224645318AC69432 /* nunito.regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

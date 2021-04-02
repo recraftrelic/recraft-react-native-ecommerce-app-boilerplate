@@ -14,8 +14,34 @@ import products from '../../constants/products/Products'
 import SearchBar from '../../component/common/SearchBar';
 import { images } from '../../utilities/Common';
 import { styles } from '../../styles/productstyle/ProductStyle';
+import ProductDetail from "./ProductDetail";
 
-const MainPage = () => {
+// const ProductDetail = (id) => {
+//   alert(id)
+//   console.log(id, 'id')
+// }
+
+// function ProductDetail({navigation,id}) {
+//   navigation.navigate(
+//     'DetailPage',
+//     { id },
+//     console.log(id, 'id')
+//   );
+// }
+
+const SearchPage = ({navigation}) => {
+console.log(navigation, 'id')
+
+
+
+const  ProductDetail1=(item)=> {
+ console.log(item,'jvtjututd');
+  navigation.navigate(  
+    'productDetail',
+    { item: item },
+  );
+}
+
   return (
     <SafeAreaView style={styles.main}>
     <ScrollView>
@@ -29,7 +55,6 @@ const MainPage = () => {
           cartStyle={styles.cart}
           cartSource={images.cart}
         />
-        
        
         </View>
         <View
@@ -51,12 +76,12 @@ const MainPage = () => {
             data={products.data}
             renderItem={({ item, index }) => (
               <View>
-              <TouchableOpacity>
+              <TouchableOpacity onPress={ () => ProductDetail1(item)}>
               <Image source={item.src}
               style={styles.products}>
                 </Image>
-                
               </TouchableOpacity>
+              
                 
                 <Image source={item.pic}
                 style={styles.photo}></Image>
@@ -73,6 +98,8 @@ const MainPage = () => {
                 style={styles.price}>{item.price}</Text>
               </View>
             )}
+            keyExtractor={item => item.id}
+
             showsHorizontalScrollIndicator={false}
             numColumns={2}
 
@@ -84,4 +111,4 @@ const MainPage = () => {
   );
 };
 
-export default MainPage;
+export default SearchPage;

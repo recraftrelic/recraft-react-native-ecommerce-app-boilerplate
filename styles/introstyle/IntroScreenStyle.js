@@ -24,7 +24,7 @@ export const styles = StyleSheet.create({
         top: ('50%'),
         textAlign: 'center',
         fontSize: 15,
-        // fontFamily: fonts.nunito,
+        fontFamily: fonts.nunito,
     },
     slide: {
         top: heightToDp('15%')

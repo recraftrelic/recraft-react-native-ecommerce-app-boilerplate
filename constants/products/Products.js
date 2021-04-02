@@ -5,6 +5,7 @@ import love from '../../assets/images/products/love.png'
 const products ={
     data: [
         {
+            id: 1,
             src: product,
             text: 'Orange Summer',
             price: '$97',
@@ -13,6 +14,7 @@ const products ={
             pic: love
         },
         {
+            id: 2,
             src: product,
             text: 'Peach Kiss',
             price: '$59',
@@ -25,6 +27,7 @@ const products ={
 
         },
         {
+            id: 3,
             src: product,
             text: 'Puf Seleve',
             price: '$43',
@@ -38,6 +41,7 @@ const products ={
 
         },
         {
+            id: 4,
             src: product,
             text: 'Saphire Suit',
             price: '$125',
@@ -51,6 +55,7 @@ const products ={
 
         },
         {
+            id: 5,
             src: product,
             text: 'Floral',
             price: '$82',
@@ -64,6 +69,7 @@ const products ={
 
         },
         {
+            id: 6,
             src: product,
             text: 'Emerald',
             price: '$110',
@@ -77,11 +83,7 @@ const products ={
 
         }
     ],
-    dataSale: [
-        {
-            
-        }
-    ]
+    
 }
 
 export default products;
