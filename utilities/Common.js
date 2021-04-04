@@ -25,7 +25,7 @@ import Circle from "../assets/images/mainpage/Circle.png";
 import backButton from "../assets/images/shoppingCart/backButton.png";
 import otherButton from "../assets/images/shoppingCart/otherButton.png";
 import Delete from "../assets/images/shoppingCart/delete.png"
-
+import location from '../assets/images/checkOut/LocationIcon.png'
 import { Dimensions, PixelRatio } from "react-native";
 
 const { width, height } = Dimensions.get("window");
@@ -69,7 +69,8 @@ const images = {
   Circle,
   backButton,
   otherButton,
-  Delete
+  Delete,
+  location,
 };
 
 const fonts = Platform.select({

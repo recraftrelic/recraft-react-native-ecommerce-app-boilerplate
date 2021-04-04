@@ -21,12 +21,21 @@ export const styles = StyleSheet.create({
         fontFamily: fonts.Quick,
         color: colors.grey
     },
+    // deleteBox: {
+    //     width:widthToDp('10%')
+    // },
     containerOne: {
        top: heightToDp('2%') ,
+    },
+    marginRyt:{
+        marginLeft:widthToDp(`-5`),
+        marginTop: heightToDp('2%'),
+
     },
     description: {
         flexDirection: 'row',
         marginBottom: heightToDp('2%'),
+        width:widthToDp('100%'),
         backgroundColor: colors.white,
         // marginRight: widthToDp('-20%')
     },
@@ -45,32 +54,30 @@ export const styles = StyleSheet.create({
     },
     content: {
         left: widthToDp('8%'),
+        width: widthToDp('60%'),
         marginTop: heightToDp('2%'),
-    },
-    display: {
-        flexDirection: 'row',  
     },
     name: {
         marginRight: widthToDp('21%'),
         fontFamily: fonts.medium,
         fontSize: 16,
         color: colors.darkBlue,
-        marginBottom: heightToDp('0.5%')
+        marginBottom: heightToDp('1%')
     },
     color: {
-        marginBottom: heightToDp('0.5%'),
+        marginBottom: heightToDp('1%'),
         fontFamily: fonts.nBold,
         color: colors.grey
     },
     size: {
-        marginBottom: heightToDp('0.5%'),
+        marginBottom: heightToDp('1%'),
         color: colors.grey,
         fontFamily: fonts.nBold,
     },
     amount: {
         fontSize: 18,
         color: colors.blue,
-        marginBottom: heightToDp('0.5%'),
+        marginBottom: heightToDp('1%'),
     },
     boxOne: {
         flexDirection: 'row',
@@ -79,7 +86,6 @@ export const styles = StyleSheet.create({
         borderWidth: 1,
         borderRadius: 5,
         width: widthToDp('20%'),
-        marginBottom: heightToDp('1%'),
     },
     less: {
         borderRightWidth: 1,  
@@ -103,13 +109,17 @@ export const styles = StyleSheet.create({
         width: widthToDp('90%'),
         marginLeft: widthToDp('5%'),
         marginRight: widthToDp('5%'),
-        bottom: heightToDp('2%')
+        bottom: heightToDp('1%')
     },
     containerTwo: {
         backgroundColor: colors.white,
         marginBottom: heightToDp('2%'),
-        flex: 1
-        // marginLeft: -35
+        flex: 1,
+    },
+    negativeOne: {
+        backgroundColor: colors.white,
+        marginBottom: heightToDp('2%'),
+        flex: 1,
     },
     total: {
         flexDirection: 'row',
@@ -126,10 +136,27 @@ export const styles = StyleSheet.create({
         fontFamily: fonts.nBold,
         fontSize: 16
     },
-    positive: {
-        marginLeft: "-100%"
+    upperLine: {
+        borderTopWidth: 1,
+        borderRightWidth: 1,
+        borderLeftWidth: 1,
+        borderTopRightRadius: 30,
+        borderTopLeftRadius: 30,
+        top: heightToDp('16%'),
+        backgroundColor: colors.white,
+        // height: heightToDp('100%'), 
+        // paddingBottom: 100
     },
-    negative: {
-        marginRight: 0
+    subOne: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        margin: heightToDp('2%')
+    },
+    amountOne: {
+    color: colors.pink,
+    fontSize: 20
+    },
+    btn: {
+        marginBottom: 100
     }
 })

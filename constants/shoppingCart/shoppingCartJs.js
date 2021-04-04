@@ -12,7 +12,7 @@ const main = {
             size: "Size : L",
             amount: "$76",
             add: addButton,
-            number: 2,
+            number: 1,
             less: lessButton,
             sub: "Sub Total :",
             total: "$152"
@@ -24,7 +24,7 @@ const main = {
             size: "Size : No size",
             amount: "$96",
             add: addButton,
-            number: 2,
+            number: 1,
             less: lessButton,
             sub: "Sub Total :",
             total: "$152"

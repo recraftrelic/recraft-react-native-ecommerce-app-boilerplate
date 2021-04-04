@@ -77,7 +77,7 @@ const SigningScreen = ({ navigation }) => {
 
           <View style={styles.btnView}>
             <ButtonContainer
-              text={login.button1}
+              text={login.button}
               bgColor={colors.blue}
               textColor={colors.white}
               image={""}

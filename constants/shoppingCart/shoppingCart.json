@@ -1,3 +1,6 @@
 {
-    "heading": "My Cart"
+    "heading": "My Cart",
+    "button": "CHECK OUT",
+    "total":"Subtotal",
+    "amount": "$0"
 }
