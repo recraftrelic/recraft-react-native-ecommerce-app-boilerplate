@@ -25,7 +25,13 @@ import Circle from "../assets/images/mainpage/Circle.png";
 import backButton from "../assets/images/shoppingCart/backButton.png";
 import otherButton from "../assets/images/shoppingCart/otherButton.png";
 import Delete from "../assets/images/shoppingCart/delete.png"
-import location from '../assets/images/checkOut/LocationIcon.png'
+import location from '../assets/images/checkOut/LocationIcon.png';
+import purseIcon from '../assets/images/checkOut/purseIcon.png';
+import next from '../assets/images/checkOut/nextButton.png';
+import not from '../assets/images/checkOut/notActive.png';
+import slideUp from '../assets/images/checkOut/slideUp.png';
+import success from '../assets/images/checkOut/Success.png'
+
 import { Dimensions, PixelRatio } from "react-native";
 
 const { width, height } = Dimensions.get("window");
@@ -71,6 +77,11 @@ const images = {
   otherButton,
   Delete,
   location,
+  purseIcon,
+  next,
+  not,
+  slideUp,
+  success,
 };
 
 const fonts = Platform.select({
@@ -85,7 +96,7 @@ const fonts = Platform.select({
     Italic: "ZillaSlab-BoldItalic",
     light: "ZillaSlab-Light",
     medium: "ZillaSlab-Medium",
-    nunito: "nunito.regular",
+    nunito: "Nunito-Regular",
     nBold: "Nunito-Bold",
     Quick: "Quicksand-Bold",
     quickBold: "Quicksand-Bold",
@@ -103,8 +114,9 @@ const fonts = Platform.select({
     medium: "ZillaSlab-Medium",
     nBold: "Nunito-Bold",
     Quick: "Quicksand-Bold",
-    nunito: "nunito.regular",
+    nunito: "Nunito-Regular",
     quickBold: "Quicksand-Bold",
+    extra: "Nunito-ExtraBold"
   },
 });
 

@@ -33,19 +33,17 @@ const ShoppingCart = () => {
   };
 
   const onPressSignIn = () => {
-    alert("hefkh")
-  }
+    alert("hefkh");
+  };
 
   const addButton = () => {
-    setIsAdd(isAdd+1)
-
-  }
+    setIsAdd(isAdd + 1);
+  };
 
   const lessButton = (value) => {
-    console.log('isaaa',isAdd)
-   if(isAdd>0)
-    setIsAdd(isAdd-1)
-  }
+    console.log("isaaa", isAdd);
+    if (isAdd > 0) setIsAdd(isAdd - 1);
+  };
 
   return (
     <SafeAreaView style={styles.main}>
@@ -60,9 +58,7 @@ const ShoppingCart = () => {
           data={main.data}
           renderItem={({ item, index }) => (
             <>
-              <View
-                style={styles.containerTwo}
-              >
+              <View style={styles.containerTwo}>
                 <View>
                   <View style={styles.description}>
                     {showDelete ? (
@@ -84,18 +80,17 @@ const ShoppingCart = () => {
                       <Text style={styles.size}>{item.size}</Text>
                       <Text style={styles.amount}>{item.amount}</Text>
                       <View style={styles.boxOne}>
-                      <TouchableOpacity onPress={lessButton}>
-                        <View style={styles.less}>
-                          <Image source={item.less}></Image>
-                        </View>
+                        <TouchableOpacity onPress={lessButton}>
+                          <View style={styles.less}>
+                            <Image source={item.less}></Image>
+                          </View>
                         </TouchableOpacity>
 
-                     
-                        <Text>{ isAdd +item.number }</Text>
+                        <Text>{isAdd + item.number}</Text>
                         <TouchableOpacity onPress={addButton}>
-                        <View style={styles.add}>
-                          <Image source={item.add}></Image>
-                        </View>
+                          <View style={styles.add}>
+                            <Image source={item.add}></Image>
+                          </View>
                         </TouchableOpacity>
                       </View>
                     </View>
@@ -109,9 +104,7 @@ const ShoppingCart = () => {
                         </TouchableOpacity>
                       </View>
                       {!showDelete ? (
-                        <View
-
-                        >
+                        <View>
                           <TouchableOpacity onPress={redDelete}>
                             <Image source={images.Delete}></Image>
                           </TouchableOpacity>
@@ -119,8 +112,7 @@ const ShoppingCart = () => {
                       ) : null}
                     </View>
                   </View>
-                <View style={styles.line}></View>
-
+                  <View style={styles.line}></View>
                 </View>
                 <View style={styles.total}>
                   <Text style={styles.sub}>{item.sub}</Text>
@@ -131,24 +123,22 @@ const ShoppingCart = () => {
           )}
           showsVerticalScrollIndicator={false}
         />
-        
       </View>
       <View style={styles.upperLine}>
-         <View style={styles.subOne}>
-          <Text >{shoppingCart.total}</Text>
+        <View style={styles.subOne}>
+          <Text>{shoppingCart.total}</Text>
           <Text style={styles.amountOne}>{shoppingCart.amount}</Text>
-          </View>
+        </View>
         <View style={styles.btn}>
-            <ButtonContainer
-              
-              text={shoppingCart.button}
-              bgColor={colors.blue}
-              textColor={colors.white}
-              image={""}
-               onPressSignIn={onPressSignIn}
-            />
-          </View>
-          </View>
+          <ButtonContainer
+            text={shoppingCart.button}
+            bgColor={colors.blue}
+            textColor={colors.white}
+            image={""}
+            onPressSignIn={onPressSignIn}
+          />
+        </View>
+      </View>
     </SafeAreaView>
   );
 };
