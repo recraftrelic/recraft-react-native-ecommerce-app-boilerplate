@@ -13,7 +13,8 @@ import MainPage from './pages/introscreens/MainPage';
 import ProfilePage from './pages/profilePage/ProfilePage';
 import SearchPage from './pages/productPages/SearchPage';
 import ShoppingCart from './pages/shoppingCart/ShoppingCart';
-import CheckOut from './pages/checkOut/CheckOut'
+import CheckOut from './pages/checkOut/CheckOut';
+import DebitCard from './pages/debitPages/DebitCard'
 
 const Stack = createStackNavigator();
 const App = () => {
@@ -78,8 +79,8 @@ const App = () => {
         options={{headerShown: false}}
         /> */}
         <Stack.Screen
-        name={Routes.CheckOut}
-        component={CheckOut}
+        name={Routes.DebitCard}
+        component={DebitCard}
         options={{headerShown: false}}
         />
       </Stack.Navigator>
