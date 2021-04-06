@@ -1,5 +1,5 @@
 import React from 'react';
-import {createStackNavigator} from '@react-navigation/stack';
+import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import Routes from './constants/routes/routes';
 import IntroScreenOne from './pages/introscreens/IntroScreenOne';
@@ -12,6 +12,8 @@ import PasswordScreen from './pages/signin/PasswordScreen';
 import MainPage from './pages/introscreens/MainPage';
 import ProfilePage from './pages/profilePage/ProfilePage';
 import SearchPage from './pages/productPages/SearchPage';
+import ShoppingCart from './pages/shoppingCart/ShoppingCart';
+import CheckOut from './pages/checkOut/CheckOut'
 
 const Stack = createStackNavigator();
 const App = () => {
@@ -20,7 +22,7 @@ const App = () => {
     <NavigationContainer>
       <Stack.Navigator>
        
-        <Stack.Screen
+        {/* <Stack.Screen
         name={Routes.mainPage}
         component={IntroScreenOne}
         options={{headerShown: false}}
@@ -68,6 +70,16 @@ const App = () => {
         <Stack.Screen
         name={Routes.SearchPage}
         component={SearchPage}
+        options={{headerShown: false}}
+        /> */}
+        {/* <Stack.Screen
+        name={Routes.ShoppingCart}
+        component={ShoppingCart}
+        options={{headerShown: false}}
+        /> */}
+        <Stack.Screen
+        name={Routes.CheckOut}
+        component={CheckOut}
         options={{headerShown: false}}
         />
       </Stack.Navigator>
