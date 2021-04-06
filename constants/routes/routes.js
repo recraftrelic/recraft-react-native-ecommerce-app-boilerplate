@@ -10,7 +10,8 @@ const Routes= {
   ProfilePage: "ProfilePage",
   SearchPage: "SearchPage",
   ShoppingCart: "ShoppingCart",
-  CheckOut: "CheckOut"
+  CheckOut: "CheckOut",
+  FurniturePage: "FurniturePage"
 }
 
 export default Routes;
