@@ -72,16 +72,16 @@ const App = () => {
         component={SearchPage}
         options={{headerShown: false}}
         /> */}
-        <Stack.Screen
+        {/* <Stack.Screen
         name={Routes.ShoppingCart}
         component={ShoppingCart}
         options={{headerShown: false}}
-        />
-        {/* <Stack.Screen
+        /> */}
+        <Stack.Screen
         name={Routes.CheckOut}
         component={CheckOut}
         options={{headerShown: false}}
-        /> */}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   )
