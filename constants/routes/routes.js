@@ -8,7 +8,9 @@ const Routes= {
   PasswordScreen: "PasswordScreen",
   MainPage: "MainPage",
   ProfilePage: "ProfilePage",
-  SearchPage: "SearchPage"
+  SearchPage: "SearchPage",
+  ShoppingCart: "ShoppingCart",
+  CheckOut: "CheckOut"
 }
 
 export default Routes;
