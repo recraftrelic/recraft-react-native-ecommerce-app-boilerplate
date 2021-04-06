@@ -21,10 +21,10 @@ import transfer from "../assets/images/mainpage/Transferbutton.png";
 import settings from "../assets/images/mainpage/Settings.png";
 import pro from "../assets/images/profilepage/pro.png";
 import filters from "../assets/images/products/Filters.png";
-import Circle from "../assets/images/mainpage/Circle.png";
+import circle from "../assets/images/mainpage/Circle.png";
 import backButton from "../assets/images/shoppingCart/backButton.png";
 import otherButton from "../assets/images/shoppingCart/otherButton.png";
-import Delete from "../assets/images/shoppingCart/delete.png"
+import deleteBox from '../assets/images/shoppingCart/delete.png';
 import location from '../assets/images/checkOut/LocationIcon.png';
 import purseIcon from '../assets/images/checkOut/purseIcon.png';
 import next from '../assets/images/checkOut/nextButton.png';
@@ -72,10 +72,10 @@ const images = {
   settings,
   pro,
   filters,
-  Circle,
+  circle,
   backButton,
   otherButton,
-  Delete,
+  deleteBox,
   location,
   purseIcon,
   next,

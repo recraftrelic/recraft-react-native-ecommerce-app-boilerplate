@@ -2,14 +2,20 @@ import React from 'react';
 import { Image, SafeAreaView, Text, View } from 'react-native';
 import Modal from "react-native-modal";
 import { styles } from '../styles/modalSlide/CommonStyle'
+import ButtonContainer from './ButtonContainer';
 
 const ModalSlide = ({
     imageStyle,
     imageSource,
-    isModalVisible,
+    isSuccessVisible,
     imageSuccess,
     successText,
-    successContent
+    successContent,
+    text,
+    textColor,
+    bgColor,
+    onSwipeComplete,
+    buttonStyle
 }) => {
 
   
@@ -17,13 +23,15 @@ const ModalSlide = ({
         <SafeAreaView>
         <View>
           <Modal
-            isVisible={isModalVisible}
+            isVisible={isSuccessVisible}
             transparent={true}
             animated
             style={{
               justifyContent: "flex-end",
             }}
             swipeDirection={["down", "up"]}
+            onSwipeComplete={onSwipeComplete}
+
           >
             <View style={styles.modalOpen}>
               <Image style={imageStyle}
@@ -38,7 +46,17 @@ const ModalSlide = ({
             >{successText}</Text>
               <Text style={styles.successContent}
             >{successContent}</Text>
+            <View style={styles.btn}>
+            <ButtonContainer
+              text={text}
+              bgColor={bgColor}
+              textColor={textColor}
+              image={""}
+              style={buttonStyle}
+            />
+          </View>
               </View>
+              
               </Modal>
               </View>
               </SafeAreaView>

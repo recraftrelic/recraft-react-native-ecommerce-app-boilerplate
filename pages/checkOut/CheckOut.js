@@ -8,19 +8,18 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 import Modal from "react-native-modal";
 import { colors } from "../../constants/colors/colors";
 import checkOut from "../../constants/checkOut/checkOut.json";
 import ButtonContainer from "../../utilities/ButtonContainer";
 import { images } from "../../utilities/Common";
-import { styles } from "../../styles/checkOut/checkOutStyle";
 import ModalSlide from "../../utilities/ModalSlide";
+import { styles } from "../../styles/checkOut/checkOutStyle";
 
 const CheckOut = (props) => {
   const [isModalVisible, setModalVisible] = useState(false);
   const [buyBtn, setBuyBtn] = useState();
-  const [isModalSuccess, setIsModalSuccess] = useState(false);
+  const [isSuccessVisible, setSuccessVisible] = useState(false);
 
   const payButton = () => {
     setModalVisible(!isModalVisible);
@@ -35,8 +34,9 @@ const CheckOut = (props) => {
   let textInput = useRef(null);
 
   const buyButton = () => {
-    setIsModalSuccess(!isModalSuccess)
-  }
+    setSuccessVisible(!isSuccessVisible);
+    setModalVisible(false);
+  };
   return (
     <SafeAreaView style={styles.main}>
       <View style={styles.container}>
@@ -97,8 +97,7 @@ const CheckOut = (props) => {
                   source={images.purseIcon}
                 ></Image>
                 <Text style={styles.pay}>{checkOut.pay}</Text>
-
-                <Image source={images.next}></Image>
+                <Image style={styles.next} source={images.next}></Image>
               </View>
             </TouchableOpacity>
           </View>
@@ -150,76 +149,65 @@ const CheckOut = (props) => {
             <View style={styles.modalOpen}>
               <Image style={styles.slideUp} source={images.slideUp}></Image>
               <Text style={styles.pin}>{checkOut.pin}</Text>
-              <KeyboardAwareScrollView
-                keyboardShouldPersistTaps="handled"
-                showsVerticalScrollIndicator={false}
-                enableOnAndroid={true}
-                style={styles.content}
-                contentContainerStyle={{
-                  flexGrow: 1,
-                }}
-              >
-                <View style={styles.forgotView}>
-                  <View style={styles.containerInput}>
-                    {Array(lengthInput)
-                      .fill()
-                      .map((data, index) => {
-                        return (
-                          <View
-                            key={index}
-                            style={[
-                              styles.cellView,
-                              {
-                                borderBottomColor:
-                                  index === internalVal.length
-                                    ? colors.orange
-                                    : colors.bluegreen,
-                              },
-                            ]}
-                          >
-                            <TextInput
-                              style={styles.cellText}
-                              onPress={() => textInput.focus()}
-                              secureTextEntry={true}
-                              keyboardType="numeric"
-                            >
-                              {internalVal[index]}
-                            </TextInput>
-                          </View>
-                        );
-                      })}
-                  </View>
-                  <View style={styles.displayPin}>
-                    <Text style={styles.forgotPin}>{checkOut.forgotPin}</Text>
-                  </View>
-                  <View style={styles.btn}>
-                    <ButtonContainer
-                      text={checkOut.button}
-                      bgColor={colors.blue}
-                      textColor={colors.white}
-                      image={""}
-                      onPressSignIn={buyButton}
-                    />
-                  </View>
+              <View style={styles.forgotView}>
+                <View style={styles.containerInput}>
+                  {Array(lengthInput)
+                    .fill()
+                    .map((data, index) => {
+                      return (
+                        <View
+                          key={index}
+                          style={[
+                            styles.cellView,
+                            {
+                              borderBottomColor: index === internalVal.length,
+                            },
+                          ]}
+                        >
+                          <TextInput
+                            ref={(input) => (textInput = input)}
+                            style={styles.cellText}
+                            secureTextEntry={true}
+                            keyboardType="numeric"
+                            maxLength={1}
+                            returnKeyType="done"
+                          ></TextInput>
+                        </View>
+                      );
+                    })}
                 </View>
-              </KeyboardAwareScrollView>
+                <View style={styles.displayPin}>
+                  <Text style={styles.forgotPin}>{checkOut.forgotPin}</Text>
+                </View>
+                <View style={styles.btn}>
+                  <ButtonContainer
+                    text={checkOut.button}
+                    bgColor={colors.blue}
+                    textColor={colors.white}
+                    image={""}
+                    onPressSignIn={buyButton}
+                  />
+                </View>
+              </View>
             </View>
           </Modal>
         </View>
       </ScrollView>
-      {/* <View style={styles.modalOpen}> */}
-      
-      <ModalSlide
-      isModalVisible={isModalSuccess}
-      imageSource={ images.slideUp }
-      imageStyle={styles.slideUp}
-      imageSuccess={images.success}
-      successText={checkOut.success}
-      successContent={checkOut.content}
-      />
-      
-                 
-      {/* </View> */}
+      <View>
+        <ModalSlide
+          isSuccessVisible={isSuccessVisible}
+          imageSource={images.slideUp}
+          imageStyle={styles.slideUp}
+          imageSuccess={images.success}
+          successText={checkOut.success}
+          successContent={checkOut.content}
+          text={checkOut.buttonOne}
+          textColor={colors.white}
+          bgColor={colors.blue}
+          buttonStyle={styles.shoppingButton}
+          onSwipeComplete={() => setSuccessVisible(!isSuccessVisible)}
+        />
+      </View>
     </SafeAreaView>
   );
 };

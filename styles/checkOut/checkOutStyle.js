@@ -158,8 +158,10 @@ paymentOption: {
     flex: 1,
     flexDirection: 'row',
     justifyContent: 'space-between',
-    padding: 8,
-      marginTop: heightToDp('2')
+    // padding: 8,
+      marginTop: heightToDp('2'),
+    marginLeft: widthToDp('5%'),
+
 },
 lineTwo: {
     borderBottomWidth: 1,
@@ -190,6 +192,9 @@ paymentOptionOne: {
     marginLeft: widthToDp('5%'),
     marginRight: widthToDp('5%'),
     marginBottom: heightToDp('1%')
+},
+next: {
+  marginRight: widthToDp('5%'),
 },
 containerFive: {
     flex: 1
@@ -279,5 +284,7 @@ forgotPin: {
 displayPin: {
   alignItems: 'flex-end'
 },
-
+shoppingButton: {
+  fontFamily: fonts.Quick
+}
 });

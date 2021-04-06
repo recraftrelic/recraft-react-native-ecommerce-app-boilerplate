@@ -10,10 +10,10 @@ import {
 } from "react-native";
 import shoppingCart from "../../constants/shoppingCart/shoppingCart.json";
 import main from "../../constants/shoppingCart/shoppingCartJs";
-import { images, widthToDp } from "../../utilities/Common";
-import { styles } from "../../styles/shoppingCart/shoppingCartStyle";
-import ButtonContainer from "../../utilities/ButtonContainer";
 import { colors } from "../../constants/colors/colors";
+import { images } from "../../utilities/Common";
+import ButtonContainer from "../../utilities/ButtonContainer";
+import { styles } from "../../styles/shoppingCart/shoppingCartStyle";
 
 const ShoppingCart = () => {
   const [isSelected, setSelection] = useState(false);
@@ -32,17 +32,16 @@ const ShoppingCart = () => {
     setShowDelete(!showDelete);
   };
 
-  const onPressSignIn = () => {
-    alert("hefkh");
-  };
+  const onPressSignIn = () => { };
 
   const addButton = () => {
     setIsAdd(isAdd + 1);
   };
 
   const lessButton = (value) => {
-    console.log("isaaa", isAdd);
-    if (isAdd > 0) setIsAdd(isAdd - 1);
+    if (isAdd > 0) {
+      setIsAdd(isAdd - 1)
+    };
   };
 
   return (
@@ -64,14 +63,13 @@ const ShoppingCart = () => {
                     {showDelete ? (
                       <View style={styles.checkbox}>
                         <CheckBox
+                          style={styles.boxColor}
                           value={isSelected}
                           onValueChange={setSelection}
                         />
                       </View>
                     ) : null}
-
                     <View style={styles.box}></View>
-
                     <View style={styles.content}>
                       <View style={styles.display}>
                         <Text style={styles.name}>{item.name}</Text>
@@ -85,7 +83,6 @@ const ShoppingCart = () => {
                             <Image source={item.less}></Image>
                           </View>
                         </TouchableOpacity>
-
                         <Text>{isAdd + item.number}</Text>
                         <TouchableOpacity onPress={addButton}>
                           <View style={styles.add}>
@@ -94,7 +91,6 @@ const ShoppingCart = () => {
                         </TouchableOpacity>
                       </View>
                     </View>
-
                     <View style={styles.deleteBox}>
                       <View style={styles.marginRyt}>
                         <TouchableOpacity onPress={deleteButton}>
@@ -106,7 +102,7 @@ const ShoppingCart = () => {
                       {!showDelete ? (
                         <View>
                           <TouchableOpacity onPress={redDelete}>
-                            <Image source={images.Delete}></Image>
+                            <Image source={images.deleteBox}></Image>
                           </TouchableOpacity>
                         </View>
                       ) : null}

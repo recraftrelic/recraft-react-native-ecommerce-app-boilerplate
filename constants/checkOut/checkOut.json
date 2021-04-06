@@ -30,5 +30,6 @@
     "pin": "Enter the My Pay pin",
     "forgotPin": "Forgot pin?",
     "success": "SUCCESS",
-    "content": "Thank you for purchasing. Your order will be shipped 2 - 4 working days."
+    "content": "Thank you for purchasing. Your order will be shipped 2 - 4 working days.",
+    "buttonOne": "CONTINUE SHOPPING"
 }
