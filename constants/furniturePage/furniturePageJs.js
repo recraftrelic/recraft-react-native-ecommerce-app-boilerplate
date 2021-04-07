@@ -1,3 +1,6 @@
+import LoveIcon from '../../assets/images/mainpage/LoveIcon.png';
+import Carticon from '../../assets/images/mainpage/Carticon.png';
+
 const main = {
     data: [
         {
@@ -12,17 +15,32 @@ const main = {
             name: "Bed",
             quantity: "10 Items"
         },
+        
+    ],
+    dataPopular: [
         {
-            name: "Drawer",
-            quantity: "12 Items"
+            name: "Green Chair",
+            src: LoveIcon,
+            amount: "$97",
+            rating: 5, 
+            cart: Carticon,
+            average: 4.9,
         },
         {
-            name: "Plant",
-            quantity: "20 Items"
+            name: "Spring sofa",
+            src: LoveIcon,
+            amount: "$224",
+            rating: 1,
+            cart: Carticon,
+            average: 4.8,
         },
         {
-            name: "Pillow",
-            quantity: "15 Items"
+            name: "Annalis",
+            src: LoveIcon,
+            amount: "$78",
+            rating: 1,
+            cart: Carticon,
+            average: 4.9,
         },
     ]
 }

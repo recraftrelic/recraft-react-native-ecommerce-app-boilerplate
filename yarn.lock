@@ -1644,6 +1644,11 @@
   "resolved" "https://registry.npmjs.org/acorn/-/acorn-8.1.0.tgz"
   "version" "8.1.0"
 
+"adb@^0.2.0":
+  "integrity" "sha1-Yi2AOz/MDQBHUfwHZhhWRC4+s8E="
+  "resolved" "https://registry.npmjs.org/adb/-/adb-0.2.0.tgz"
+  "version" "0.2.0"
+
 "agent-base@6":
   "version" "6.0.2"
   dependencies:
@@ -2951,6 +2956,11 @@
   "integrity" "sha512-TLz+x/vEXm/Y7P7wn1EJFNLxYpUD4TgMosxY6fAVJUnJMbupHBOncxyWUG9OpTaH9EBD7uFI5LfEgmMOc54DsA=="
   "resolved" "https://registry.npmjs.org/detect-newline/-/detect-newline-3.1.0.tgz"
   "version" "3.1.0"
+
+"devices@^0.1.0":
+  "integrity" "sha1-DtDW4Lq0UBzG/SWDsJTHpd07vZ4="
+  "resolved" "https://registry.npmjs.org/devices/-/devices-0.1.0.tgz"
+  "version" "0.1.0"
 
 "dezalgo@^1.0.0":
   "version" "1.0.3"
