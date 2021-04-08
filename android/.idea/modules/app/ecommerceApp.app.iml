@@ -105,5 +105,6 @@
     <orderEntry type="module" module-name="ecommerceApp.react-native-safe-area-context" />
     <orderEntry type="module" module-name="ecommerceApp.react-native-screens" />
     <orderEntry type="module" module-name="ecommerceApp.react-native-splash-screen" />
+    <orderEntry type="module" module-name="ecommerceApp.react-native-vector-icons" />
   </component>
 </module>

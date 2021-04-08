@@ -23,6 +23,7 @@ const TextInputContainer = (props) => {
         secureTextEntry,
         value,
         onChangeText,
+        keyboardType
     } = props;
     return (
       
@@ -33,8 +34,8 @@ const TextInputContainer = (props) => {
                     onChangeText={(value) => onChangeText(value)}
                     placeholder={placeholder}
                     secureTextEntry={secureTextEntry ? !showHidePassword: false}
-                    style={{ height: moderateScale(50) }}
-                    
+                    style={{ height: moderateScale(50)}}
+                    keyboardType={keyboardType}
                 />
 
                 {
