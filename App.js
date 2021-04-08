@@ -79,21 +79,21 @@ const App = () => {
         component={ShoppingCart}
         options={{headerShown: false}}
         /> */}
-        <Stack.Screen
+        {/* <Stack.Screen
         name={Routes.CheckOut}
         component={CheckOut}
         options={{headerShown: false}}
-        />
+        /> */}
          {/* <Stack.Screen
         name={Routes.FurniturePage}
         component={FurniturePage}
         options={{headerShown: false}}
         /> */}
-         {/* <Stack.Screen
+         <Stack.Screen
         name={Routes.PlantPage}
         component={PlantPage}
         options={{headerShown: false}}
-        /> */}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   )
