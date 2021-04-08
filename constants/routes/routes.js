@@ -16,7 +16,10 @@ const Routes= {
   TopUp: "TopUp",
   Account: "Account",
   PayScreen: "PayScreen",
-  ProductDisplay: "ProductDisplay"
+  ProductDisplay: "ProductDisplay",
+  FurniturePage: "FurniturePage",
+  PlantPage: "PlantPage",
+  DebitCard: "DebitCard"
 }
 
 export default Routes;
