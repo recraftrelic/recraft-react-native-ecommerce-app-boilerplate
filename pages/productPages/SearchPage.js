@@ -42,7 +42,7 @@ const MainPage = () => {
         </View>
         <View>
         <Image
-        source={images.Filters}
+        source={images.filters}
         style={styles.filters}/>
         </View>
         <View

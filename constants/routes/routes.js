@@ -11,6 +11,8 @@ const Routes= {
   SearchPage: "SearchPage",
   ShoppingCart: "ShoppingCart",
   CheckOut: "CheckOut",
+  FurniturePage: "FurniturePage",
+  PlantPage: "PlantPage",
   DebitCard: "DebitCard"
 }
 

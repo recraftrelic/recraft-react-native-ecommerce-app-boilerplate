@@ -11,6 +11,7 @@ import {
 import Modal from "react-native-modal";
 import { colors } from "../../constants/colors/colors";
 import checkOut from "../../constants/checkOut/checkOut.json";
+import Routes from "../../constants/routes/routes";
 import ButtonContainer from "../../utilities/ButtonContainer";
 import { images } from "../../utilities/Common";
 import ModalSlide from "../../utilities/ModalSlide";
@@ -20,6 +21,7 @@ const CheckOut = (props) => {
   const [isModalVisible, setModalVisible] = useState(false);
   const [buyBtn, setBuyBtn] = useState();
   const [isSuccessVisible, setSuccessVisible] = useState(false);
+  const [backward, setBackward] = useState();
 
   const payButton = () => {
     setModalVisible(!isModalVisible);
@@ -37,10 +39,17 @@ const CheckOut = (props) => {
     setSuccessVisible(!isSuccessVisible);
     setModalVisible(false);
   };
+
   return (
     <SafeAreaView style={styles.main}>
       <View style={styles.container}>
-        <Image style={styles.backButton} source={images.backButton}></Image>
+        <TouchableOpacity
+          onPress={() => {
+            props.navigation.goBack(Routes.ShoppingCart);
+          }}
+        >
+          <Image style={styles.backButton} source={images.backButton}></Image>
+        </TouchableOpacity>
         <Text style={styles.heading}>{checkOut.heading}</Text>
       </View>
       <ScrollView>
