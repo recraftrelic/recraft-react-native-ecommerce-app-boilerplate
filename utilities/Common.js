@@ -30,7 +30,25 @@ import purseIcon from '../assets/images/checkOut/purseIcon.png';
 import next from '../assets/images/checkOut/nextButton.png';
 import not from '../assets/images/checkOut/notActive.png';
 import slideUp from '../assets/images/checkOut/slideUp.png';
-import success from '../assets/images/checkOut/Success.png'
+import success from '../assets/images/checkOut/Success.png';
+import coin from '../assets/images/debit/coin.png';
+import coin2 from '../assets/images/debit/coin2.png';
+import coin3 from '../assets/images/debit/coin3.png';
+import coin4 from '../assets/images/debit/coin4.png';
+import card from '../assets/images/debit/card.png';
+import nextbtn from '../assets/images/debit/nextbtn.png';
+import bank from '../assets/images/payment/bank.png';
+import avaliable from '../assets/images/payment/not.png';
+import addImage from '../assets/images/payment/addImage.png';
+import scan from '../assets/images/payment/scan.png';
+import phone from '../assets/images/payment/phone.png';
+import accountbank from '../assets/images/payment/accountbank.png';
+import code from '../assets/images/payment/code.png';
+import love from '../assets/images/products/Love.png';
+import backbtn from '../assets/images/products/backbtn.png';
+import shopping from '../assets/images/products/shopping.png';
+import slideup from '../assets/images/products/slideup.png'
+
 
 import { Dimensions, PixelRatio } from "react-native";
 
@@ -82,6 +100,24 @@ const images = {
   not,
   slideUp,
   success,
+  coin,
+  coin2,
+  coin3,
+  coin4,
+  card,
+  nextbtn,
+  bank,
+  avaliable,
+  addImage,
+  scan,
+  phone,
+  accountbank,
+  code,
+  love,
+  backbtn,
+  shopping,
+  slideup
+
 };
 
 const fonts = Platform.select({

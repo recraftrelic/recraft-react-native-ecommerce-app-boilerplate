@@ -11,6 +11,12 @@ const Routes= {
   SearchPage: "SearchPage",
   ShoppingCart: "ShoppingCart",
   CheckOut: "CheckOut",
+  DebitCard: "DebitCard",
+  ConfirmScreen: "ConfirmScreen",
+  TopUp: "TopUp",
+  Account: "Account",
+  PayScreen: "PayScreen",
+  ProductDisplay: "ProductDisplay",
   FurniturePage: "FurniturePage",
   PlantPage: "PlantPage",
   DebitCard: "DebitCard"

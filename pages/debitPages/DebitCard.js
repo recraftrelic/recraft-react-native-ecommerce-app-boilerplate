@@ -4,7 +4,8 @@ import {
   View,
   SafeAreaView,
   Image,
-  TextInput
+  TextInput,
+  TouchableOpacity
 } from 'react-native';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
 
@@ -35,27 +36,33 @@ const DebitCard = ({ navigation }) => {
   } = state;
 
   const onPressSignIn = () => {
-    navigation.navigate(Routes.MainPage)
+    navigation.navigate(Routes.ConfirmScreen)
   }
 
   const onChangeText = (key) => (val) => {
     setState({ ...state, [key]: val });
   };
 
-  const forgotButton = () => {
-    navigation.navigate(Routes.ForgotComponent)
+  const Goback = () => {
+    navigation.navigate(Routes.TopUp)
   }
   return (
     <SafeAreaView style={styles.main}>
-    <View style={styles.mainView}>
+      <View style={styles.mainView}>
 
         <View style={styles.header}>
-        <Text style={styles.topup}>
-        Top Up
+          <Text style={styles.topup}>
+            Top Up
         </Text>
-        <Image source={images.backButton}
-        style={styles.image}
-        ></Image>
+          <TouchableOpacity
+            onPress={Goback}
+            style={styles.image}
+          >
+            <Image source={images.backButton}
+
+            />
+          </TouchableOpacity>
+
         </View>
 
         <KeyboardAwareScrollView
@@ -68,10 +75,10 @@ const DebitCard = ({ navigation }) => {
           }}
         >
           <View style={styles.inputView}>
-          <Text
-          style={styles.debit}
-          >
-          Add a debit card
+            <Text
+              style={styles.debit}
+            >
+              Add a debit card
           </Text>
             <TextInputContainer
               value={account}
@@ -91,37 +98,41 @@ const DebitCard = ({ navigation }) => {
               keyboardType='numeric'
             />
             <View
-            style={styles.outter}
+              style={styles.outter}
             >
-            
-            <TextInput
-            placeholder="Expire"
-            keyboardType='numeric'
-            style={styles.expire}
-          />
 
-          <TextInput
-            placeholder="Security code"
-            secureTextEntry={true}
-            maxLength = {length}
-            keyboardType='numeric'
-            style={styles.security}
-          />
+              <TextInput
+                placeholder="Expire"
+                keyboardType='numeric'
+                style={styles.expire}
+              />
+
+              <TextInput
+                placeholder="Security code"
+                secureTextEntry={true}
+                maxLength={length}
+                keyboardType='numeric'
+                style={styles.security}
+              />
             </View>
-            
+
           </View>
-          
-          <View style={styles.button}>
+
+          <View
+            style={styles.btn}
+          >
+
             <ButtonContainer
-              text={debitCard.button}
+              text={debitCard.add}
               bgColor={colors.darkGrey}
               textColor={colors.white}
               image={""}
               onPressSignIn={onPressSignIn}
             />
           </View>
+
         </KeyboardAwareScrollView>
-    </View>
+      </View>
     </SafeAreaView>
 
 
