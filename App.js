@@ -15,6 +15,11 @@ import SearchPage from './pages/productPages/SearchPage';
 import ShoppingCart from './pages/shoppingCart/ShoppingCart';
 import CheckOut from './pages/checkOut/CheckOut';
 import DebitCard from './pages/debitPages/DebitCard'
+import ConfirmScreen from './pages/debitPages/ConfimScreen';
+import TopUp from './pages/debitPages/TopUp';
+import Account from './pages/payment/Account';
+import PayScreen from './pages/payment/PayScreen';
+import ProductDisplay from './pages/productPages/ProductDisplay';
 
 const Stack = createStackNavigator();
 const App = () => {
@@ -73,16 +78,19 @@ const App = () => {
         component={SearchPage}
         options={{headerShown: false}}
         /> */}
-        {/* <Stack.Screen
-        name={Routes.ShoppingCart}
-        component={ShoppingCart}
-        options={{headerShown: false}}
-        /> */}
+    
         <Stack.Screen
-        name={Routes.DebitCard}
-        component={DebitCard}
+        name={Routes.SearchPage}
+        component={SearchPage}
         options={{headerShown: false}}
         />
+
+        <Stack.Screen
+        name={Routes.ProductDisplay}
+        component={ProductDisplay}
+        options={{headerShown: false}}
+        />
+       
       </Stack.Navigator>
     </NavigationContainer>
   )

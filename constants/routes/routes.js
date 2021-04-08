@@ -11,7 +11,12 @@ const Routes= {
   SearchPage: "SearchPage",
   ShoppingCart: "ShoppingCart",
   CheckOut: "CheckOut",
-  DebitCard: "DebitCard"
+  DebitCard: "DebitCard",
+  ConfirmScreen: "ConfirmScreen",
+  TopUp: "TopUp",
+  Account: "Account",
+  PayScreen: "PayScreen",
+  ProductDisplay: "ProductDisplay"
 }
 
 export default Routes;

@@ -34,11 +34,11 @@ const ModalSlide = ({
 
           >
             <View style={styles.modalOpen}>
-              <Image style={imageStyle}
+              <Image style={styles.imageStyle}
                source={imageSource}
                
             />
-             <Image style={imageStyle}
+             <Image style={styles.imageStyle1}
                source={imageSuccess}
                
             />
