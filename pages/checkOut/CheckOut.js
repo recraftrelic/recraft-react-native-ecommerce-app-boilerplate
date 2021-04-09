@@ -17,7 +17,8 @@ import { images } from "../../utilities/Common";
 import ModalSlide from "../../utilities/ModalSlide";
 import { styles } from "../../styles/checkOut/checkOutStyle";
 
-const CheckOut = (props) => {
+const CheckOut = ({ navigation }) => {
+
   const [isModalVisible, setModalVisible] = useState(false);
   const [buyBtn, setBuyBtn] = useState();
   const [isSuccessVisible, setSuccessVisible] = useState(false);
@@ -40,13 +41,22 @@ const CheckOut = (props) => {
     setModalVisible(false);
   };
 
+  const continueButton = () => {
+    navigation.navigate(Routes.FurniturePage)
+    setSuccessVisible(false);
+  }
+
+  const wallet = () => {
+    navigation.navigate(Routes.TopUp)
+  }
+
   return (
     <SafeAreaView style={styles.main}>
       <View style={styles.container}>
         <TouchableOpacity
-          onPress={() => {
-            props.navigation.goBack(Routes.ShoppingCart);
-          }}
+          onPress={() => 
+           navigation.goBack()
+          }
         >
           <Image style={styles.backButton} source={images.backButton}></Image>
         </TouchableOpacity>
@@ -99,7 +109,7 @@ const CheckOut = (props) => {
         <View style={styles.containerThree}>
           <View style={styles.paymentOption}>
             <Text style={styles.payment}>{checkOut.payment}</Text>
-            <TouchableOpacity onPress={payButton}>
+            <TouchableOpacity onPress={wallet} >
               <View style={styles.wallet}>
                 <Image
                   style={styles.purseIcon}
@@ -141,6 +151,7 @@ const CheckOut = (props) => {
               bgColor={colors.blue}
               textColor={colors.white}
               image={""}
+              onPressSignIn={payButton}
             />
           </View>
         </View>
@@ -215,6 +226,7 @@ const CheckOut = (props) => {
           bgColor={colors.blue}
           buttonStyle={styles.shoppingButton}
           onSwipeComplete={() => setSuccessVisible(!isSuccessVisible)}
+          onPress={continueButton}
         />
       </View>
     </SafeAreaView>

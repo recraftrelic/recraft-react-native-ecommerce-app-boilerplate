@@ -38,6 +38,10 @@ export const styles = StyleSheet.create({
         bottom: moderateScale(7),
         left: moderateScale(30)
     },
+    qrImage: {
+        bottom: moderateScale(37),
+        left: moderateScale(320)
+    },
     content: {
         flex:1
     },

@@ -25,7 +25,5 @@ export const styles = StyleSheet.create({
         fontSize: 16,
         fontFamily: fonts.Quick,
         color: colors.grey,
-       
-
     },
 })

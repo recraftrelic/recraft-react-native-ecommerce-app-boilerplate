@@ -38,10 +38,11 @@ const PayScreen = ({ navigation }) => {
         
 
         </Text>
+        <TouchableOpacity onPress={() => navigation.goBack()}>
         <Image source={images.backButton}
             style={styles.image}
         />
-          
+        </TouchableOpacity>  
 
         <Image source={images.addImage}
             style={styles.imagecrop}

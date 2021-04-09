@@ -15,7 +15,8 @@ const ModalSlide = ({
     textColor,
     bgColor,
     onSwipeComplete,
-    buttonStyle
+    buttonStyle,
+    onPress
 }) => {
 
   
@@ -53,6 +54,7 @@ const ModalSlide = ({
               textColor={textColor}
               image={""}
               style={buttonStyle}
+              onPressSignIn={onPress}
             />
           </View>
               </View>
