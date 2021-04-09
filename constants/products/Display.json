@@ -1,0 +1,7 @@
+{ 
+    "Size":["S","M","L","XL"],
+    "Color":["C7DC5B","FED883","FF809F","FFA771"],
+    "sizeTxt": "Size",
+    "colorTxt": "color",
+    "cart": "ADD TO CART"
+}

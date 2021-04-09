@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   SafeAreaView,
   View,
@@ -6,80 +6,102 @@ import {
   Image,
   Text,
   ScrollView,
-  TouchableOpacity
+  TouchableOpacity,
+  Dimensions,
 } from "react-native";
-import product from '../../constants/products/product.json';
-import mainPage from '../../constants/mainpage/mainpage.json';
-import products from '../../constants/products/Products'
-import SearchBar from '../../component/common/SearchBar';
-import { images } from '../../utilities/Common';
-import { styles } from '../../styles/productstyle/ProductStyle';
+import product from "../../constants/products/product.json";
+import mainPage from "../../constants/mainpage/mainpage.json";
+import products from "../../constants/products/Products";
+import SearchBar from "../../component/common/SearchBar";
+import { images } from "../../utilities/Common";
+import { styles } from "../../styles/productstyle/ProductStyle";
+import Routes from "../../constants/routes/routes";
 
-const MainPage = () => {
+const { width, height } = Dimensions.get("screen");
+
+const MainPage = ({ navigation, showSearch }) => {
+  const [searchBar, setSearchBar] = useState(true);
+  useEffect(() => {
+    if (showSearch) {
+      setSearchBar(false);
+    }
+  });
   return (
     <SafeAreaView style={styles.main}>
-    <ScrollView>
+      {searchBar ? (
+        <View style={styles.container}>
+          <SearchBar
+            style={styles.searchbar}
+            placeholder={mainPage.search}
+            imageSource={images.searchbar}
+            imageStyle={styles.searchIcon}
+            cartStyle={styles.cart}
+            cartSource={images.cart}
+          />
+        </View>
+      ) : null}
+      <ScrollView>
+        <View style={styles.textstyl}>
+          <Text style={styles.textStyle}>{product.items}</Text>
 
-      <View style={styles.container}>
-        <SearchBar
-          style={styles.searchbar}
-          placeholder={mainPage.search}
-          imageSource={images.searchbar}
-          imageStyle={styles.searchIcon}
-          cartStyle={styles.cart}
-          cartSource={images.cart}
-        />
-        
-       
+          <Image source={images.filters} style={{}} />
         </View>
-        <View
-        style={styles.search}>
-        <Text
-        style={styles.textStyle}>
-        {product.items}
-        </Text>
-
-        </View>
-        <View>
-        <Image
-        source={images.filters}
-        style={styles.filters}/>
-        </View>
-        <View
-        style={styles.flatlistView}>
-        <FlatList
+        <View style={styles.flatlistView}>
+          <FlatList
             data={products.data}
             renderItem={({ item, index }) => (
-              <View>
-              <TouchableOpacity>
-              <Image source={item.src}
-              style={styles.products}>
-                </Image>
-                
-              </TouchableOpacity>
-                
-                <Image source={item.pic}
-                style={styles.photo}></Image>
-               
-                <Text
-                style={styles.txt}>{item.text}</Text>
-                <Image source={item.photo}
-                style={styles.img}></Image>
-                <Text
-                style={styles.rate}>
-                {item.ratting}
-                </Text>
-                <Text
-                style={styles.price}>{item.price}</Text>
+              <View
+                style={{
+                  margin: 5,
+                  width: width / 2,
+                }}
+              >
+                <TouchableOpacity
+                  onPress={() =>
+                    navigation.navigate(Routes.ProductDisplay, { item: item })
+                  }
+                >
+                  <Image
+                    source={item.src}
+                    style={[styles.products, { width: width / 2 - 25 }]}
+                  ></Image>
+
+                  <Image source={item.pic} style={styles.product} />
+                </TouchableOpacity>
+
+                <View
+                  style={{
+                    flex: 1,
+                    flexDirection: "row",
+                  }}
+                >
+                  <View style={styles.txtstyl}>
+                    <Text style={styles.txt}>{item.text}</Text>
+
+                    <View
+                      style={{
+                        flexDirection: "row",
+                      }}
+                    >
+                      <Image source={item.photo} style={styles.img}></Image>
+                      <Text style={styles.rate}>{item.ratting}</Text>
+                    </View>
+                  </View>
+                  <View
+                    style={{
+                      flex: 0.4,
+                    }}
+                  >
+                    <Text style={styles.price}>{item.price}</Text>
+                  </View>
+                </View>
               </View>
             )}
             showsHorizontalScrollIndicator={false}
             numColumns={2}
-
           />
         </View>
-    </ScrollView>
-
+      </ScrollView>
     </SafeAreaView>
   );
 };

@@ -96,9 +96,31 @@ const ForgoteComponent = ({ navigation }) => {
           </View>
           <View
           style={{
+            left: moderateScale(100),
+            top: moderateScale(50)
+          }}
+          >
+          <Text
+          style={{
+              color: '#ACBAC3'
+          }}
+      >
+          {login.code}
+        </Text>
+          <Text
+          style={{
+              color: '#126881',
+              marginLeft: moderateScale(18)
+          }}
+      >
+         {login.emailcode}
+          </Text>
+          </View>
+          <View
+          style={{
             flex: 0.2,
             alignItems: 'center',
-            marginLeft: moderateScale(30),
+            marginLeft: moderateScale(1),
             padding: moderateScale(12)
           }}
           >

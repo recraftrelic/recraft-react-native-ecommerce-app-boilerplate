@@ -14,10 +14,15 @@ import furniturePage from "../../constants/furniturePage/furniturePage.json";
 import main from "../../constants/furniturePage/furniturePageJs";
 import { images } from "../../utilities/Common";
 import { styles } from "../../styles/furniturePage/furniturePageStyle";
+import { NavigationContainer } from "@react-navigation/native";
+import Routes from "../../constants/routes/routes";
 
-const FurniturePage = () => {
+const FurniturePage = ({ navigation }) => {
   const [furnitureProduct, setFurnitureProduct] = useState(main.data);
 
+  const popularItem = () => {
+    navigation.navigate(Routes.PlantPage)
+  }
   const slideButton = () => {
     const addMoreData = [
       {
@@ -51,7 +56,9 @@ const FurniturePage = () => {
     <SafeAreaView style={StyleSheet.main}>
       <View style={styles.container}>
         <View style={styles.headerField}>
+          <TouchableOpacity onPress={() => navigation.goBack()}>
           <Image source={images.backButton}></Image>
+          </TouchableOpacity>
           <Text style={styles.heading}>{furniturePage.heading}</Text>
           <Image source={images.cart}></Image>
         </View>
@@ -81,7 +88,9 @@ const FurniturePage = () => {
             <FlatList
               vertical={true}
               data={main.dataPopular}
+              
               renderItem={({ item, index }) => (
+                <TouchableOpacity onPress={popularItem}>
                 <View style={styles.menu}>
                   <View style={styles.boxOne}>
                     <Image></Image>
@@ -104,6 +113,7 @@ const FurniturePage = () => {
                     </View>
                   </View>
                 </View>
+                </TouchableOpacity>
               )}
               showsVerticalScrollIndicator={false}
             />
