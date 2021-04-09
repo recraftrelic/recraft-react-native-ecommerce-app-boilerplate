@@ -10,7 +10,7 @@ import {
   introScreens,
   slideImage,
 } from "../../constants/introscreens/screenOne";
-import Routes from '../../constants/routes/routes'
+import Routes from "../../constants/routes/routes";
 import { styles } from "../../styles/introstyle/IntroScreenStyle";
 
 const IntroScreenOne = ({ navigation }) => {
@@ -33,6 +33,11 @@ const IntroScreenOne = ({ navigation }) => {
     setActiveTab(updateActiveTab);
   };
 
+  const skipButton = () => {
+    navigation.navigate(Routes.MainPage);
+    alert("kjehjs");
+  };
+
   return (
     <>
       <SafeAreaView style={styles.main}>
@@ -48,12 +53,20 @@ const IntroScreenOne = ({ navigation }) => {
         <View style={styles.container}>
           <Image style={styles.slide} source={activeSlideImage} />
         </View>
-        <View>
+        <View
+          style={{
+            flex: 1,
+            flexDirection: "row",
+            justifyContent: "space-between",
+            alignItems: "center",
+            padding: 30
+          }}
+        >
+          <TouchableOpacity onPress={skipButton} style={styles.skipBtn}>
+            <Text style={styles.skip}>{introScreens.skip}</Text>
+          </TouchableOpacity>
           <TouchableOpacity style={styles.button} onPress={nextButton}>
             <Text style={styles.text}>{introScreens.btnTex}</Text>
-          </TouchableOpacity>
-          <TouchableOpacity>
-            <Text style={styles.skip}>{introScreens.skip}</Text>
           </TouchableOpacity>
         </View>
       </SafeAreaView>

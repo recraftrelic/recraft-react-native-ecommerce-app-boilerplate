@@ -17,6 +17,8 @@ import ButtonContainer from '../../utilities/ButtonContainer';
 import { styles } from '../../styles/debitStyle/DebitStyle';
 
 const length = 4
+
+
 const TopUp = ({ navigation }) => {
   const [state, setState] = useState({
     account,
@@ -25,6 +27,10 @@ const TopUp = ({ navigation }) => {
     expire,
     security
   });
+
+  const qrCode = () => {
+  navigation.navigate(Routes.PayScreen)
+  }
 
   const {
     account,
@@ -54,9 +60,18 @@ const TopUp = ({ navigation }) => {
             {debitCard.topUp}
 
           </Text>
+          <TouchableOpacity onPress={() => navigation.goBack()}>
           <Image source={images.backButton}
             style={styles.image}
           ></Image>
+          </TouchableOpacity>
+          <TouchableOpacity onPress={qrCode}
+          style={styles.qrImage}
+          >
+          <Image source={images.qr}
+            
+          />
+          </TouchableOpacity>
         </View>
 
         <KeyboardAwareScrollView

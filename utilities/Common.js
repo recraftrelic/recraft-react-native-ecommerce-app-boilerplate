@@ -47,8 +47,8 @@ import code from '../assets/images/payment/code.png';
 import love from '../assets/images/products/Love.png';
 import backbtn from '../assets/images/products/backbtn.png';
 import shopping from '../assets/images/products/shopping.png';
-import slideup from '../assets/images/products/slideup.png'
-
+import slideup from '../assets/images/products/slideup.png';
+import qr from '../assets/images/debit/qrCode.png';
 
 import { Dimensions, PixelRatio } from "react-native";
 
@@ -116,7 +116,8 @@ const images = {
   love,
   backbtn,
   shopping,
-  slideup
+  slideup,
+  qr
 
 };
 
