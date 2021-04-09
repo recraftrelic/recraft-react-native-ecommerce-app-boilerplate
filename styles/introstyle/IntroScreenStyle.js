@@ -15,18 +15,18 @@ export const styles = StyleSheet.create({
     flex: 1,
   },
   heading: {
-    top: "25%",
+    top: "45%",
     fontSize: 18,
     fontFamily: fonts.Bold,
     color: colors.blackGrey,
   },
   content: {
-    top: "40%",
+    top: "60%",
     textAlign: "center",
     fontSize: 15,
   },
   slide: {
-    top: heightToDp("20%"),
+    top: heightToDp("30%"),
   },
   button: {
     backgroundColor: colors.blue,

@@ -584,6 +584,10 @@
         "source": "D:\\New folder\\gradle-6.8.3\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\color-v21\\abc_btn_colored_borderless_text_material.xml"
     },
     {
+        "merged": "C:\\Users\\justa\\OneDrive\\Documents\\project\\recraft-react-native-ecommerce-app-boilerplate\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_splashscreen.jpg.flat",
+        "source": "C:\\Users\\justa\\OneDrive\\Documents\\project\\recraft-react-native-ecommerce-app-boilerplate\\android\\app\\src\\main\\res\\drawable-v24\\splashscreen.jpg"
+    },
+    {
         "merged": "C:\\Users\\justa\\OneDrive\\Documents\\project\\recraft-react-native-ecommerce-app-boilerplate\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_ic_menu_selectall_mtrl_alpha.png.flat",
         "source": "D:\\New folder\\gradle-6.8.3\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\drawable-xxhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
     },
@@ -1352,12 +1356,12 @@
         "source": "D:\\New folder\\gradle-6.8.3\\caches\\transforms-2\\files-2.1\\863e0c3c6716935cd3657ad638fd992d\\material-1.1.0\\res\\drawable-xxxhdpi-v4\\design_ic_visibility_off.png"
     },
     {
-        "merged": "C:\\Users\\justa\\OneDrive\\Documents\\project\\recraft-react-native-ecommerce-app-boilerplate\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mtrl_ic_error.xml.flat",
-        "source": "D:\\New folder\\gradle-6.8.3\\caches\\transforms-2\\files-2.1\\863e0c3c6716935cd3657ad638fd992d\\material-1.1.0\\res\\drawable\\mtrl_ic_error.xml"
-    },
-    {
         "merged": "C:\\Users\\justa\\OneDrive\\Documents\\project\\recraft-react-native-ecommerce-app-boilerplate\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_picker_dialog.xml.flat",
         "source": "D:\\New folder\\gradle-6.8.3\\caches\\transforms-2\\files-2.1\\863e0c3c6716935cd3657ad638fd992d\\material-1.1.0\\res\\layout\\mtrl_picker_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\justa\\OneDrive\\Documents\\project\\recraft-react-native-ecommerce-app-boilerplate\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mtrl_ic_error.xml.flat",
+        "source": "D:\\New folder\\gradle-6.8.3\\caches\\transforms-2\\files-2.1\\863e0c3c6716935cd3657ad638fd992d\\material-1.1.0\\res\\drawable\\mtrl_ic_error.xml"
     },
     {
         "merged": "C:\\Users\\justa\\OneDrive\\Documents\\project\\recraft-react-native-ecommerce-app-boilerplate\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable_recraft.png.flat",
@@ -1642,6 +1646,10 @@
     {
         "merged": "C:\\Users\\justa\\OneDrive\\Documents\\project\\recraft-react-native-ecommerce-app-boilerplate\\android\\app\\build\\intermediates\\res\\merged\\debug\\anim_catalyst_slide_down.xml.flat",
         "source": "D:\\New folder\\gradle-6.8.3\\caches\\transforms-2\\files-2.1\\2f63d11b30a325d40d5d5fa3d6349c86\\jetified-react-native-0.63.4\\res\\anim\\catalyst_slide_down.xml"
+    },
+    {
+        "merged": "C:\\Users\\justa\\OneDrive\\Documents\\project\\recraft-react-native-ecommerce-app-boilerplate\\android\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_itunes.png.flat",
+        "source": "C:\\Users\\justa\\OneDrive\\Documents\\project\\recraft-react-native-ecommerce-app-boilerplate\\android\\app\\src\\main\\res\\mipmap-mdpi\\itunes.png"
     },
     {
         "merged": "C:\\Users\\justa\\OneDrive\\Documents\\project\\recraft-react-native-ecommerce-app-boilerplate\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-watch-v20_abc_dialog_material_background.xml.flat",
@@ -2568,6 +2576,10 @@
         "source": "D:\\New folder\\gradle-6.8.3\\caches\\transforms-2\\files-2.1\\863e0c3c6716935cd3657ad638fd992d\\material-1.1.0\\res\\layout\\mtrl_calendar_day.xml"
     },
     {
+        "merged": "C:\\Users\\justa\\OneDrive\\Documents\\project\\recraft-react-native-ecommerce-app-boilerplate\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_logo.jpg.flat",
+        "source": "C:\\Users\\justa\\OneDrive\\Documents\\project\\recraft-react-native-ecommerce-app-boilerplate\\android\\app\\src\\main\\res\\drawable-v24\\logo.jpg"
+    },
+    {
         "merged": "C:\\Users\\justa\\OneDrive\\Documents\\project\\recraft-react-native-ecommerce-app-boilerplate\\android\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_btn_text_btn_bg_color_selector.xml.flat",
         "source": "D:\\New folder\\gradle-6.8.3\\caches\\transforms-2\\files-2.1\\863e0c3c6716935cd3657ad638fd992d\\material-1.1.0\\res\\color\\mtrl_btn_text_btn_bg_color_selector.xml"
     },
@@ -2630,6 +2642,10 @@
     {
         "merged": "C:\\Users\\justa\\OneDrive\\Documents\\project\\recraft-react-native-ecommerce-app-boilerplate\\android\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_chip_text_color.xml.flat",
         "source": "D:\\New folder\\gradle-6.8.3\\caches\\transforms-2\\files-2.1\\863e0c3c6716935cd3657ad638fd992d\\material-1.1.0\\res\\color\\mtrl_chip_text_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\justa\\OneDrive\\Documents\\project\\recraft-react-native-ecommerce-app-boilerplate\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_recraftlogo.png.flat",
+        "source": "C:\\Users\\justa\\OneDrive\\Documents\\project\\recraft-react-native-ecommerce-app-boilerplate\\android\\app\\src\\main\\res\\drawable-v24\\recraftlogo.png"
     },
     {
         "merged": "C:\\Users\\justa\\OneDrive\\Documents\\project\\recraft-react-native-ecommerce-app-boilerplate\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_alert_select_dialog_multichoice.xml.flat",
