@@ -2,12 +2,11 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:drawable="@color/white"
-        android:height="2000px"
-        android:width="1000px"/>
+    />
     <item>
         <bitmap
             android:gravity="center"
-            android:src="@drawable/splashscreen" />
+            android:src="@drawable/splash" />
     </item>
 
 </layer-list>

@@ -1,10 +1,10 @@
 import { StyleSheet } from "react-native";
-import { colors } from '../../constants/colors/colors';
-import { fonts, heightToDp, widthToDp } from '../../utilities/Common';
+import { colors } from "../../constants/colors/colors";
+import { fonts, heightToDp, widthToDp } from "../../utilities/Common";
 
 export const styles = StyleSheet.create({
-    main: {
-        marginTop: Platform.OS == 'ios' ? 50 : 0,
+  main: {
+    marginTop: Platform.OS == "ios" ? 50 : 0,
     flex: 1,
     backgroundColor: colors.lightPink
     },
@@ -139,6 +139,7 @@ export const styles = StyleSheet.create({
         borderTopLeftRadius: 30,
         top: heightToDp('16%'),
         backgroundColor: colors.white,
+        marginBottom: heightToDp('100%')
     },
     subOne: {
         flexDirection: 'row',
@@ -147,9 +148,9 @@ export const styles = StyleSheet.create({
     },
     amountOne: {
     color: colors.pink,
-    fontSize: 20
-    },
-    btn: {
-        marginBottom: 100
-    }
-})
+    fontSize: 20,
+  },
+  btn: {
+    marginBottom: 100,
+  },
+});

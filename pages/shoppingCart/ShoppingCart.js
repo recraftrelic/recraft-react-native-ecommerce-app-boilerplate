@@ -7,6 +7,7 @@ import {
   CheckBox,
   FlatList,
   TouchableOpacity,
+  ScrollView,
 } from "react-native";
 import shoppingCart from "../../constants/shoppingCart/shoppingCart.json";
 import main from "../../constants/shoppingCart/shoppingCartJs";
@@ -67,6 +68,7 @@ const ShoppingCart = ({navigation}) => {
         <Text style={styles.heading}>{shoppingCart.heading}</Text>
         <Image source={images.otherButton}></Image>
       </View>
+      <ScrollView>
       <View style={styles.containerOne}>
         <FlatList
           vertical={true}
@@ -151,6 +153,7 @@ const ShoppingCart = ({navigation}) => {
           />
         </View>
       </View>
+      </ScrollView>
     </SafeAreaView>
   );
 };
