@@ -10,24 +10,24 @@ const main = {
             src: deleteButton,
             color: "Color : Dark Grey",
             size: "Size : L",
-            amount: "$76",
+            amount: 76,
             add: addButton,
             number: 1,
             less: lessButton,
             sub: "Sub Total :",
-            total: "$152"
+            total: 152
         },
         {
             name: "Milano Parada",
             src: deleteButton,
             color: "Color : Silver",
             size: "Size : No size",
-            amount: "$96",
+            amount: 96,
             add: addButton,
             number: 1,
             less: lessButton,
             sub: "Sub Total :",
-            total: "$152"
+            total: 192
         },
     ]
 }

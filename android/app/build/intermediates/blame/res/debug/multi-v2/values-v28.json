@@ -1,10 +1,27 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
+            "outputFile": "/Users/recraft-9/Desktop/work/recraft-react-native-ecommerce-app-boilerplate/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v28/values-v28.xml",
+            "map": [
+                {
+                    "source": "/Users/recraft-9/.gradle/caches/transforms-2/files-2.1/863e0c3c6716935cd3657ad638fd992d/material-1.1.0/res/values-v28/values-v28.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,143,231,319,407,494,581,668",
+                        "endColumns": "87,87,87,87,86,86,86,86",
+                        "endOffsets": "138,226,314,402,489,576,663,750"
+                    }
+                },
+                {
+                    "source": "/Users/recraft-9/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/values-v28/values-v28.xml",
+=======
             "outputFile": "C:\\Users\\justa\\OneDrive\\Documents\\project\\recraft-react-native-ecommerce-app-boilerplate\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v28\\values-v28.xml",
             "map": [
                 {
                     "source": "D:\\New folder\\gradle-6.8.3\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\values-v28\\values-v28.xml",
+>>>>>>> aeff0e16d64418702e9380744e4100bc9d11a27f
                     "from": {
                         "startLines": "2,3,4,8",
                         "startColumns": "4,4,4,4",

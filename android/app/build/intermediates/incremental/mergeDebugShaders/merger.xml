@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
+<<<<<<< HEAD
+<merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/recraft-9/Desktop/work/recraft-react-native-ecommerce-app-boilerplate/android/app/src/main/shaders"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/recraft-9/Desktop/work/recraft-react-native-ecommerce-app-boilerplate/android/app/src/debug/shaders"/></dataSet></merger>
+=======
 <merger version="3"><dataSet config="main" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\justa\OneDrive\Documents\project\recraft-react-native-ecommerce-app-boilerplate\android\app\src\main\shaders"/></dataSet><dataSet config="debug" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="C:\Users\justa\OneDrive\Documents\project\recraft-react-native-ecommerce-app-boilerplate\android\app\src\debug\shaders"/></dataSet></merger>
+>>>>>>> aeff0e16d64418702e9380744e4100bc9d11a27f
