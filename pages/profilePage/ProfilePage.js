@@ -24,7 +24,7 @@ const ProfilePage = ({ navigation }) => {
             vertical={true}
             data={profile.data}
             renderItem={({ item, index }) => (
-              <View style={styles.content}>
+              <View style={styles.content} key={index}>
                 <Image style={styles.imageOne} source={item.src}></Image>
                 <Text style={styles.imageOne}>{item.name}</Text>
               </View>
