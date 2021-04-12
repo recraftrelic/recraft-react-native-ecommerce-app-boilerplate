@@ -12,10 +12,9 @@ import {
 import { Rating } from "react-native-elements";
 import furniturePage from "../../constants/furniturePage/furniturePage.json";
 import main from "../../constants/furniturePage/furniturePageJs";
+import Routes from "../../constants/routes/routes";
 import { images } from "../../utilities/Common";
 import { styles } from "../../styles/furniturePage/furniturePageStyle";
-import { NavigationContainer } from "@react-navigation/native";
-import Routes from "../../constants/routes/routes";
 
 const FurniturePage = ({ navigation }) => {
   const [furnitureProduct, setFurnitureProduct] = useState(main.data);

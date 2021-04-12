@@ -1,9 +1,8 @@
 import React from "react";
 import { StyleSheet } from "react-native";
 import { moderateScale } from "react-native-size-matters";
-
 import { colors } from "../../constants/colors/colors";
-import { fonts, heightToDp, widthToDp } from "../../utilities/Common";
+import { widthToDp } from "../../utilities/Common";
 
 export const styles = StyleSheet.create({
   main: {
@@ -67,13 +66,8 @@ export const styles = StyleSheet.create({
     bottom: 85,
     marginLeft: moderateScale(290),
   },
-  flatlistView: {
-    // marginBottom: 100,
-    // bottom: moderateScale(50),
-  },
   products: {
     margin: 5,
-    // width:'90%',
     borderRadius:10
   },
   photo: {

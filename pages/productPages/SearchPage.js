@@ -12,10 +12,10 @@ import {
 import product from "../../constants/products/product.json";
 import mainPage from "../../constants/mainpage/mainpage.json";
 import products from "../../constants/products/Products";
+import Routes from "../../constants/routes/routes";
 import SearchBar from "../../component/common/SearchBar";
 import { images } from "../../utilities/Common";
 import { styles } from "../../styles/productstyle/ProductStyle";
-import Routes from "../../constants/routes/routes";
 
 const { width, height } = Dimensions.get("screen");
 

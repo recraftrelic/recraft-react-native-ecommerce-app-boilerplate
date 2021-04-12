@@ -37,7 +37,7 @@ const MainPage = ({ navigation }) => {
         nestedScrollEnabled={true}
         contentInsetAdjustmentBehavior="automatic"
       >
-        <View style={styles.container}>
+        
           <View style={styles.color}>
           <View>
             <SearchBar
@@ -111,7 +111,8 @@ const MainPage = ({ navigation }) => {
             </View>
           </View>
           </View>
-          <View style={styles.backColor}>
+          <View style={styles.container}>
+          <View>
             <Text style={styles.sale}>{mainPage.sale}</Text>
           </View>
 
@@ -173,7 +174,7 @@ const MainPage = ({ navigation }) => {
         <Image style={styles.iconTwo} source={images.home}></Image>
         <Image style={styles.iconTwo} source={images.notification}></Image>
         <TouchableOpacity onPress={imageButton}>
-        <Image  style={styles.iconTwo} source={images.Circle}></Image>
+        <Image  style={styles.iconTwo} source={images.circle}></Image>
         </TouchableOpacity>
       </View>
     </SafeAreaView>

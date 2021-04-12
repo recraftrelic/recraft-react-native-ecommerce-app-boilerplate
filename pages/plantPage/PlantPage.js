@@ -1,13 +1,10 @@
 import React from "react";
 import { Image, SafeAreaView, Text, View } from "react-native";
-import SearchProduct from "../../constants/searchProduct/searchProduct";
+import { TouchableOpacity } from "react-native-gesture-handler";
 import FurniturePage from "../../constants/furniturePage/furniturePage.json";
 import { images } from "../../utilities/Common";
 import SearchPage from '../../pages/productPages/SearchPage'
 import { styles } from "../../styles/plantPage/plantPageStyle";
-import { TouchableOpacity } from "react-native-gesture-handler";
-import { NavigationContainer } from "@react-navigation/native";
-// import { styles } from "../../styles/productstyle/ProductStyle"
 
 const PlantPage = ({ navigation }) => {
   return (

@@ -115,6 +115,7 @@ export const styles = StyleSheet.create({
   },
   color: {
     backgroundColor: colors.lightPink,
+    padding: 19,
   },
   priceOne: {
     top: heightToDp("16%"),
@@ -214,8 +215,7 @@ export const styles = StyleSheet.create({
  },
  iconTwo: {
    marginRight: widthToDp('27%'),
- 
- },
+  },
  settings: {
    flexDirection: 'row',
    backgroundColor: colors.white,

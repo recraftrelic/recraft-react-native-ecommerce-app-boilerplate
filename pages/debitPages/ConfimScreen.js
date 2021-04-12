@@ -8,7 +8,6 @@ import {
   TouchableOpacity
 } from 'react-native';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
-
 import debitCard from '../../constants/debitcard/debitCard.json'
 import Routes from '../../constants/routes/routes';
 import { colors } from '../../constants/colors/colors';

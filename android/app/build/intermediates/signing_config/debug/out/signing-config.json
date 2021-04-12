@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+{"mName":"debug","mStoreFile":"/Users/recraft-9/Desktop/work/recraft-react-native-ecommerce-app-boilerplate/android/app/debug.keystore","mStorePassword":"android","mKeyAlias":"androiddebugkey","mKeyPassword":"android","mStoreType":"jks","mV1SigningEnabled":true,"mV2SigningEnabled":true}
+=======
 {"mName":"debug","mStoreFile":"C:\\Users\\justa\\OneDrive\\Documents\\project\\recraft-react-native-ecommerce-app-boilerplate\\android\\app\\debug.keystore","mStorePassword":"android","mKeyAlias":"androiddebugkey","mKeyPassword":"android","mStoreType":"jks","mV1SigningEnabled":true,"mV2SigningEnabled":true}
+>>>>>>> aeff0e16d64418702e9380744e4100bc9d11a27f

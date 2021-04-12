@@ -32,7 +32,6 @@ export const styles = StyleSheet.create({
         fontSize: moderateScale(15),
         textAlign: 'center',
         top: moderateScale(20),
-
     },
     image: {
         bottom: moderateScale(7),
@@ -47,7 +46,6 @@ export const styles = StyleSheet.create({
     },
     topupbtn: {
         top: moderateScale(450)
-
     },
     subcard: {
         top: moderateScale(20),
@@ -130,7 +128,6 @@ export const styles = StyleSheet.create({
         textAlign: 'left',
         top: moderateScale(30)
     },
-
     outter: {
         flexDirection: 'row',
         justifyContent: 'space-evenly',
@@ -173,20 +170,14 @@ export const styles = StyleSheet.create({
         marginLeft: moderateScale(1),
         padding: moderateScale(12)
     },
-
-
-
-
     TextInputContainer: {
         flex: 0.7,
     },
     subContainer: {
         flex: 0.7,
     },
-
     headerText: {
         color: colors.white
-
     },
     subHead: {
         top: heightToDp(7),
@@ -220,12 +211,10 @@ export const styles = StyleSheet.create({
         backgroundColor: colors.lightGrey,
         bottom: heightToDp(2),
         justifyContent:'center'
-
     },
     passwordInput: {
         height: 0,
         width: 0,
-
     },
     forgote: {
         color: colors.red,
@@ -250,7 +239,6 @@ export const styles = StyleSheet.create({
     textBtn: {
         color: colors.white,
         fontFamily: fonts.zilaMedium,
-
     },
     media: {
         color: colors.grey,
@@ -265,7 +253,6 @@ export const styles = StyleSheet.create({
         flex: 0.4,
         top: moderateScale(30)
     },
-    
     count: {
         flex: 0.1,
         marginLeft: moderateScale(142),
@@ -305,6 +292,4 @@ export const styles = StyleSheet.create({
         textAlign: 'center',
         fontSize: 16,
     }
-
-
 })

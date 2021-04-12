@@ -38,7 +38,7 @@ const ProfilePage = ({ navigation }) => {
         <Image  style={styles.iconTwo} source={images.home}></Image>
         </TouchableOpacity>
         <Image style={styles.iconTwo} source={images.notification}></Image>
-        <Image style={styles.iconTwo} source={images.Circle}></Image>
+        <Image style={styles.iconTwo} source={images.circle}></Image>
       </View>
     </View>
   );

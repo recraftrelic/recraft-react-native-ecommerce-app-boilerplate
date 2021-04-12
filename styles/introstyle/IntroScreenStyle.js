@@ -26,7 +26,7 @@ export const styles = StyleSheet.create({
     fontSize: 15,
   },
   slide: {
-    top: heightToDp("30%"),
+    marginTop: heightToDp("35%"),
   },
   button: {
     backgroundColor: colors.blue,
