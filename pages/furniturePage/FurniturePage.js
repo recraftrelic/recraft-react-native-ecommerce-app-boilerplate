@@ -89,7 +89,7 @@ const FurniturePage = ({ navigation }) => {
               data={main.dataPopular}
               
               renderItem={({ item, index }) => (
-                <TouchableOpacity onPress={popularItem}>
+                <TouchableOpacity onPress={popularItem} key={index}>
                 <View style={styles.menu}>
                   <View style={styles.boxOne}>
                     <Image></Image>

@@ -51,6 +51,7 @@ const MainPage = ({ navigation, showSearch }) => {
             data={products.data}
             renderItem={({ item, index }) => (
               <View
+              key={index}
                 style={{
                   margin: 5,
                   width: width / 2,

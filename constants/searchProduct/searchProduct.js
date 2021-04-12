@@ -17,7 +17,6 @@ const searchProduct = () => {
   return (
     <SafeAreaView style={styles.main}>
       <ScrollView>
-        {/* <View style={styles.container}></View> */}
         <View style={styles.search}>
           <Text style={styles.textStyle}>{product.items}</Text>
         </View>
@@ -28,7 +27,7 @@ const searchProduct = () => {
           <FlatList
             data={products.dataPlant}
             renderItem={({ item, index }) => (
-              <View>
+              <View key={index}>
                 <TouchableOpacity>
                   <Image source={item.src} style={styles.products}></Image>
                 </TouchableOpacity>

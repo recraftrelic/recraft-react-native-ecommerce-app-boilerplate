@@ -58,7 +58,7 @@ const MainPage = ({ navigation }) => {
               horizontal={true}
               data={main.data}
               renderItem={({ item, index }) => (
-                <View style={styles.itemCategory}>
+                <View style={styles.itemCategory} key={index}>
                   <Image source={item.src}></Image>
                 </View>
               )}
@@ -121,7 +121,7 @@ const MainPage = ({ navigation }) => {
               horizontal={true}
               data={main.dataSale}
               renderItem={({ item, index }) => (
-                <View style={styles.discount}>
+                <View style={styles.discount} key={index}>
                   <View>
                     <Text style={styles.discountBar}>{item.average}</Text>
                   </View>
@@ -142,7 +142,7 @@ const MainPage = ({ navigation }) => {
               vertical={true}
               data={main.dataPopular}
               renderItem={({ item, index }) => (
-                <View style={styles.menu}>
+                <View style={styles.menu} key={index}>
                   <View style={styles.boxOne}>
                     <Image style={styles.img}></Image>
                   </View>

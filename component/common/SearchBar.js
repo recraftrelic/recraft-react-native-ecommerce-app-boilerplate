@@ -1,6 +1,5 @@
 import React from 'react';
 import { Image, SafeAreaView, TextInput } from 'react-native';
-import { Searchbar } from 'react-native-paper';
 import { styles } from '../../styles/mainpagestyle/MainPageStyle';
 
 const SearchBar = ({

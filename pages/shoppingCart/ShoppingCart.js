@@ -74,7 +74,7 @@ const ShoppingCart = ({navigation}) => {
           vertical={true}
           data={allData}
           renderItem={({ item, index }) => (
-            <>
+            <View key={index}>
               <View style={styles.containerTwo}>
                 <View>
                   <View style={styles.description}>
@@ -133,7 +133,7 @@ const ShoppingCart = ({navigation}) => {
                   <Text style={styles.totalOne}>{`$${item.total}`}</Text>
                 </View>
               </View>
-            </>
+            </View>
           )}
           showsVerticalScrollIndicator={false}
         />

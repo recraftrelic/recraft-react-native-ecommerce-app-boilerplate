@@ -121,6 +121,7 @@ const ProductDisplay = (props) => {
               keyExtractor={(item) => item.id}
               renderItem={({ item, index }) => (
                 <View
+                key={index}
                   style={[
                     {
                       backgroundColor: `${
@@ -153,7 +154,7 @@ const ProductDisplay = (props) => {
               keyExtractor={(item) => item.id}
               renderItem={({ item, index }) => (
                 <TouchableOpacity
-                  onPress={() => ShowColor(index)}
+                  onPress={() => ShowColor(index)} key={index}
                   style={[styles.diffColor, { backgroundColor: `#${item}` }]}
                 />
               )}
