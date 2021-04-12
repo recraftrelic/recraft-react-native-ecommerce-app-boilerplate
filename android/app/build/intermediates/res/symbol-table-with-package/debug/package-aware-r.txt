@@ -1372,6 +1372,7 @@ drawable notify_panel_notification_icon_bg
 drawable recraft
 drawable recraftlogo
 drawable redbox_top_border_background
+drawable splash
 drawable splashscreen
 drawable test_custom_background
 drawable tooltip_frame_dark
