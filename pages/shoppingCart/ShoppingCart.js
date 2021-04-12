@@ -14,8 +14,11 @@ import { colors } from "../../constants/colors/colors";
 import { images } from "../../utilities/Common";
 import ButtonContainer from "../../utilities/ButtonContainer";
 import { styles } from "../../styles/shoppingCart/shoppingCartStyle";
+import ProductDisplay from "../productPages/ProductDisplay";
+import { NavigationContainer } from "@react-navigation/native";
+import Routes from "../../constants/routes/routes";
 
-const ShoppingCart = () => {
+const ShoppingCart = ({navigation}) => {
   const [isSelected, setSelection] = useState([]);
   //const [isDelete, setIsDelete] = useState(false);
   const [showDelete, setShowDelete] = useState([]);
@@ -32,7 +35,9 @@ const ShoppingCart = () => {
     setShowDelete([...showDelete], showDelete[index] = false);
   };
 
-  const onPressSignIn = () => { };
+  const onPressSignIn = () => {
+    navigation.navigate(Routes.CheckOut);
+  };
 
   const addButton = (index) => {
     setData([...allData], allData[index].number = allData[index].number + 1)
@@ -59,7 +64,9 @@ const ShoppingCart = () => {
   return (
     <SafeAreaView style={styles.main}>
       <View style={styles.container}>
-        <Image source={images.backButton}></Image>
+        <TouchableOpacity onPress={() => navigation.goBack()}>
+          <Image source={images.backButton}></Image>
+        </TouchableOpacity>
         <Text style={styles.heading}>{shoppingCart.heading}</Text>
         <Image source={images.otherButton}></Image>
       </View>
