@@ -138,6 +138,7 @@ const ShoppingCart = ({navigation}) => {
           showsVerticalScrollIndicator={false}
         />
       </View>
+      </ScrollView>
       <View style={styles.upperLine}>
         <View style={styles.subOne}>
           <Text>{shoppingCart.total}</Text>
@@ -153,7 +154,6 @@ const ShoppingCart = ({navigation}) => {
           />
         </View>
       </View>
-      </ScrollView>
     </SafeAreaView>
   );
 };
