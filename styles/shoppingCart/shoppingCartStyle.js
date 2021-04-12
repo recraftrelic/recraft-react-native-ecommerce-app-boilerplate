@@ -139,7 +139,7 @@ export const styles = StyleSheet.create({
         borderTopLeftRadius: 30,
         top: heightToDp('16%'),
         backgroundColor: colors.white,
-        marginBottom: heightToDp('100%')
+        marginBottom: heightToDp('5%')
     },
     subOne: {
         flexDirection: 'row',
