@@ -24,7 +24,6 @@ export const styles = StyleSheet.create({
        padding: 5,
        color: colors.grey,
        maxWidth: widthToDp('80%'),
-    
     },
     imageStyle : {
         top: heightToDp('3%'),
@@ -32,5 +31,4 @@ export const styles = StyleSheet.create({
     imageStyle1 : {
         top: heightToDp('5%'),
     }
-
 })

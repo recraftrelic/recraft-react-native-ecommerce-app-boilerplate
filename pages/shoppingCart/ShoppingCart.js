@@ -11,16 +11,13 @@ import {
 import shoppingCart from "../../constants/shoppingCart/shoppingCart.json";
 import main from "../../constants/shoppingCart/shoppingCartJs";
 import { colors } from "../../constants/colors/colors";
+import Routes from "../../constants/routes/routes";
 import { images } from "../../utilities/Common";
 import ButtonContainer from "../../utilities/ButtonContainer";
 import { styles } from "../../styles/shoppingCart/shoppingCartStyle";
-import ProductDisplay from "../productPages/ProductDisplay";
-import { NavigationContainer } from "@react-navigation/native";
-import Routes from "../../constants/routes/routes";
 
 const ShoppingCart = ({navigation}) => {
   const [isSelected, setSelection] = useState([]);
-  //const [isDelete, setIsDelete] = useState(false);
   const [showDelete, setShowDelete] = useState([]);
   const [allData, setData] = useState(main.data)
 
@@ -110,7 +107,7 @@ const ShoppingCart = ({navigation}) => {
                         </TouchableOpacity>
                       </View>
                     </View>
-                    <View style={styles.deleteBox}>
+                    <View>
                       <View style={styles.marginRyt}>
                         <TouchableOpacity onPress={(event) => deleteButton(index)}>
                           {showDelete[index] ? null : (

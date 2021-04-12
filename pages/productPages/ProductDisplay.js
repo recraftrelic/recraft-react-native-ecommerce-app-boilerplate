@@ -114,7 +114,7 @@ const ProductDisplay = (props) => {
           <View style={styles.sizeShow}>
             <Text style={styles.label}>{data.sizeTxt}</Text>
           </View>
-          <View style={styles.size}>
+          <View>
             <FlatList
               data={data.Size}
               horizontal={true}
@@ -146,7 +146,7 @@ const ProductDisplay = (props) => {
           <View>
             <Text style={styles.label}>{data.colorTxt}</Text>
           </View>
-          <View style={styles.color}>
+          <View>
             <FlatList
               data={data.Color}
               horizontal={true}

@@ -21,23 +21,18 @@ export const styles = StyleSheet.create({
         fontFamily: fonts.Quick,
         color: colors.grey
     },
-    // deleteBox: {
-    //     width:widthToDp('10%')
-    // },
     containerOne: {
        top: heightToDp('2%') ,
     },
     marginRyt:{
         marginLeft:widthToDp(`-5`),
         marginTop: heightToDp('2%'),
-
     },
     description: {
         flexDirection: 'row',
         marginBottom: heightToDp('2%'),
         width:widthToDp('100%'),
         backgroundColor: colors.white,
-        // marginRight: widthToDp('-20%')
     },
     box: {
         borderRadius: 10,
@@ -144,8 +139,6 @@ export const styles = StyleSheet.create({
         borderTopLeftRadius: 30,
         top: heightToDp('16%'),
         backgroundColor: colors.white,
-        // height: heightToDp('100%'), 
-        // paddingBottom: 100
     },
     subOne: {
         flexDirection: 'row',

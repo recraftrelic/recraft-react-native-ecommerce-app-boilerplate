@@ -158,8 +158,7 @@ paymentOption: {
     flex: 1,
     flexDirection: 'row',
     justifyContent: 'space-between',
-    // padding: 8,
-      marginTop: heightToDp('2'),
+    marginTop: heightToDp('2'),
     marginLeft: widthToDp('5%'),
 
 },
