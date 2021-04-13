@@ -160,6 +160,10 @@
         "source": "D:\\New folder\\gradle-6.8.3\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\color\\abc_tint_edittext.xml"
     },
     {
+        "merged": "C:\\Users\\justa\\OneDrive\\Documents\\project\\recraft-react-native-ecommerce-app-boilerplate\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_r.png.flat",
+        "source": "C:\\Users\\justa\\OneDrive\\Documents\\project\\recraft-react-native-ecommerce-app-boilerplate\\android\\app\\src\\main\\res\\drawable-v24\\r.png"
+    },
+    {
         "merged": "C:\\Users\\justa\\OneDrive\\Documents\\project\\recraft-react-native-ecommerce-app-boilerplate\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_bar_up_container.xml.flat",
         "source": "D:\\New folder\\gradle-6.8.3\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\layout\\abc_action_bar_up_container.xml"
     },

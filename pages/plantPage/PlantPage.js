@@ -32,6 +32,8 @@ const PlantPage = ({ navigation }) => {
         >
           <SearchPage
             showSearch= {true}
+            navigation={navigation}
+            
           />
         </View>
       </SafeAreaView>
