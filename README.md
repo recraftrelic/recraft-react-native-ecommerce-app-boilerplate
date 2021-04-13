@@ -1,64 +1,30 @@
 ## Recraft  recraft-react-native-ecommerce-app-boilerplate
 This recraft-react-native-ecommerce-app-boilerplate app is a boilerplate for any react native developer who wants to build a app with Ecommerce. The goal of this boilerplate is to provide a fully functional login screens of app which can be reused with very little to no modification.
-<!-- ## Note
-You can also get the app on play store-- -->
-<!-- ## Documentation
-* [Installation]
-* [Run the Project in Development Mode]
-* [Folder Structure]
-* [Constants]
-* [Themes]
-* [Languages]
-* [Pages]
-* [Available Hooks] -->
-<!-- Browse the full documentation on -->
+
 ## IOS Demo 
 
 <p align="center">
   <img width="250" src="./iosPreview/introios.gif?raw=true" hspace="10" vspace="10" >
 </p>
-<!-- <p align="center">
-  <img width="250" src="./Ios previews/Screen4.gif?raw=true" hspace="10" vspace="10"><img width="250" src="./Ios previews/Screen5.gif?raw=true" hspace="10" vspace="10"><img width="250" src="./Ios previews/Screen6.gif?raw=true" hspace="10" vspace="10">
-</p>
-<p align="center">
-  <img width="250" src="./Ios previews/Screen7.gif?raw=true" hspace="10" vspace="10"><img width="250" src="./Ios previews/Screen8.gif?raw=true" hspace="10" vspace="10"><img width="250" src="./Ios previews/Screen9.gif?raw=true" hspace="10" vspace="10"><img width="250" src="./Ios previews/Screen10.gif?raw=true" hspace="10" vspace="10">
-  </p> -->
 
 ## Android Demo
 
 <p align="center">
-  <img width="250" src="./andriodPreview/introScreen.gif?raw=true" hspace="10" vspace="10" >
-</p>
-<p align="center">
-  <img width="250" src="./andriodPreview/checkout.gif?raw=true" hspace="10" vspace="10" >
-</p>
-<p align="center">
-  <img width="250" src="./andriodPreview/email.gif?raw=true" hspace="10" vspace="10" >
-</p>
-<p align="center">
-  <img width="250" src="./andriodPreview/forgotpassword.gif?raw=true" hspace="10" vspace="10" >
+  <img width="200" src="./andriodPreview/introScreen.gif?raw=true" >
+  <img width="200" src="./andriodPreview/checkout.gif?raw=true"  >
+  <img width="200" src="./andriodPreview/email.gif?raw=true"  >
+  <img width="200" src="./andriodPreview/forgotpassword.gif?raw=true">
 </p>
 <p align="center">
   <img width="250" src="./andriodPreview/mainpage.gif?raw=true" hspace="10" vspace="10" >
-</p>
-<p align="center">
   <img width="250" src="./andriodPreview/mypay.gif?raw=true" hspace="10" vspace="10" >
-</p>
-<p align="center">
   <img width="250" src="./andriodPreview/shoppingcart.gif?raw=true" hspace="10" vspace="10" >
 </p>
 <p align="center">
   <img width="250" src="./andriodPreview/signin.gif?raw=true" hspace="10" vspace="10" >
-</p>
-<p align="center">
   <img width="250" src="./andriodPreview/signup.gif?raw=true" hspace="10" vspace="10" >
+  <img width="250" src="./andriodPreview/furniture.gif?raw=true" hspace="10" vspace="10" >
 </p>
-<!-- <p align="center">
-  <img width="250" src="./gifs/screen4.gif?raw=true" hspace="10" vspace="10"><img width="250" src="./gifs/screen5.gif?raw=true" hspace="10" vspace="10"><img width="250" src="./gifs/screen6.gif?raw=true" hspace="10" vspace="10">
-</p>
-<p align="center">
-  <img width="250" src="./gifs/screen7.gif?raw=true" hspace="10" vspace="10"><img width="250" src="./gifs/screen8.gif?raw=true" hspace="10" vspace="10"><img width="250" src="./gifs/screen9.gif?raw=true" hspace="10" vspace="10"><img width="250" src="./gifs/screen10.gif?raw=true" hspace="10" vspace="10">
-  </p> -->
 
 ## Packages & Libraries used
 * [React Native](https://www.npmjs.com/package/react-native) - A framework for building native apps with React.

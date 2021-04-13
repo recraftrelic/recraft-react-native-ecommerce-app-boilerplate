@@ -127,7 +127,6 @@ export const styles = StyleSheet.create({
         zIndex: 99,
         top: moderateScale(320),
         left: moderateScale(25),
-        // borderRadius: 12,
         borderTopEndRadius: 20,
         borderTopLeftRadius: 20
     },
@@ -202,8 +201,6 @@ export const styles = StyleSheet.create({
         width: moderateScale(358),
         position: 'absolute',
         zIndex: 99,
-        // top: moderateScale(20),
-        // left: moderateScale(20),
     },
     nextbutton: {
         bottom: moderateScale(30),
