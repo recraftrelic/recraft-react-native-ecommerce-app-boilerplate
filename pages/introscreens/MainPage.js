@@ -37,7 +37,7 @@ const MainPage = ({ navigation }) => {
         nestedScrollEnabled={true}
         contentInsetAdjustmentBehavior="automatic"
       >
-        <View style={styles.container}>
+        
           <View style={styles.color}>
           <View>
             <SearchBar
@@ -58,7 +58,7 @@ const MainPage = ({ navigation }) => {
               horizontal={true}
               data={main.data}
               renderItem={({ item, index }) => (
-                <View style={styles.itemCategory}>
+                <View style={styles.itemCategory} key={index}>
                   <Image source={item.src}></Image>
                 </View>
               )}
@@ -111,7 +111,8 @@ const MainPage = ({ navigation }) => {
             </View>
           </View>
           </View>
-          <View style={styles.backColor}>
+          <View style={styles.container}>
+          <View>
             <Text style={styles.sale}>{mainPage.sale}</Text>
           </View>
 
@@ -120,7 +121,7 @@ const MainPage = ({ navigation }) => {
               horizontal={true}
               data={main.dataSale}
               renderItem={({ item, index }) => (
-                <View style={styles.discount}>
+                <View style={styles.discount} key={index}>
                   <View>
                     <Text style={styles.discountBar}>{item.average}</Text>
                   </View>
@@ -141,7 +142,7 @@ const MainPage = ({ navigation }) => {
               vertical={true}
               data={main.dataPopular}
               renderItem={({ item, index }) => (
-                <View style={styles.menu}>
+                <View style={styles.menu} key={index}>
                   <View style={styles.boxOne}>
                     <Image style={styles.img}></Image>
                   </View>
@@ -173,7 +174,7 @@ const MainPage = ({ navigation }) => {
         <Image style={styles.iconTwo} source={images.home}></Image>
         <Image style={styles.iconTwo} source={images.notification}></Image>
         <TouchableOpacity onPress={imageButton}>
-        <Image  style={styles.iconTwo} source={images.Circle}></Image>
+        <Image  style={styles.iconTwo} source={images.circle}></Image>
         </TouchableOpacity>
       </View>
     </SafeAreaView>

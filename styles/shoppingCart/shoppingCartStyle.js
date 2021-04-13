@@ -1,10 +1,10 @@
 import { StyleSheet } from "react-native";
-import { colors } from '../../constants/colors/colors';
-import { fonts, heightToDp, widthToDp } from '../../utilities/Common';
+import { colors } from "../../constants/colors/colors";
+import { fonts, heightToDp, widthToDp } from "../../utilities/Common";
 
 export const styles = StyleSheet.create({
-    main: {
-        marginTop: Platform.OS == 'ios' ? 50 : 0,
+  main: {
+    marginTop: Platform.OS == "ios" ? 50 : 0,
     flex: 1,
     backgroundColor: colors.lightPink
     },
@@ -21,23 +21,18 @@ export const styles = StyleSheet.create({
         fontFamily: fonts.Quick,
         color: colors.grey
     },
-    // deleteBox: {
-    //     width:widthToDp('10%')
-    // },
     containerOne: {
        top: heightToDp('2%') ,
     },
     marginRyt:{
         marginLeft:widthToDp(`-5`),
         marginTop: heightToDp('2%'),
-
     },
     description: {
         flexDirection: 'row',
         marginBottom: heightToDp('2%'),
         width:widthToDp('100%'),
         backgroundColor: colors.white,
-        // marginRight: widthToDp('-20%')
     },
     box: {
         borderRadius: 10,
@@ -144,8 +139,7 @@ export const styles = StyleSheet.create({
         borderTopLeftRadius: 30,
         top: heightToDp('16%'),
         backgroundColor: colors.white,
-        // height: heightToDp('100%'), 
-        // paddingBottom: 100
+        marginBottom: heightToDp('5%')
     },
     subOne: {
         flexDirection: 'row',
@@ -154,9 +148,9 @@ export const styles = StyleSheet.create({
     },
     amountOne: {
     color: colors.pink,
-    fontSize: 20
-    },
-    btn: {
-        marginBottom: 100
-    }
-})
+    fontSize: 20,
+  },
+  btn: {
+    marginBottom: 100,
+  },
+});

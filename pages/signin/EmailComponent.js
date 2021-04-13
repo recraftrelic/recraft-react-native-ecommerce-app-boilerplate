@@ -4,7 +4,6 @@ import {
   SafeAreaView,
 } from 'react-native';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view'
-
 import login from '../../constants/signin/login.json';
 import { colors } from '../../constants/colors/colors';
 import Routes from '../../constants/routes/routes';

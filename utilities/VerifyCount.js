@@ -53,21 +53,6 @@ const VerifyCount = () => {
 
     return (
         <View>
-            <Text
-                style={{
-                    color: '#ACBAC3'
-                }}
-            >
-                {login.code}
-      </Text>
-            <Text
-                style={{
-                    color: '#126881',
-                    marginLeft: moderateScale(18)
-                }}
-            >
-               {login.emailcode}
-      </Text>
            
             <TouchableOpacity onPress={onResendOTP}>
             <View>

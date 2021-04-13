@@ -36,7 +36,8 @@ export const styles = StyleSheet.create({
   },
   location: {
     height: heightToDp("3%"),
-    width: widthToDp("4%"),
+    width: widthToDp("3.9%"),
+    marginLeft: widthToDp('3%')
   },
   shipping: {
     right: widthToDp("20%"),
@@ -158,8 +159,7 @@ paymentOption: {
     flex: 1,
     flexDirection: 'row',
     justifyContent: 'space-between',
-    // padding: 8,
-      marginTop: heightToDp('2'),
+    marginTop: heightToDp('2'),
     marginLeft: widthToDp('5%'),
 
 },
@@ -252,7 +252,7 @@ pin: {
   fontSize: 15,
   color: colors.grey,
   marginTop: heightToDp('3%'),
-  fontFamily: fonts.VariableFont
+  fontFamily: fonts.VariableFont,
 },
 content: {
   flex:1
@@ -279,7 +279,8 @@ cellText: {
   fontSize: 16,
 },
 forgotPin: {
-  color: colors.red
+  color: colors.red,
+  marginRight: widthToDp('5%')
 },
 displayPin: {
   alignItems: 'flex-end'

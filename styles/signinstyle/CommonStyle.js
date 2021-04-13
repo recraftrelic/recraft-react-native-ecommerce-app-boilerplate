@@ -1,16 +1,11 @@
 import {
     StyleSheet,
     Dimensions,
-    Platform
 } from "react-native";
-import { fonts } from '../../utilities/Common';
-import { RFValue } from 'react-native-responsive-fontsize';
-
-import {
-    moderateScale,
-} from 'react-native-size-matters';
-import { heightToDp, widthToDp } from '../../utilities/Common';
+import { moderateScale } from 'react-native-size-matters';
 import { colors } from "../../constants/colors/colors";
+import { fonts } from '../../utilities/Common';
+import { heightToDp, widthToDp } from '../../utilities/Common';
 
 const { width } = Dimensions.get('screen');
 
@@ -42,11 +37,9 @@ export const styles = StyleSheet.create({
     header: {
         left: widthToDp(75),
         top: heightToDp(3),
-
     },
     headerText: {
         color: colors.white
-
     },
     subHead: {
         top: heightToDp(7),
@@ -80,12 +73,10 @@ export const styles = StyleSheet.create({
         backgroundColor: colors.lightGrey,
         bottom: heightToDp(2),
         justifyContent:'center'
-
     },
     passwordInput: {
         height: 0,
         width: 0,
-
     },
     forgote: {
         color: colors.red,
@@ -110,7 +101,6 @@ export const styles = StyleSheet.create({
     textBtn: {
         color: colors.white,
         fontFamily: fonts.zilaMedium,
-
     },
     media: {
         color: colors.grey,
@@ -120,10 +110,9 @@ export const styles = StyleSheet.create({
     btnContainer: {
         flex: 0.4,
     },
-    
     count: {
         flex: 0.1,
-        marginLeft: moderateScale(142),
+        marginLeft: moderateScale(152),
         flex: 0.2,
         flexDirection: 'row',
         justifyContent: 'space-around',

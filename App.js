@@ -14,6 +14,14 @@ import ProfilePage from './pages/profilePage/ProfilePage';
 import SearchPage from './pages/productPages/SearchPage';
 import ShoppingCart from './pages/shoppingCart/ShoppingCart';
 import CheckOut from './pages/checkOut/CheckOut'
+import ProductDisplay from './pages/productPages/ProductDisplay';
+import FurniturePage from './pages/furniturePage/FurniturePage';
+import PlantPage from './pages/plantPage/PlantPage';
+import TopUp from './pages/debitPages/TopUp';
+import DebitCard from './pages/debitPages/DebitCard';
+import ConfirmScreen from './pages/debitPages/ConfimScreen';
+import PayScreen from './pages/payment/PayScreen';
+import Account from './pages/payment/Account'
 
 const Stack = createStackNavigator();
 const App = () => {
@@ -22,7 +30,7 @@ const App = () => {
     <NavigationContainer>
       <Stack.Navigator>
        
-        {/* <Stack.Screen
+        <Stack.Screen
         name={Routes.mainPage}
         component={IntroScreenOne}
         options={{headerShown: false}}
@@ -71,15 +79,55 @@ const App = () => {
         name={Routes.SearchPage}
         component={SearchPage}
         options={{headerShown: false}}
-        /> */}
-        {/* <Stack.Screen
+        />
+        <Stack.Screen
+        name={Routes.ProductDisplay}
+        component={ProductDisplay}
+        options={{headerShown: false}}
+        />
+        <Stack.Screen
         name={Routes.ShoppingCart}
         component={ShoppingCart}
         options={{headerShown: false}}
-        /> */}
+        /> 
         <Stack.Screen
         name={Routes.CheckOut}
         component={CheckOut}
+        options={{headerShown: false}}
+        />
+         <Stack.Screen
+        name={Routes.FurniturePage}
+        component={FurniturePage}
+        options={{headerShown: false}}
+        />
+         <Stack.Screen
+        name={Routes.PlantPage}
+        component={PlantPage}
+        options={{headerShown: false}}
+        />
+         <Stack.Screen
+        name={Routes.TopUp}
+        component={TopUp}
+        options={{headerShown: false}}
+        />
+        <Stack.Screen
+        name={Routes.DebitCard}
+        component={DebitCard}
+        options={{headerShown: false}}
+        />
+        <Stack.Screen
+        name={Routes.ConfirmScreen}
+        component={ConfirmScreen}
+        options={{headerShown: false}}
+        />
+        <Stack.Screen
+        name={Routes.PayScreen}
+        component={PayScreen}
+        options={{headerShown: false}}
+        />
+         <Stack.Screen
+        name={Routes.Account}
+        component={Account}
         options={{headerShown: false}}
         />
       </Stack.Navigator>

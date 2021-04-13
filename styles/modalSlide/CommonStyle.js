@@ -14,15 +14,21 @@ export const styles = StyleSheet.create({
         alignItems:'center',
       },
     successText: {
-        top: heightToDp('4%'),
+        top: heightToDp('8%'),
         fontSize: 18,
         
     },
     successContent: {
-        marginTop: heightToDp('5%'),
+        marginTop: heightToDp('9%'),
        textAlign: 'center',
        padding: 5,
-       color: colors.grey
-    
+       color: colors.grey,
+       maxWidth: widthToDp('80%'),
+    },
+    imageStyle : {
+        top: heightToDp('3%'),
+    },
+    imageStyle1 : {
+        top: heightToDp('5%'),
     }
 })
