@@ -53,6 +53,9 @@ You can also get the app on play store-- -->
 <p align="center">
   <img width="250" src="./andriodPreview/signup.gif?raw=true" hspace="10" vspace="10" >
 </p>
+<p align="center">
+  <img width="250" src="./andriodPreview/furniture.gif?raw=true" hspace="10" vspace="10" >
+</p>
 <!-- <p align="center">
   <img width="250" src="./gifs/screen4.gif?raw=true" hspace="10" vspace="10"><img width="250" src="./gifs/screen5.gif?raw=true" hspace="10" vspace="10"><img width="250" src="./gifs/screen6.gif?raw=true" hspace="10" vspace="10">
 </p>
