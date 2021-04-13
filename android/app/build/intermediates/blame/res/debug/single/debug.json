@@ -160,8 +160,17 @@
         "source": "/Users/recraft-5/.gradle/caches/transforms-2/files-2.1/1cb9b9ea592aa2ea85233be252327dcf/appcompat-1.1.0/res/drawable-xhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
     },
     {
+<<<<<<< HEAD
         "merged": "/Users/recraft-5/recraft-react-native-ecommerce-app-boilerplate/android/app/build/intermediates/res/merged/debug/color_mtrl_card_view_foreground.xml.flat",
         "source": "/Users/recraft-5/.gradle/caches/transforms-2/files-2.1/863e0c3c6716935cd3657ad638fd992d/material-1.1.0/res/color/mtrl_card_view_foreground.xml"
+=======
+        "merged": "C:\\Users\\justa\\OneDrive\\Documents\\project\\recraft-react-native-ecommerce-app-boilerplate\\android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_r.png.flat",
+        "source": "C:\\Users\\justa\\OneDrive\\Documents\\project\\recraft-react-native-ecommerce-app-boilerplate\\android\\app\\src\\main\\res\\drawable-v24\\r.png"
+    },
+    {
+        "merged": "C:\\Users\\justa\\OneDrive\\Documents\\project\\recraft-react-native-ecommerce-app-boilerplate\\android\\app\\build\\intermediates\\res\\merged\\debug\\layout_abc_action_bar_up_container.xml.flat",
+        "source": "D:\\New folder\\gradle-6.8.3\\caches\\transforms-2\\files-2.1\\1cb9b9ea592aa2ea85233be252327dcf\\appcompat-1.1.0\\res\\layout\\abc_action_bar_up_container.xml"
+>>>>>>> dev
     },
     {
         "merged": "/Users/recraft-5/recraft-react-native-ecommerce-app-boilerplate/android/app/build/intermediates/res/merged/debug/color_abc_hint_foreground_material_dark.xml.flat",
