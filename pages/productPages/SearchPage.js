@@ -19,7 +19,7 @@ import { styles } from "../../styles/productstyle/ProductStyle";
 
 const { width, height } = Dimensions.get("screen");
 
-const MainPage = ({ navigation, showSearch }) => {
+const SearchPage = ({ navigation, showSearch }) => {
   const [searchBar, setSearchBar] = useState(true);
   useEffect(() => {
     if (showSearch) {
@@ -107,4 +107,4 @@ const MainPage = ({ navigation, showSearch }) => {
   );
 };
 
-export default MainPage;
+export default SearchPage;

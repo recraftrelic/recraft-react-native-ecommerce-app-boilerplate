@@ -2,15 +2,18 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1291975564/android.ecommerceApp.react-native-community_masked-view.iml" filepath="$PROJECT_DIR$/.idea/modules/1291975564/android.ecommerceApp.react-native-community_masked-view.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/266104523/android.ecommerceApp.react-native-gesture-handler.iml" filepath="$PROJECT_DIR$/.idea/modules/266104523/android.ecommerceApp.react-native-gesture-handler.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1628775311/android.ecommerceApp.react-native-reanimated.iml" filepath="$PROJECT_DIR$/.idea/modules/-1628775311/android.ecommerceApp.react-native-reanimated.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1320222604/android.ecommerceApp.react-native-safe-area-context.iml" filepath="$PROJECT_DIR$/.idea/modules/-1320222604/android.ecommerceApp.react-native-safe-area-context.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1464246668/android.ecommerceApp.react-native-screens.iml" filepath="$PROJECT_DIR$/.idea/modules/1464246668/android.ecommerceApp.react-native-screens.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1642801193/android.ecommerceApp.react-native-splash-screen.iml" filepath="$PROJECT_DIR$/.idea/modules/-1642801193/android.ecommerceApp.react-native-splash-screen.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/807277803/android.ecommerceApp.react-native-vector-icons.iml" filepath="$PROJECT_DIR$/.idea/modules/807277803/android.ecommerceApp.react-native-vector-icons.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/ecommerceApp.iml" filepath="$PROJECT_DIR$/.idea/modules/ecommerceApp.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/ecommerceApp.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/ecommerceApp.app.iml" />
+<<<<<<< HEAD
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-336398917/ecommerceApp.react-native-community_masked-view.iml" filepath="$PROJECT_DIR$/.idea/modules/-336398917/ecommerceApp.react-native-community_masked-view.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-1744438404/ecommerceApp.react-native-gesture-handler.iml" filepath="$PROJECT_DIR$/.idea/modules/-1744438404/ecommerceApp.react-native-gesture-handler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-547986144/ecommerceApp.react-native-reanimated.iml" filepath="$PROJECT_DIR$/.idea/modules/-547986144/ecommerceApp.react-native-reanimated.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/-716692251/ecommerceApp.react-native-safe-area-context.iml" filepath="$PROJECT_DIR$/.idea/modules/-716692251/ecommerceApp.react-native-safe-area-context.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1413246781/ecommerceApp.react-native-screens.iml" filepath="$PROJECT_DIR$/.idea/modules/1413246781/ecommerceApp.react-native-screens.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/1072422088/ecommerceApp.react-native-splash-screen.iml" filepath="$PROJECT_DIR$/.idea/modules/1072422088/ecommerceApp.react-native-splash-screen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/63581658/ecommerceApp.react-native-vector-icons.iml" filepath="$PROJECT_DIR$/.idea/modules/63581658/ecommerceApp.react-native-vector-icons.iml" />
+=======
+>>>>>>> dev
     </modules>
   </component>
 </project>

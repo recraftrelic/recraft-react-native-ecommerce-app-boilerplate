@@ -3,9 +3,23 @@ This recraft-react-native-ecommerce-app-boilerplate app is a boilerplate for any
 
 ## IOS Demo 
 
+<!-- <p align="center">
+  <img width="250" src="./iosPreview/introios.gif?raw=true" hspace="10" vspace="10" >
+</p> -->
 <p align="center">
   <img width="250" src="./iosPreview/introios.gif?raw=true" hspace="10" vspace="10" >
+  <img width="250" src="./iosPreview/screen1.gif?raw=true" hspace="10" vspace="10">
+  <img width="250" src="./iosPreview/screen2.gif?raw=true" hspace="10" vspace="10">
 </p>
+<p align="center">
+  <img width="250" src="./iosPreview/screen4.gif?raw=true" hspace="10" vspace="10">
+  <img width="250" src="./iosPreview/screen5.gif?raw=true" hspace="10" vspace="10">
+  <img width="250" src="./iosPreview/screen6.gif?raw=true" hspace="10" vspace="10">
+  <img width="250" src="./iosPreview/screen7.gif?raw=true" hspace="10" vspace="10">
+  <img width="250" src="./iosPreview/screen8.gif?raw=true" hspace="10" vspace="10">
+  <img width="250" src="./iosPreview/screen3.gif?raw=true" hspace="10" vspace="10">
+
+  </p>
 
 ## Android Demo
 

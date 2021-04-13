@@ -1,4 +1,14 @@
+<<<<<<< HEAD
+#Tue Apr 13 11:16:14 IST 2021
+base.0=/Users/recraft-5/recraft-react-native-ecommerce-app-boilerplate/android/C\:\\Users\\justa\\OneDrive\\Documents\\project\\recraft-react-native-ecommerce-app-boilerplate\\android\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
+path.1=classes.dex
+renamed.1=classes2.dex
+path.0=classes.dex
+renamed.0=classes.dex
+base.1=/Users/recraft-5/recraft-react-native-ecommerce-app-boilerplate/android/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+=======
 #Tue Apr 13 12:43:15 IST 2021
 base.0=C\:\\Users\\justa\\OneDrive\\Documents\\project\\recraft-react-native-ecommerce-app-boilerplate\\android\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
+>>>>>>> dev

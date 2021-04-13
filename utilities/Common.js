@@ -125,18 +125,12 @@ const fonts = Platform.select({
   ios: {
     regular: "WorkSans-Regular",
     semiBold: "WorkSans-SemiBold",
-    bold: "WorkSans-Bold",
     extraBold: "WorkSans-ExtraBold",
-    VariableFont: "AbrilFatface-Regular",
     Rubik: "Rubik-VariableFont",
     Bold: "ZillaSlab-Bold",
     Italic: "ZillaSlab-BoldItalic",
     light: "ZillaSlab-Light",
     medium: "ZillaSlab-Medium",
-    nunito: "Nunito-Regular",
-    nBold: "Nunito-Bold",
-    Quick: "Quicksand-Bold",
-    quickBold: "Quicksand-Bold",
   },
   android: {
     regular: "WorkSans-Regular",

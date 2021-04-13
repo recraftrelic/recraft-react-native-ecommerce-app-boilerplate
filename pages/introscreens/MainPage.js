@@ -37,8 +37,8 @@ const MainPage = ({ navigation }) => {
         nestedScrollEnabled={true}
         contentInsetAdjustmentBehavior="automatic"
       >
-        
-          <View style={styles.color}>
+
+        <View style={styles.color}>
           <View>
             <SearchBar
               style={styles.searchbar}
@@ -47,7 +47,6 @@ const MainPage = ({ navigation }) => {
               imageStyle={styles.searchIcon}
               cartStyle={styles.cart}
               cartSource={images.cart}
-              onChange={textChange}
             />
           </View>
           <View>
@@ -110,8 +109,8 @@ const MainPage = ({ navigation }) => {
               </TouchableOpacity>
             </View>
           </View>
-          </View>
-          <View style={styles.container}>
+        </View>
+        <View style={styles.container}>
           <View>
             <Text style={styles.sale}>{mainPage.sale}</Text>
           </View>
@@ -121,16 +120,22 @@ const MainPage = ({ navigation }) => {
               horizontal={true}
               data={main.dataSale}
               renderItem={({ item, index }) => (
-                <View style={styles.discount} key={index}>
-                  <View>
-                    <Text style={styles.discountBar}>{item.average}</Text>
+                <TouchableOpacity style={styles.discount}
+                  key={index}
+                  onPress={textChange}
+                >
+                  <View  >
+                    <View>
+                      <Text style={styles.discountBar}>{item.average}</Text>
+                    </View>
+                    <Text style={styles.contentOne}>{item.name}</Text>
+                    <View>
+                      <Text style={styles.price}>{item.discount}</Text>
+                      <Text style={styles.priceOne}>{item.actual}</Text>
+                    </View>
                   </View>
-                  <Text style={styles.contentOne}>{item.name}</Text>
-                  <View>
-                    <Text style={styles.price}>{item.discount}</Text>
-                    <Text style={styles.priceOne}>{item.actual}</Text>
-                  </View>
-                </View>
+                </TouchableOpacity>
+
               )}
               showsHorizontalScrollIndicator={false}
             />
@@ -174,7 +179,7 @@ const MainPage = ({ navigation }) => {
         <Image style={styles.iconTwo} source={images.home}></Image>
         <Image style={styles.iconTwo} source={images.notification}></Image>
         <TouchableOpacity onPress={imageButton}>
-        <Image  style={styles.iconTwo} source={images.circle}></Image>
+          <Image style={styles.iconTwo} source={images.circle}></Image>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
